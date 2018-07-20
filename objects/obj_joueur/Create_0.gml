@@ -12,4 +12,3 @@ enum DIR
 	REPOS
 }
 
-dir_precedente = DIR.REPOS

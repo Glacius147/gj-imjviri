@@ -4,10 +4,12 @@ if obj_menu.mode = MENU_MODE.OFF
 {
 	scr_input();
 	
+	// On ne prend en compte que la direction la plus recente (l autre est dans dir_precedente)
 	switch dir_precedente
 	{
 		case DIR.LEFT :
 		{
+		//si la touche est tjs apuyée mais qu'une autre direction est aussi demandée, on ne prend en compte que la nouvelle
 			if k_left
 			{
 				if (k_up || k_down)
@@ -16,6 +18,7 @@ if obj_menu.mode = MENU_MODE.OFF
 					break;
 				}
 			}
+		//sinon on prend en compte la seule touche enclenchée.
 			else
 			{
 				scr_direction_actuelle();
@@ -83,11 +86,51 @@ if obj_menu.mode = MENU_MODE.OFF
 		}
 	}
 	
+	// application du mouvement
+	hsp = (k_right - k_left)*vitesse_marche;
+	vsp = (k_down - k_up)*vitesse_marche;
+
+	scr_deplacement();
 	
-	if k_down  y ++;
-	if k_left x --;	
-	if k_up  y --;
-	if k_right x ++;
+	// animation
+	immobile = true;
+	if k_left
+	{
+		immobile = false;
+		sprite_index = spr_joueur_right;
+		image_xscale = -1;
+		image_speed = 1;
+	}
+
+	if k_right
+	{
+		immobile = false;
+		sprite_index = spr_joueur_right;
+		image_xscale = 1;
+		image_speed = 1;
+	}
+	
+	if k_up
+	{
+		immobile = false;
+		sprite_index = spr_joueur_up;
+		image_xscale = 1;
+		image_speed = 1;
+	}
+	
+	if k_down
+	{
+		immobile = false;
+		sprite_index = spr_joueur_down;
+		image_xscale = 1;
+		image_speed = 1;
+	}
+	
+	if immobile 
+	{
+		image_speed = 0;
+		image_index = 1;
+	}
 	
 	
 }
