@@ -127,6 +127,14 @@
             }
         },
         {
+            "Key": "7f964f8c-21aa-434f-8996-7abdcf0d615b",
+            "Value": {
+                "id": "9c29743d-efbf-44ec-b22f-c3667a6724a2",
+                "resourcePath": "objects\\obj_joueur\\obj_joueur.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "85f6454e-b540-4e5c-9d2d-e2d8efb827b7",
             "Value": {
                 "id": "aa32e7d8-b918-47db-b4d1-1946be71f116",
@@ -204,6 +212,14 @@
                 "id": "ed5ab1e6-2ca4-4066-a522-2058d02e826b",
                 "resourcePath": "views\\cdad3469-ad7d-4940-9f38-faa9cda31bcf.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "d504bc74-784f-47ac-9c46-f850832fc903",
+            "Value": {
+                "id": "c1face25-fb4b-4666-8cfa-fa1899a623d0",
+                "resourcePath": "sprites\\spr_joueur_down\\spr_joueur_down.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
