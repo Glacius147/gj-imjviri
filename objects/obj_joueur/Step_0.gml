@@ -119,8 +119,10 @@ if obj_menu.mode = MENU_MODE.OFF
 	
 	// gestion dégats infligés
 	
-	scr_attaque();
+	if attaque scr_attaque();
 	
 	// gestion dégats reçus
+	
+	
 	
 }

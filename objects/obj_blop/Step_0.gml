@@ -17,4 +17,6 @@ if obj_menu.mode = MENU_MODE.OFF
 	//animation
 	scr_animation();
 	
+	//attaque
+	scr_attaque_monstre();
 }
