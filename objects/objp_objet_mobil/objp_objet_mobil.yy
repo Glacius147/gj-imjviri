@@ -5,23 +5,33 @@
     "name": "objp_objet_mobil",
     "eventList": [
         {
-            "id": "e3b4ba32-b8ec-44dc-ae44-df35aacf90c2",
+            "id": "83afd266-fd92-4dae-bba4-dc2b295c16d2",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 3,
+            "enumb": 1,
+            "eventtype": 2,
             "m_owner": "7f964f8c-21aa-434f-8996-7abdcf0d615b"
         },
         {
-            "id": "29578bd9-0f53-48ca-a2d5-6600658b0a1b",
+            "id": "d34ade17-65ab-4d43-b08e-76ee927b94c5",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 10,
+            "eventtype": 7,
+            "m_owner": "7f964f8c-21aa-434f-8996-7abdcf0d615b"
+        },
+        {
+            "id": "29f9eac3-8d74-4e48-9be6-46f85e1ce5e5",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
-            "eventtype": 0,
+            "eventtype": 8,
             "m_owner": "7f964f8c-21aa-434f-8996-7abdcf0d615b"
         }
     ],
@@ -67,7 +77,7 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "DIR.DOWN",
-            "varName": "dir_precedente",
+            "varName": "dir_attaque",
             "varType": 0
         },
         {
@@ -197,20 +207,6 @@
             "varType": 5
         },
         {
-            "id": "aa3855ae-6b77-4e94-ac2f-fbfa1c6a7fa8",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0",
-            "varName": "attaque",
-            "varType": 3
-        },
-        {
             "id": "e02e2285-48e5-494f-8435-64c3f3ff7cb4",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
@@ -225,6 +221,20 @@
             "varType": 5
         },
         {
+            "id": "aa3855ae-6b77-4e94-ac2f-fbfa1c6a7fa8",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "attaque",
+            "varType": 3
+        },
+        {
             "id": "45c9db00-16c6-4122-821a-ba97545af44a",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
@@ -236,6 +246,104 @@
             "resourceFilter": 1023,
             "value": "DIR.REPOS",
             "varName": "dir_actuelle",
+            "varType": 0
+        },
+        {
+            "id": "bc54917b-adaf-4abb-9b19-2f980cdb5c9c",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "k_attaque",
+            "varType": 3
+        },
+        {
+            "id": "ced410ea-7cbb-4eb4-a1a0-b5729b3bf2d5",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "portee",
+            "varType": 0
+        },
+        {
+            "id": "a3bff5eb-0957-4f5a-ba30-9f42f8fe60fa",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "invulnerable",
+            "varType": 3
+        },
+        {
+            "id": "1e1b9053-0d35-4f4e-827e-f5055a9d9d0c",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "15",
+            "varName": "frames_invulnerable",
+            "varType": 0
+        },
+        {
+            "id": "f3d4da1a-7bdf-4181-8bf1-6f69def2719c",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "1",
+            "varName": "pv",
+            "varType": 0
+        },
+        {
+            "id": "dffca6e7-3e10-47d5-8370-4706c7e86fce",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "1",
+            "varName": "degats",
+            "varType": 0
+        },
+        {
+            "id": "e200e76a-957c-411c-9fcf-d14596a1d9ff",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "blink",
             "varType": 0
         }
     ],

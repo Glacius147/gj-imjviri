@@ -4,7 +4,7 @@ k_left = keyboard_check(vk_left) || (gamepad_axis_value(0,gp_axislh) < -0.3);
 k_right = keyboard_check(vk_right) || (gamepad_axis_value(0,gp_axislh) > 0.3);  ;
 k_up = keyboard_check(vk_up) || (gamepad_axis_value(0,gp_axislv) < -0.3);
 k_down = keyboard_check(vk_down) || (gamepad_axis_value(0,gp_axislv) > 0.3);
-k_sword = keyboard_check_pressed(ord("B")) || gamepad_button_check(0,gp_face1);
+k_attaque = keyboard_check_pressed(ord("B")) || gamepad_button_check(0,gp_face1);
 k_objet = keyboard_check_pressed(ord("N")) || gamepad_button_check(0,gp_face2);
 
 //On emepche d'aller a gauche & a droite en meme temps
