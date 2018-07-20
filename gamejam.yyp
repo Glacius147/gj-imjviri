@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "0163593c-64fa-45cf-a54a-591165b2aeb8",
+            "Value": {
+                "id": "fbc6f6b2-7e26-438a-9576-0206e89cd221",
+                "resourcePath": "objects\\obj_blop\\obj_blop.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "04b7cf86-d53c-4b3e-ad75-e090cd094e70",
             "Value": {
                 "id": "909fbebc-64d6-43cd-9a72-4fa3fe4048ac",
@@ -183,6 +191,14 @@
             }
         },
         {
+            "Key": "7de92fa5-aa8a-490b-99b2-9d0a6ba1c272",
+            "Value": {
+                "id": "f8a3866e-9ffd-4c55-a1f4-4447b34d0bb6",
+                "resourcePath": "shaders\\shader_blink\\shader_blink.yy",
+                "resourceType": "GMShader"
+            }
+        },
+        {
             "Key": "7f7dd199-1c30-4bcd-b7ee-f21a0d10123d",
             "Value": {
                 "id": "c9583307-26d1-4a3f-8412-42c0fa08a734",
@@ -311,6 +327,14 @@
             }
         },
         {
+            "Key": "ce4b9b27-8152-4a3a-a8f0-b1e3e2631e3f",
+            "Value": {
+                "id": "00a0f46c-fe63-4e6f-8fd8-3106a47fcd52",
+                "resourcePath": "sprites\\spr_blop_down\\spr_blop_down.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d504bc74-784f-47ac-9c46-f850832fc903",
             "Value": {
                 "id": "c1face25-fb4b-4666-8cfa-fa1899a623d0",
@@ -340,6 +364,14 @@
                 "id": "7c112b00-ba14-43ed-95f3-bee7664bcfa6",
                 "resourcePath": "views\\e1fbf5be-45e0-4fef-8d1b-ce2286c7a162.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "e7e2b6eb-4388-45d4-9d09-6e4541fd7ce2",
+            "Value": {
+                "id": "b62294ca-1347-42eb-bb83-139e7b20c911",
+                "resourcePath": "scripts\\scr_attaque\\scr_attaque.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -381,6 +413,22 @@
                 "resourcePath": "scripts\\scr_approche\\scr_approche.yy",
                 "resourceType": "GMScript"
             }
+        },
+        {
+            "Key": "f5e03ca1-28a0-4e3e-aa45-7c76c614328f",
+            "Value": {
+                "id": "fd15ff59-b36f-41f7-ae08-59c0c659cd07",
+                "resourcePath": "objects\\objp_enemy\\objp_enemy.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "f735f0b4-87a1-455f-bc31-2fe88b90e621",
+            "Value": {
+                "id": "63057049-742b-48c1-bf22-1f82afe31a92",
+                "resourcePath": "objects\\obj_variables\\obj_variables.yy",
+                "resourceType": "GMObject"
+            }
         }
     ],
     "script_order": [
@@ -391,7 +439,8 @@
         "db3a2587-1273-474a-8a37-1dbb9ff73901",
         "04b7cf86-d53c-4b3e-ad75-e090cd094e70",
         "ca8dd323-e839-4dad-96c4-662cd9e2be14",
-        "269edf4b-cf8a-434d-abc1-ace0444fc73a"
+        "269edf4b-cf8a-434d-abc1-ace0444fc73a",
+        "e7e2b6eb-4388-45d4-9d09-6e4541fd7ce2"
     ],
     "tutorial": ""
 }

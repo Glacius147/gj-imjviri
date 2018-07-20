@@ -1,82 +1,102 @@
 {
-    "id": "3b242514-a6be-4a6d-9c3e-28fcfe2b477d",
+    "id": "0163593c-64fa-45cf-a54a-591165b2aeb8",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_joueur",
+    "name": "obj_blop",
     "eventList": [
         {
-            "id": "de4663b3-c3f0-4248-af17-d1eec3a4111b",
+            "id": "2fb0ae42-634f-496e-83c1-ce13e979ea35",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 3,
-            "m_owner": "3b242514-a6be-4a6d-9c3e-28fcfe2b477d"
+            "m_owner": "0163593c-64fa-45cf-a54a-591165b2aeb8"
         },
         {
-            "id": "cc58fa08-2009-4fd3-a978-ff486f9803e0",
+            "id": "20e40fc0-6a81-4b92-a50b-34bd9648a0c1",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "0163593c-64fa-45cf-a54a-591165b2aeb8"
+        },
+        {
+            "id": "e1863000-d459-419f-9b32-9aebff0224ff",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 2,
-            "m_owner": "3b242514-a6be-4a6d-9c3e-28fcfe2b477d"
+            "m_owner": "0163593c-64fa-45cf-a54a-591165b2aeb8"
+        },
+        {
+            "id": "4c878748-ea10-4c4a-936d-d75d95a4af00",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 10,
+            "eventtype": 7,
+            "m_owner": "0163593c-64fa-45cf-a54a-591165b2aeb8"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": [
         {
-            "id": "bbcc3e9a-11de-4fd1-9f1d-b436b11f27fa",
+            "id": "e46f5d19-9c54-403e-b40b-518c94636489",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "7f964f8c-21aa-434f-8996-7abdcf0d615b",
             "propertyId": "ed77d986-65ec-4943-9991-036bbbb98f27",
-            "value": "spr_joueur_right"
+            "value": "spr_blop"
         },
         {
-            "id": "0f8a4275-2fc5-4ed5-969d-7dff67330c43",
+            "id": "ea1b1329-0d78-4a72-b29f-b9baf5dd6cb1",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "7f964f8c-21aa-434f-8996-7abdcf0d615b",
             "propertyId": "0bed4638-1d3e-4060-824a-9bb43bd8cf99",
-            "value": "spr_joueur_down"
+            "value": "spr_blop_down"
         },
         {
-            "id": "eb4f4665-55b5-42d0-9ff5-a0bb53953b69",
+            "id": "1147ab73-68fe-4a85-ab37-4144f97972ab",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "7f964f8c-21aa-434f-8996-7abdcf0d615b",
             "propertyId": "9e328212-059f-4831-aaf2-c7fb81b0e102",
-            "value": "spr_joueur_up"
+            "value": "spr_blop_down"
         },
         {
-            "id": "8334ed92-7f06-4817-85f2-23ab1f8a6b3d",
+            "id": "c4446113-2e4f-4c16-a8e0-64d5db9a093c",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "7f964f8c-21aa-434f-8996-7abdcf0d615b",
             "propertyId": "e02e2285-48e5-494f-8435-64c3f3ff7cb4",
-            "value": "spr_joueur_attaque"
+            "value": "spr_blop_down"
         },
         {
-            "id": "0d0b053a-100d-4768-8a81-a5e30ff4e8d7",
+            "id": "b0e188ea-1bd8-4627-85a9-45ff728f6add",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "7f964f8c-21aa-434f-8996-7abdcf0d615b",
-            "propertyId": "ced410ea-7cbb-4eb4-a1a0-b5729b3bf2d5",
-            "value": "20"
+            "propertyId": "0811741f-fcef-4ff4-b18b-4cf9f30f362d",
+            "value": "1"
         },
         {
-            "id": "23b0e4a3-8641-42a3-bd1d-85b2de4792f1",
+            "id": "d4fbc6bd-396f-4ae4-8894-ce2b7f7670ab",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "7f964f8c-21aa-434f-8996-7abdcf0d615b",
             "propertyId": "f3d4da1a-7bdf-4181-8bf1-6f69def2719c",
-            "value": "3"
+            "value": "2"
         }
     ],
-    "parentObjectId": "7f964f8c-21aa-434f-8996-7abdcf0d615b",
+    "parentObjectId": "f5e03ca1-28a0-4e3e-aa45-7c76c614328f",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -90,23 +110,8 @@
     "physicsShape": 1,
     "physicsShapePoints": null,
     "physicsStartAwake": true,
-    "properties": [
-        {
-            "id": "41320c77-4c71-405f-80c7-837645fc15ae",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "12",
-            "varName": "duree_sword",
-            "varType": 0
-        }
-    ],
+    "properties": null,
     "solid": false,
-    "spriteId": "d504bc74-784f-47ac-9c46-f850832fc903",
+    "spriteId": "ce4b9b27-8152-4a3a-a8f0-b1e3e2631e3f",
     "visible": true
 }

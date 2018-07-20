@@ -91,7 +91,7 @@ if obj_menu.mode = MENU_MODE.OFF
 	vsp = (k_down - k_up)*vitesse_marche;
 
 	// on arrete le mouvement en cas d'attaque
-	if (k_sword && !attaque) 
+	if (k_attaque && !attaque) 
 	{
 		attaque = true;
 		alarm[0] = duree_sword;
@@ -103,10 +103,24 @@ if obj_menu.mode = MENU_MODE.OFF
 		vsp = 0;
 	}
 
+	if !attaque
+	{
+		if k_up dir_attaque = DIR.UP;
+		if k_down dir_attaque = DIR.DOWN;
+		if k_right dir_attaque = DIR.RIGHT;
+		if k_left dir_attaque = DIR.LEFT;
+	}
+
 	//déplacement
 	scr_deplacement();
 	
 	//animation
 	scr_animation();
+	
+	// gestion dégats infligés
+	
+	scr_attaque();
+	
+	// gestion dégats reçus
 	
 }

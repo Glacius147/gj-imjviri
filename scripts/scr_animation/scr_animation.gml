@@ -1,10 +1,13 @@
 	/// @desc scr_animation();
 	
 	//annime le perso dans la direction de son déplacement
+	
+	//animation de frappe
 if attaque
 {
 	sprite_index = spr_attaque;
-	switch dir_precedente
+	//choix de la direction
+	switch dir_attaque
 	{
 		case DIR.LEFT :
 		{
@@ -39,7 +42,9 @@ if attaque
 }
 else
 {
+	//flag de deplacement
 	immobile = true;
+	//animation de deplacement
 	if hsp < 0 || k_left
 	{
 		immobile = false;
@@ -72,11 +77,13 @@ else
 		image_speed = 1;
 	}
 	
+	//animation immobile
 	if immobile 
 	{
+		//si fin d'attaque
 		if sprite_index = spr_attaque
 		{
-			switch dir_precedente
+			switch dir_attaque
 			{
 				case DIR.LEFT :
 				{
@@ -109,6 +116,7 @@ else
 		
 			}					
 		}
+		//dans tous les cas, position immobile du sprite
 		image_speed = 0;
 		image_index = 1;
 	}
