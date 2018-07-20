@@ -4,6 +4,8 @@
 // Et le mettre dans une master list ?
 
 
+x = round((mouse_x-8) / 16)*16+8
+y = round((mouse_y-8) / 16)*16+8
 
 if x>(4096+4*16) // on est dans la barre de selection
 {
@@ -14,6 +16,7 @@ if x>(4096+4*16) // on est dans la barre de selection
 		{
 			other.sprite_index = sprite_index
 			other.current_type = object_index
+			
 		}
 	}
 }
