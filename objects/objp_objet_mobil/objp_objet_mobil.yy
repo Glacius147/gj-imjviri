@@ -195,6 +195,34 @@
             "value": "0",
             "varName": "spr_up",
             "varType": 5
+        },
+        {
+            "id": "aa3855ae-6b77-4e94-ac2f-fbfa1c6a7fa8",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "attaque",
+            "varType": 3
+        },
+        {
+            "id": "e02e2285-48e5-494f-8435-64c3f3ff7cb4",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "spr_attaque",
+            "varType": 5
         }
     ],
     "solid": false,

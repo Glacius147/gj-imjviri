@@ -90,6 +90,14 @@ if obj_menu.mode = MENU_MODE.OFF
 	hsp = (k_right - k_left)*vitesse_marche;
 	vsp = (k_down - k_up)*vitesse_marche;
 
+	if (k_sword && !attaque) || attaque
+	{
+		hsp = 0;
+		vsp = 0;
+		attaque = true;
+		alarm[0] = duree_sword;
+	}
+
 
 	//déplacement
 	scr_deplacement();

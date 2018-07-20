@@ -87,6 +87,14 @@
             }
         },
         {
+            "Key": "3bcaabbd-b801-4bd5-9917-31afb4c6f641",
+            "Value": {
+                "id": "1ca3b723-1192-48bd-ab78-e138fa6fe410",
+                "resourcePath": "sprites\\spr_joueur_attaque\\spr_joueur_attaque.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "3ce2871a-39f1-4719-aa63-de824b8b1302",
             "Value": {
                 "id": "d49d18d3-098c-429f-94fb-99a252d95283",
