@@ -311,6 +311,14 @@
             }
         },
         {
+            "Key": "d07b9ca9-9b90-488f-8c3f-15ed9dad3795",
+            "Value": {
+                "id": "19d0f7b3-d874-447d-afdb-1d621e53b686",
+                "resourcePath": "objects\\obj_edt_current\\obj_edt_current.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "d504bc74-784f-47ac-9c46-f850832fc903",
             "Value": {
                 "id": "c1face25-fb4b-4666-8cfa-fa1899a623d0",
