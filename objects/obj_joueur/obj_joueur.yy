@@ -138,6 +138,20 @@
             "value": "12",
             "varName": "duree_sword",
             "varType": 0
+        },
+        {
+            "id": "5a2bfa42-ce94-4534-94ae-4156597d9fdf",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "3",
+            "varName": "pv_max",
+            "varType": 0
         }
     ],
     "solid": false,
