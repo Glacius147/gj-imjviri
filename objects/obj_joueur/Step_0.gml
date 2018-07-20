@@ -90,47 +90,14 @@ if obj_menu.mode = MENU_MODE.OFF
 	hsp = (k_right - k_left)*vitesse_marche;
 	vsp = (k_down - k_up)*vitesse_marche;
 
+
+	//déplacement
 	scr_deplacement();
 	
-	// animation
-	immobile = true;
-	if k_left
-	{
-		immobile = false;
-		sprite_index = spr_joueur_right;
-		image_xscale = -1;
-		image_speed = 1;
-	}
-
-	if k_right
-	{
-		immobile = false;
-		sprite_index = spr_joueur_right;
-		image_xscale = 1;
-		image_speed = 1;
-	}
+	//animation
+	scr_animation();
 	
-	if k_up
-	{
-		immobile = false;
-		sprite_index = spr_joueur_up;
-		image_xscale = 1;
-		image_speed = 1;
-	}
-	
-	if k_down
-	{
-		immobile = false;
-		sprite_index = spr_joueur_down;
-		image_xscale = 1;
-		image_speed = 1;
-	}
-	
-	if immobile 
-	{
-		image_speed = 0;
-		image_index = 1;
-	}
-	
+	if k_left image_xscale = -1;
+	if k_right image_xscale = 1;
 	
 }
