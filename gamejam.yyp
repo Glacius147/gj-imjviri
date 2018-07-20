@@ -103,6 +103,14 @@
             }
         },
         {
+            "Key": "3e3f21b4-6394-4775-be05-fe3101465078",
+            "Value": {
+                "id": "fffbf1e0-9f78-4935-843d-6d7a9dc7387b",
+                "resourcePath": "sprites\\spr_test_grille\\spr_test_grille.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "47abc805-88b3-4968-a256-62aa8d1392fa",
             "Value": {
                 "id": "cac867ae-a821-48c3-bb77-ad6135ad8541",
