@@ -66,7 +66,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "DIR.REPOS",
+            "value": "DIR.DOWN",
             "varName": "dir_precedente",
             "varType": 0
         },
@@ -223,6 +223,20 @@
             "value": "0",
             "varName": "spr_attaque",
             "varType": 5
+        },
+        {
+            "id": "45c9db00-16c6-4122-821a-ba97545af44a",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "DIR.REPOS",
+            "varName": "dir_actuelle",
+            "varType": 0
         }
     ],
     "solid": false,
