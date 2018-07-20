@@ -9,10 +9,10 @@ if x<4096
 {
 draw_self()
 }
-else
+/*else
 {
 	
 x = round((mouse_x) / 16)*16
 y = round((mouse_y) / 16)*16
 	
-}
+}*/
