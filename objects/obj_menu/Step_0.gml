@@ -80,8 +80,3 @@ x2 = (0.5 + 3/8*percent)*w;
 
 y1 = (0.5 - 3/8*percent)*h;
 y2 = (0.5 + 3/8*percent)*h;
-
-
-
-
-/// @description ?
