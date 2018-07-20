@@ -53,7 +53,7 @@
             "mvc": "1.0",
             "objectId": "7f964f8c-21aa-434f-8996-7abdcf0d615b",
             "propertyId": "ed77d986-65ec-4943-9991-036bbbb98f27",
-            "value": "spr_blop"
+            "value": "spr_blop_right"
         },
         {
             "id": "ea1b1329-0d78-4a72-b29f-b9baf5dd6cb1",
@@ -69,7 +69,7 @@
             "mvc": "1.0",
             "objectId": "7f964f8c-21aa-434f-8996-7abdcf0d615b",
             "propertyId": "9e328212-059f-4831-aaf2-c7fb81b0e102",
-            "value": "spr_blop_down"
+            "value": "spr_blop_up"
         },
         {
             "id": "c4446113-2e4f-4c16-a8e0-64d5db9a093c",
