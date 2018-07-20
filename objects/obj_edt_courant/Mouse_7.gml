@@ -16,7 +16,6 @@ if x>(4096+4*16) // on est dans la barre de selection
 		{
 			other.sprite_index = sprite_index
 			other.current_type = object_index
-			
 		}
 	}
 }
