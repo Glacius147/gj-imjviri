@@ -87,10 +87,26 @@
             }
         },
         {
+            "Key": "3bcaabbd-b801-4bd5-9917-31afb4c6f641",
+            "Value": {
+                "id": "1ca3b723-1192-48bd-ab78-e138fa6fe410",
+                "resourcePath": "sprites\\spr_joueur_attaque\\spr_joueur_attaque.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "3ce2871a-39f1-4719-aa63-de824b8b1302",
             "Value": {
                 "id": "d49d18d3-098c-429f-94fb-99a252d95283",
                 "resourcePath": "sprites\\spr_joueur_up\\spr_joueur_up.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "3e3f21b4-6394-4775-be05-fe3101465078",
+            "Value": {
+                "id": "fffbf1e0-9f78-4935-843d-6d7a9dc7387b",
+                "resourcePath": "sprites\\spr_test_grille\\spr_test_grille.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -100,14 +116,6 @@
                 "id": "cac867ae-a821-48c3-bb77-ad6135ad8541",
                 "resourcePath": "views\\47abc805-88b3-4968-a256-62aa8d1392fa.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "5de9ac2e-e3bb-415e-aa53-f3e29753af34",
-            "Value": {
-                "id": "602d6756-7d5c-485e-bfd5-b443e2dc0f87",
-                "resourcePath": "sprites\\spr_test_grille\\spr_test_grille.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
