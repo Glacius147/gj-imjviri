@@ -20,6 +20,7 @@ menu_itemheight = font_get_size(font_menu);
 menu_selection = -1;
 menu_control = true;
 
+touche_enfoncee = false;
 
 
 enum MENU_MODE

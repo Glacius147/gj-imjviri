@@ -9,17 +9,23 @@ if mode = MENU_MODE.MENU
 	//controls clavier
 	if menu_control
 	{
-		if (keyboard_check_pressed(vk_up))
+		scr_input();
+		if k_up && !touche_enfoncee
 		{
-			menu_curseur = scr_wrap(menu_curseur + 1, 0 , menu_item - 1);
+			menu_curseur = scr_wrap(menu_curseur + 1, 0 , menu_item - 1); 
+			touche_enfoncee = true;
 		}
 		
-		if (keyboard_check_pressed(vk_down))
+		if k_down && !touche_enfoncee
 		{
 			menu_curseur = scr_wrap(menu_curseur - 1, 0 , menu_item - 1);
+			touche_enfoncee = true;
+
 		}
 		
-		if (keyboard_check_pressed(vk_enter))
+		if !k_down && !k_up 			touche_enfoncee = false;
+		
+		if k_attaque
 		{
 			menu_x_target = w + 200;
 			menu_selection = menu_curseur;
