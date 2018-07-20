@@ -3,11 +3,6 @@
 	//annime le perso dans la direction de son déplacement
 if attaque
 {
-	if k_right dir_precedente = DIR.RIGHT;
-	if k_left dir_precedente = DIR.LEFT;
-	if k_up dir_precedente = DIR.UP;
-	if k_down dir_precedente = DIR.DOWN;
-	
 	sprite_index = spr_attaque;
 	switch dir_precedente
 	{

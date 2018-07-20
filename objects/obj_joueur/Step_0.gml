@@ -5,7 +5,7 @@ if obj_menu.mode = MENU_MODE.OFF
 	scr_input();
 	
 	// On ne prend en compte que la direction la plus recente (l autre est dans dir_precedente)
-	switch dir_precedente
+	switch dir_actuelle
 	{
 		case DIR.LEFT :
 		{
@@ -108,8 +108,5 @@ if obj_menu.mode = MENU_MODE.OFF
 	
 	//animation
 	scr_animation();
-	
-	if k_left image_xscale = -1;
-	if k_right image_xscale = 1;
 	
 }
