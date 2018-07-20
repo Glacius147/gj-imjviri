@@ -8,4 +8,7 @@ var salle_height = 16*11;
 view_camera = camera_create();
 
 
-var viewmat = matrix_build_lookat(640, 240, -10, 640, 240, 0, 0, 1, 0);
+camera_set_view_pos(view_camera, salle_width/2,salle_height/2);
+camera_set_view_size(view_camera, salle_width,salle_height);
+
+ camera_set_default(view_camera);
