@@ -259,7 +259,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "spr_bombe",
+            "value": "spr_cryo",
             "varName": "objet_b",
             "varType": 0
         },
@@ -290,6 +290,20 @@
             "value": "0",
             "varName": "frames_immobile",
             "varType": 0
+        },
+        {
+            "id": "11318142-8ff6-4d72-841b-06f23e3a76f0",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "True",
+            "varName": "cryo",
+            "varType": 3
         }
     ],
     "solid": false,

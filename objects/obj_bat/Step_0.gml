@@ -1,12 +1,12 @@
 /// @desc Déplacement et action du perso
 
-if obj_menu.mode = MENU_MODE.JEU && room_origine_x = obj_joueur.room_current_x && room_origine_y = obj_joueur.room_current_y 
+if obj_menu.mode = MENU_MODE.JEU && room_origine_x = obj_joueur.room_current_x && room_origine_y = obj_joueur.room_current_y && !cryo
 {
 		
 
 	// application du mouvement
-	hsp = dcos(dir_bat)*vitesse_marche*vitesse_bat;
-	vsp = dsin(dir_bat)*vitesse_marche*vitesse_bat;
+	hsp = dcos(dir_bat)*vitesse_marche*vitesse;
+	vsp = dsin(dir_bat)*vitesse_marche*vitesse;
 
 	//déplacement
 	scr_deplacement_vol();
@@ -17,8 +17,8 @@ if obj_menu.mode = MENU_MODE.JEU && room_origine_x = obj_joueur.room_current_x &
 	
 	if mode = MODE_BAT.DECOLAGE
 	{
-		vitesse_bat += 0.01	
-		if vitesse_bat == 1 mode = MODE_BAT.VOL
+		vitesse += 0.01	
+		if vitesse == 1 mode = MODE_BAT.VOL
 		{
 			alarm[0] = irandom_range(120,300);
 		}
@@ -26,8 +26,8 @@ if obj_menu.mode = MENU_MODE.JEU && room_origine_x = obj_joueur.room_current_x &
 	
 	if mode = MODE_BAT.ATTERRISSAGE
 	{
-		vitesse_bat -= 0.01	
-		if vitesse_bat == 0 mode = MODE_BAT.REPOS
+		vitesse -= 0.01	
+		if vitesse == 0 mode = MODE_BAT.REPOS
 		{
 			alarm[0] = irandom_range(40,120);
 		}
@@ -39,7 +39,7 @@ if obj_menu.mode = MENU_MODE.JEU && room_origine_x = obj_joueur.room_current_x &
 	//animation	
 	if mode != MODE_BAT.REPOS
 	{
-	image_speed = vitesse_bat;
+	image_speed = vitesse;
 	if hsp != 0
 	{
 		sprite_index = spr_right;

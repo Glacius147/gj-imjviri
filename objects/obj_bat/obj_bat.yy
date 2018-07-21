@@ -162,7 +162,7 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "0",
-            "varName": "vitesse_bat",
+            "varName": "vitesse1",
             "varType": 0
         },
         {
