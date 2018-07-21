@@ -5,19 +5,19 @@
     "name": "obj_porte",
     "eventList": [
         {
-            "id": "87a498e6-ab5a-4291-bb9b-4db93ebea0f3",
+            "id": "bbe58ab2-1c86-4f16-86fb-d3ef9e1da794",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
-            "collisionObjectId": "3b242514-a6be-4a6d-9c3e-28fcfe2b477d",
-            "enumb": 0,
-            "eventtype": 4,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 25,
+            "eventtype": 7,
             "m_owner": "cf7dde9f-980f-428b-8464-f164db1de2c2"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "d6c33cd1-23d3-4fc7-a8f7-b739c79c8dce",
+    "parentObjectId": "ecc6472e-0ffe-4374-adcb-097042aed299",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
