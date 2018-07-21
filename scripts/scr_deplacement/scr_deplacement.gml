@@ -3,6 +3,8 @@
 while (place_meeting(x+hsp,y,objp_solide) && hsp != 0)
 {
 	hsp = scr_approche(hsp,0,1);
+	other.collision = id;
+	
 }
 x = x + hsp;
 
