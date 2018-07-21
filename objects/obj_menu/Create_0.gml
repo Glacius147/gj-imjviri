@@ -72,6 +72,7 @@ global.list_item[13] = string(obj_bloc_explosable);
 global.list_item[14] = string(obj_mur_explosable);
 global.list_item[15] = string(obj_dependance);
 global.list_item[16] = string(obj_fantome);
+global.list_item[17] = string(obj_escalier);
 
 
 global.map_item_index = ds_map_create()

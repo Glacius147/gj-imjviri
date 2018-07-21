@@ -55,10 +55,14 @@ for (i = 0; i < size; i++;)
 		destinations[count] = item[? "destination"];
 		count++
 		var new_item = noone;
-	}
+	} 
 	else
 	{
 		var new_item = instance_create_layer(item_x,item_y,"items",item_type)
+	}
+	if item_type == string(obj_escalier)
+	{
+		new_item.destination = item[? "destination"];	
 	}
 	if new_item != noone
 	{
