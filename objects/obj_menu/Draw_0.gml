@@ -20,7 +20,15 @@ if mode = MENU_MODE.JEU || mode = MENU_MODE.UP || mode = MENU_MODE.DOWN || mode 
 		draw_sprite(obj_joueur.objet_b,0,x_b + 163,y_b + 40);
 	}
 
-
+	//affichage choix objet
+	scr_9box(spr_9box,x_b + 100, y_b -150, x_b + 200 + 30, y_b -112);
+	if instance_exists(obj_joueur) 
+	{
+		if obj_joueur.cryo draw_sprite(spr_cryo,0,x_b + 118,y_b - 131);
+		if obj_joueur.bombes > 0 draw_sprite(spr_bombe,0,x_b + 118 + 20 , y_b - 131);
+	}
+	
+	
 
 	//placement des coeurs
 	/// @desc affiche le niveau de PV du joueur
