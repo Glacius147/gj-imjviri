@@ -43,6 +43,16 @@
             "enumb": 64,
             "eventtype": 8,
             "m_owner": "3b242514-a6be-4a6d-9c3e-28fcfe2b477d"
+        },
+        {
+            "id": "89bf72fb-4b08-4a70-afb7-2b465a47a067",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 20,
+            "eventtype": 7,
+            "m_owner": "3b242514-a6be-4a6d-9c3e-28fcfe2b477d"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -203,6 +213,34 @@
             "resourceFilter": 1023,
             "value": "0",
             "varName": "clef",
+            "varType": 0
+        },
+        {
+            "id": "828cd747-a3ae-4911-804a-115a6d841d88",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "110",
+            "varName": "bombes",
+            "varType": 0
+        },
+        {
+            "id": "155eaf51-d6fe-4cc0-885e-205c1bbf7986",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "OBJET_HOLD.BOMBE",
+            "varName": "objet_b",
             "varType": 0
         }
     ],

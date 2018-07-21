@@ -1,6 +1,6 @@
 /// @desc Mort si PV = 0;
 
-if pv = 0 
+if pv <= 0 
 {
 	instance_change(obj_mob_mort,true); 
 	image_index = 0; 

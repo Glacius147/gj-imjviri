@@ -3,9 +3,9 @@
 if mode = MENU_MODE.JEU || mode = MENU_MODE.UP || mode = MENU_MODE.DOWN || mode = MENU_MODE.PAUSE || mode = MENU_MODE.CHANGEMENT_SALLE
 {
 	draw_set_color(c_blue);
-	draw_rectangle(x_b + 15,y_b + 6,x_b + 84,y_b + 59,false);
-	scr_9box(spr_9box,x_b + 95, y_b + 22, x_b + 95 + 30, y_b + 22 + 38);
-	scr_9box(spr_9box,x_b + 129, y_b + 22, x_b + 129 + 30, y_b + 22 + 38);
+	draw_rectangle(x_b + 6,y_b + 6,x_b + 75,y_b + 59,false);
+	scr_9box(spr_9box,x_b + 114, y_b + 22, x_b + 114 + 30, y_b + 22 + 38);
+	scr_9box(spr_9box,x_b + 148, y_b + 22, x_b + 148 + 30, y_b + 22 + 38);
 
 	//placement des coeurs
 	/// @desc affiche le niveau de PV du joueur
@@ -25,7 +25,18 @@ if mode = MENU_MODE.JEU || mode = MENU_MODE.UP || mode = MENU_MODE.DOWN || mode 
 		if pv >= i im_coeur = 0;
 		if pv = i - 0.5 im_coeur = 1;
 		if pv < i - 0.5 im_coeur = 2;
-		draw_sprite(spr_coeur,im_coeur,x_b + 175 + 13*(i-1),y_b + 18);
+		draw_sprite(spr_coeur,im_coeur,x_b + 194 + 13*(i-1),y_b + 18);
+	}
+	
+	// placement des clefs et des bombes
+	draw_sprite(spr_clef,0,x_b + 90,y_b + 20);
+	draw_sprite(spr_bombe,0,x_b + 90,y_b + 40);
+	draw_set_font(font_hub);
+	draw_set_color(c_yellow);
+	if instance_exists(obj_joueur)
+	{
+	
+	draw_text(x_b + 105,y_b + 20,"x" + string(obj_joueur.clef));
 	}
 }
 
