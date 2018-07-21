@@ -15,7 +15,7 @@ for (i = 0; i<nb_obj; i++)
 	ds_map_add(item_map_ds, "x",obj_list[i].x);
 	ds_map_add(item_map_ds, "y",obj_list[i].y);
 	p_x = floor(obj_list[i].x/256)
-	p_y = floor(obj_list[i].x/176)
+	p_y = floor(obj_list[i].y/176)
 	ds_map_add(item_map_ds, "piece x",p_x);
 	ds_map_add(item_map_ds, "piece y",p_y);
 	ds_map_add(item_map_ds, "sprite",obj_list[i].image_index);

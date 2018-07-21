@@ -31,7 +31,7 @@ for (i = 0; i < size; i++;)
 	item_py = item[? "piece y"];
 	item_sprite = item[? "sprite"];
 	item_angle = item[? "angle"];
-	if item_type == obj_mur_salle{
+	if item_type == string(obj_mur_salle){
 		var new_item = instance_create_layer(item_x,item_y,"salles",item_type)
 		salle_x = round(item_x/256)
 		salle_y = round(item_y/176)
