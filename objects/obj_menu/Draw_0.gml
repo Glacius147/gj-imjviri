@@ -1,6 +1,6 @@
 /// @descr interface en jeu
 
-if mode = MENU_MODE.JEU || mode = MENU_MODE.UP || mode = MENU_MODE.DOWN || mode = MENU_MODE.PAUSE
+if mode = MENU_MODE.JEU || mode = MENU_MODE.UP || mode = MENU_MODE.DOWN || mode = MENU_MODE.PAUSE || mode = MENU_MODE.CHANGEMENT_SALLE
 {
 	draw_set_color(c_blue);
 	draw_rectangle(x_b + 15,y_b + 6,x_b + 84,y_b + 59,false);

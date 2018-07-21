@@ -87,6 +87,14 @@
             }
         },
         {
+            "Key": "25ec1fef-06c8-40b5-ae4b-6490bbb25ff1",
+            "Value": {
+                "id": "c77b7b8f-a422-445f-afee-a274e2113534",
+                "resourcePath": "objects\\obj_porte_fermee\\obj_porte_fermee.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "26884f40-4a3f-452c-b015-4914b73bad16",
             "Value": {
                 "id": "e472dddb-7b65-4bac-a604-6ecef33e7dc5",
@@ -191,6 +199,22 @@
             }
         },
         {
+            "Key": "66948f79-49cc-485c-a351-c5a5576d8c8b",
+            "Value": {
+                "id": "5d98d07b-9da8-448d-aa9d-9e946046a52b",
+                "resourcePath": "sprites\\spr_hub\\spr_hub.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "672164bd-4ff5-40a7-a815-39b9746a439c",
+            "Value": {
+                "id": "0f92ea56-14a1-4c59-b746-07507ddf16d9",
+                "resourcePath": "sprites\\spr_clef\\spr_clef.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "6df23827-f8d9-4bba-bbfe-d9c3cd27fb77",
             "Value": {
                 "id": "b3718748-95da-408d-9ba6-9ab38e543694",
@@ -274,7 +298,7 @@
             "Key": "7eb17201-b6ff-443d-9bb7-411db44d7d9d",
             "Value": {
                 "id": "c855837d-8148-4704-bea9-06aa4745e0dc",
-                "resourcePath": "objects\\obj_porte_fermee\\obj_porte_fermee.yy",
+                "resourcePath": "objects\\obj_porte_bloquee\\obj_porte_bloquee.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -324,6 +348,14 @@
                 "id": "c66587b7-26ac-4526-bb51-99961b2eb0bf",
                 "resourcePath": "scripts\\scr_9box\\scr_9box.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "8eafca8a-4df6-41d4-bc71-a8557243a44b",
+            "Value": {
+                "id": "441444d9-05b9-49d1-8b3f-ed1368295f1f",
+                "resourcePath": "sprites\\spr_porte_fermee\\spr_porte_fermee.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -546,7 +578,7 @@
             "Key": "d7d06761-1c61-468d-ad0b-6f157274e1dc",
             "Value": {
                 "id": "90fb341e-2932-47cd-9054-7d5d8f7b6c3f",
-                "resourcePath": "sprites\\spr_porte_fermee\\spr_porte_fermee.yy",
+                "resourcePath": "sprites\\spr_porte_bloquee\\spr_porte_bloquee.yy",
                 "resourceType": "GMSprite"
             }
         },

@@ -1,4 +1,5 @@
 //
+
 draw_self()
 
 //affichage en blanc si touché
