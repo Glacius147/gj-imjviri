@@ -27,8 +27,8 @@ if c_x>(4096+5*16) // on est dans la barre de selection
 else if c_x>4096 // On est dans la minimap
 {
 	//Position de la souris dans la caméra de l'interface
-	c_y = mouse_y - camera_get_view_y(view_camera[1]) - 6*3
-	c_x = mouse_x - camera_get_view_x(view_camera[1]) - 15*3
+	c_y = mouse_y - camera_get_view_y(view_camera[1]) - 6
+	c_x = mouse_x - camera_get_view_x(view_camera[1]) - 15
 	col = floor(c_x/4)
 	row = floor(c_y/3)
 	camera_set_view_pos(view_camera[0],col*256 ,row*176);
