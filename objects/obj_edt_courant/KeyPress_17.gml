@@ -13,7 +13,7 @@ switch (mode_edition) {
 				image_alpha = 1	
 			}
 		}
-		sprite_index = spr_fleche1
+		sprite_index = -1
 		current_type = obj_dependance
         break;
     case EDITEUR_MODE.DEPENDANCE_1:

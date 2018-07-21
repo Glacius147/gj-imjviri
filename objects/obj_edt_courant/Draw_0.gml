@@ -3,6 +3,8 @@
 
 if view_current == 0
 {
+if mode_edition = EDITEUR_MODE.NORMAL{
+	
 //Détermination du type d'objet
 if current_type == obj_mur_salle.object_index
 	{
@@ -29,6 +31,19 @@ else if item != noone and (item.object_index == obj_mur or item.object_index == 
 }
 
 }
+
+} else if mode_edition = EDITEUR_MODE.DEPENDANCE_2{
+if mouse_x<4096
+{
+	draw_self()	
+}
+	
+	
+}
+
+
+
+
 /*else
 {
 	

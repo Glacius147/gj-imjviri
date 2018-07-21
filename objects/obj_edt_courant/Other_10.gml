@@ -21,6 +21,11 @@ for (i = 0; i<nb_obj; i++)
 	ds_map_add(item_map_ds, "piece y",p_y);
 	ds_map_add(item_map_ds, "sprite",obj_list[i].image_index);
 	ds_map_add(item_map_ds, "angle",obj_list[i].image_angle);
+	if obj_list[i].object_index == obj_dependance
+	{
+		ds_map_add(item_map_ds, "origine",obj_list[i].origine);
+		ds_map_add(item_map_ds, "destination",obj_list[i].destination);
+	}
 	ds_map_add_map(i_map, "item"+string(i), item_map_ds);
 			
 	}
