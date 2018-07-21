@@ -69,7 +69,7 @@ else // On clique pour poser l'objet
 		if item == noone and created_room[current_room_x,current_room_y]
 		{
 			new_item = instance_create_layer(x,y,"Instances",current_type);
-			scr_array_replace(obj_list,current_player,new_item)
+			obj_list = scr_array_replace(obj_list,current_player,new_item)
 			instance_destroy(current_player)
 			current_player = new_item
 		}
@@ -82,6 +82,7 @@ else // On clique pour poser l'objet
 		if item == noone and created_room[current_room_x,current_room_y]
 		{
 			obj_list[nb_obj] = instance_create_layer(x,y,"Instances",current_type);
+			
 			if current_type == obj_joueur
 			{
 				current_player = obj_list[nb_obj]
@@ -108,6 +109,7 @@ if mouse_check_button_released(mb_right)
 	nextroom = scr_is_room_adj(x,y)
 	has_nextroom = nextroom[0];
 	var flag_cycle = false
+	var flag_change_mirror = true
 	if has_nextroom and item.object_index == obj_mur
 	{
 		flag_cycle = true
@@ -115,6 +117,7 @@ if mouse_check_button_released(mb_right)
 	} else if has_nextroom and item.object_index == obj_porte
 	{
 		flag_cycle = true
+		flag_change_mirror = false
 		var next_type = obj_porte_bloquee
 	} else if has_nextroom and item.object_index == obj_porte_bloquee
 	{
@@ -135,9 +138,12 @@ if mouse_check_button_released(mb_right)
 		new_x = item.x
 		new_y = item.y
 		new_item =  instance_create_layer(new_x,new_y,"Instances",next_type);
-		if next_type == obj_mur
+		if next_type == obj_mur_explosable
 		{
 			new_item.image_index = round(item.image_angle/90)
+		} else if next_type == obj_mur
+		{
+			new_item.image_index = item.image_index	
 		} else if next_type == obj_porte
 			new_item.image_angle = 90*item.image_index
 		else {
@@ -146,13 +152,18 @@ if mouse_check_button_released(mb_right)
 		new_item.mask_index = spr_mur
 		obj_list = scr_array_replace(obj_list,item,new_item)
 		instance_destroy(item)
+		if flag_change_mirror
+		{
 		item = nextroom[1]
 		new_x = item.x
 		new_y = item.y
 		new_item =  instance_create_layer(new_x,new_y,"Instances",next_type);
-		if next_type == obj_mur
+		if next_type == obj_mur_explosable
 		{
 			new_item.image_index = round(item.image_angle/90)
+		} else if next_type == obj_mur
+		{
+			new_item.image_index = item.image_index	
 		} else if next_type == obj_porte
 			new_item.image_angle = 90*item.image_index
 		else {
@@ -161,7 +172,7 @@ if mouse_check_button_released(mb_right)
 		new_item.mask_index = spr_mur
 		obj_list = scr_array_replace(obj_list,item,new_item)
 		instance_destroy(item)	
-		
+		}
 	}
 	}
 	

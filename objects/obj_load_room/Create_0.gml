@@ -51,3 +51,8 @@ for (i = 0; i < size; i++;)
 	new_item.room_origine_x = item_px;
 	new_item.room_origine_y = item_py;
 }
+
+with obj_joueur
+{
+	event_user(1);
+}
