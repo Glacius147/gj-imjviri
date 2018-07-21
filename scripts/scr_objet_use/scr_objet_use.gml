@@ -2,7 +2,7 @@
 
 switch objet_b
 {
-	case OBJET_HOLD.BOMBE :
+	case spr_bombe :
 	{
 		if bombes > 0
 		{
