@@ -48,10 +48,10 @@ else // On clique pour poser l'objet
 			nb_obj ++;
 			//Ajout de 4 murs
 			obj_list[nb_obj] = instance_create_layer(x+3*8,y+11*8,"Instances",obj_mur);
-			obj_list[nb_obj].image_index = 3;
+			obj_list[nb_obj].image_index = 1;
 			nb_obj ++;
 			obj_list[nb_obj] = instance_create_layer(x+29*8,y+11*8,"Instances",obj_mur);
-			obj_list[nb_obj].image_index = 1;
+			obj_list[nb_obj].image_index = 3;
 			nb_obj ++;
 			obj_list[nb_obj] = instance_create_layer(x+16*8,y+3*8,"Instances",obj_mur);
 			obj_list[nb_obj].image_index = 0;
@@ -88,10 +88,11 @@ if mouse_check_button_released(mb_right)
 		new_x = item.x
 		new_y = item.y
 		new_item =  instance_create_layer(new_x,new_y,"Instances",obj_porte);
-		new_item.image_angle = -90*item.image_index
+		new_item.image_angle = 90*item.image_index
 		obj_list = scr_array_replace(obj_list,item,new_item)
 		instance_destroy(item)
 	}
+	
 	
 	
 }
