@@ -82,17 +82,67 @@ if mouse_check_button_released(mb_right)
 {
 	x = round((mouse_x-8) / 16)*16+8;
 	y = round((mouse_y-8) / 16)*16+8;
-	item = instance_position(x,y,obj_master);
-	if item.object_index == obj_mur
+	item = instance_position(mouse_x,mouse_y,obj_master);
+	if item != noone
 	{
+	test = item.object_index
+	test2 = obj_mur
+	test3 = obj_porte
+	nextroom = scr_is_room_adj(x,y)
+	has_nextroom = nextroom[0];
+	var flag_cycle = false
+	if has_nextroom and item.object_index == obj_mur
+	{
+		flag_cycle = true
+		var next_type = obj_porte
+	} else if has_nextroom and item.object_index == obj_porte
+	{
+		flag_cycle = true
+		var next_type = obj_porte_bloquee
+	} else if has_nextroom and item.object_index == obj_porte_bloquee
+	{
+		flag_cycle = true
+		var next_type = obj_porte_fermee
+	} else if has_nextroom and item.object_index == obj_porte_fermee
+	{
+		flag_cycle = true
+		var next_type = obj_mur
+	} 
+	if flag_cycle
+	{
+	
 		new_x = item.x
 		new_y = item.y
-		new_item =  instance_create_layer(new_x,new_y,"Instances",obj_porte);
-		new_item.image_angle = 90*item.image_index
+		new_item =  instance_create_layer(new_x,new_y,"Instances",next_type);
+		if next_type == obj_mur
+		{
+			new_item.image_index = round(item.image_angle/90)
+		} else if next_type == obj_porte
+			new_item.image_angle = 90*item.image_index
+		else {
+			new_item.image_angle = item.image_angle
+		}
+		new_item.mask_index = spr_mur
 		obj_list = scr_array_replace(obj_list,item,new_item)
 		instance_destroy(item)
+		item = nextroom[1]
+		new_x = item.x
+		new_y = item.y
+		new_item =  instance_create_layer(new_x,new_y,"Instances",next_type);
+		if next_type == obj_mur
+		{
+			new_item.image_index = round(item.image_angle/90)
+		} else if next_type == obj_porte
+			new_item.image_angle = 90*item.image_index
+		else {
+			new_item.image_angle = item.image_angle
+		}
+		new_item.mask_index = spr_mur
+		obj_list = scr_array_replace(obj_list,item,new_item)
+		instance_destroy(item)	
+		
 	}
-	
+	}
 	
 	
 }
