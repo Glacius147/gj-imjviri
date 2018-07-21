@@ -23,7 +23,10 @@ if c_x>(4096+5*16) // on est dans la barre de selection
 		
 		sprite_index = item.sprite_index
 		current_type = item.object_index
-
+		if current_type == obj_escalier
+		{
+			dest = item.destination	
+		}
 	}
 }
 else if c_x>4096 // On est dans la minimap
@@ -90,6 +93,9 @@ else // On clique pour poser l'objet
 			if current_type == obj_joueur
 			{
 				current_player = obj_list[nb_obj]
+			} else if current_type == obj_escalier
+			{
+				obj_list[nb_obj].destination = dest
 			}
 			nb_obj ++;
 		}
