@@ -2,9 +2,12 @@
 //deplacement horizontal
 while (place_meeting(x+hsp,y,objp_solide) && hsp != 0)
 {
+	with instance_place(x+hsp,y,objp_solide)
+	{
+	collision = other.id;
+	event_user(15);
+	}
 	hsp = scr_approche(hsp,0,1);
-	other.collision = id;
-	
 }
 x = x + hsp;
 

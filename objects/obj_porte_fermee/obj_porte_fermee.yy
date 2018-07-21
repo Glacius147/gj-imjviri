@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "obj_porte_fermee",
     "eventList": [
-        
+        {
+            "id": "b706034a-6060-4d0a-a864-75cef1c8ca5f",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 25,
+            "eventtype": 7,
+            "m_owner": "25ec1fef-06c8-40b5-ae4b-6490bbb25ff1"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
