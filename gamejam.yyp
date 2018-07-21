@@ -215,6 +215,14 @@
             }
         },
         {
+            "Key": "49570328-9fc4-413b-b679-3809a89a7244",
+            "Value": {
+                "id": "dfaf36df-7960-452d-9131-5a4a5e09c1bb",
+                "resourcePath": "fonts\\font_hub\\font_hub.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "4ba8bc06-61bd-443b-86d6-ee6b2f823c95",
             "Value": {
                 "id": "4bccad66-a48a-41d4-9035-24617070d553",
