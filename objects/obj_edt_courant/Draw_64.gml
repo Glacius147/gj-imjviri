@@ -3,9 +3,17 @@
 
 {
 var i;
-for (i = 0; i < 10; i += 1)
-   {
-   draw_text(32, 32 + (i * 32), string(i) + ". "+ string(scr[i]));
-   }
+var j;
+for (i = 0; i < 16; i += 1)
+	{
+		for (i = 0; i < 16; i += 1)
+		{
+			if true
+			{
+				x = 1
+				y = 3
+				draw_rectangle(x, y, x, y, outline);
+			}
+		}
+	}
 }
-draw_rectangle(x1, y1, x2, y2, outline);
