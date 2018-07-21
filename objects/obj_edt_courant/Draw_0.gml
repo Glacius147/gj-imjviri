@@ -21,11 +21,14 @@ item = instance_position(x,y,obj_master);
 
 if (x<4096 and item == noone)
 {
-draw_self();
+draw_self()
+}
+else if item != noone and (item.object_index == obj_mur or item.object_index == obj_porte or item.object_index == obj_porte_bloquee or item.object_index == obj_porte_fermee)
+{
+	
 }
 
 }
-
 /*else
 {
 	

@@ -2,8 +2,8 @@
 // You can write your code in this editor
 
 
-c_x = mouse_x
-c_y = mouse_y
+c_x = camera_get_view_x(view_camera[0])
+c_y = camera_get_view_y(view_camera[0])
 
 var current_room_x = floor(c_x/256)
 var current_room_y = floor(c_y/176)
