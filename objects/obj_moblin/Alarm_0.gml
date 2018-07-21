@@ -1,6 +1,8 @@
 /// @desc choix d'une direction
 
-alarm[0] = irandom_range(60,120);
+marche = true;
+
+alarm[2] = irandom_range(180,240);
 
 var i = irandom_range(1,4);
 

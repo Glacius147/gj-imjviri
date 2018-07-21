@@ -24,7 +24,9 @@
         "6c66c4fc-42dd-49bc-b7cf-8df1cf1217a3",
         "b0a47c4b-f460-437a-b245-42ecabb44947",
         "577b827f-8d71-41e6-a1e6-3fe3d45d8b4c",
-        "67e155ca-8451-44c2-b16c-5334f8d71db8"
+        "67e155ca-8451-44c2-b16c-5334f8d71db8",
+        "55f952f2-0b90-488b-81dd-bb76c361d706",
+        "1ed446ed-114d-45fa-b43b-78bb200e8cad"
     ],
     "filterType": "GMObject",
     "folderName": "donjon",
