@@ -43,7 +43,7 @@ else // On clique pour poser l'objet
 		y = current_room_y*176
 		if !created_room[current_room_x,current_room_y]
 		{
-			obj_list[nb_obj] = instance_create_layer(x,y,"Instances",current_type);
+			obj_list[nb_obj] = instance_create_layer(x,y,"salles",current_type);
 			created_room[current_room_x,current_room_y] = true;
 			nb_obj ++;
 			//Ajout de 4 murs
@@ -85,8 +85,13 @@ if mouse_check_button_released(mb_right)
 	item = instance_position(x,y,obj_master);
 	if item.object_index == obj_mur
 	{
-			
-		
+		new_x = item.x
+		new_y = item.y
+		new_item =  instance_create_layer(new_x,new_y,"Instances",obj_porte);
+		new_item.image_angle = -90*item.image_index
+		obj_list = scr_array_replace(obj_list,item,new_item)
+		instance_destroy(item)
 	}
+	
 	
 }
