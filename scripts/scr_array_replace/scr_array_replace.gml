@@ -1,7 +1,6 @@
 /// @desc affiche une zone de menu
-/// @arg sprite
 /// @arg array
-/// @arg to replace
+/// @arg toreplace
 /// @arg replacement
 
 
@@ -12,9 +11,9 @@ var _new = argument[2];
 var i
 for (i = 0; i<array_length_1d(_array);i++)
 {
-	if array[i] == _old
+	if _array[i] == _old
 	{
-		array[i] = _new;
+		_array[i] = _new;
 		break;
 	}
 }

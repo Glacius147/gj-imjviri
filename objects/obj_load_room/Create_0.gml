@@ -27,7 +27,10 @@ for (i = 0; i < size; i++;)
 	item_type = global.list_item[item[? "type"]];
 	item_x = item[? "x"];
 	item_y = item[? "y"];
+	item_px = item[? "piece x"];
+	item_py = item[? "piece y"];
 	item_sprite = item[? "sprite"];
+	item_angle = item[? "angle"];
 	if item_type == obj_mur_salle{
 		var new_item = instance_create_layer(item_x,item_y,"salles",item_type)
 		salle_x = round(item_x/256)
@@ -43,4 +46,7 @@ for (i = 0; i < size; i++;)
 		var new_item = instance_create_layer(item_x,item_y,"items",item_type)
 	}
 	new_item.image_index = item_sprite;
+	new_item.image_angle = item_angle;
+	new_item.room_origine_x = item_px;
+	new_item.room_origine_y = item_py;
 }
