@@ -68,6 +68,8 @@ global.list_item[9] = string(obj_clef);
 global.list_item[10] = string(obj_bombe_loot);
 global.list_item[11] = string(obj_coeur);
 global.list_item[12] = string(obj_moblin);
+global.list_item[13] = string(obj_bloc_explosable);
+global.list_item[14] = string(obj_mur_explosable);
 
 
 global.map_item_index = ds_map_create()

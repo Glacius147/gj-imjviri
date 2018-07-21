@@ -37,7 +37,7 @@ else if c_x>4096 // On est dans la minimap
 else // On clique pour poser l'objet
 {
 	//Détermination du type d'objet
-	if current_type == obj_mur_salle.object_index
+	if current_type == obj_mur_salle
 	{
 		x = current_room_x*256
 		y = current_room_y*176
@@ -61,7 +61,20 @@ else // On clique pour poser l'objet
 			nb_obj ++;
 			
 		}
-	} else // par défaut
+	} else if current_type == obj_joueur and current_player !=noone
+	{
+		x = round((mouse_x-8) / 16)*16+8;
+		y = round((mouse_y-8) / 16)*16+8;
+		item = instance_position(x,y,obj_master);
+		if item == noone and created_room[current_room_x,current_room_y]
+		{
+			new_item = instance_create_layer(x,y,"Instances",current_type);
+			scr_array_replace(obj_list,current_player,new_item)
+			instance_destroy(current_player)
+			current_player = new_item
+		}
+	}
+	else // par défaut
 	{
 		x = round((mouse_x-8) / 16)*16+8;
 		y = round((mouse_y-8) / 16)*16+8;
@@ -69,6 +82,10 @@ else // On clique pour poser l'objet
 		if item == noone and created_room[current_room_x,current_room_y]
 		{
 			obj_list[nb_obj] = instance_create_layer(x,y,"Instances",current_type);
+			if current_type == obj_joueur
+			{
+				current_player = obj_list[nb_obj]
+			}
 			nb_obj ++;
 		}
 	}

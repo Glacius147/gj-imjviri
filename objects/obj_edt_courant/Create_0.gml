@@ -6,7 +6,7 @@ sprite_index = spr_joueur_down
 current_type = obj_joueur
 
 
-
+current_player = noone
 
 
 
