@@ -73,7 +73,7 @@
             "mvc": "1.0",
             "objectId": "7f964f8c-21aa-434f-8996-7abdcf0d615b",
             "propertyId": "ed77d986-65ec-4943-9991-036bbbb98f27",
-            "value": "sprite36"
+            "value": "spr_bat_right"
         },
         {
             "id": "e7911241-96c6-4655-a330-9dee891f90b2",
@@ -149,20 +149,6 @@
             "resourceFilter": 1023,
             "value": "0",
             "varName": "dir_bat",
-            "varType": 0
-        },
-        {
-            "id": "ad05205f-66d7-4a1f-8b45-ea72257fc0db",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0",
-            "varName": "vitesse1",
             "varType": 0
         },
         {
