@@ -2,7 +2,8 @@
 // You can write your code in this editor
 enum EDITEUR_MODE{
 	NORMAL,
-	DEPENDANCE
+	DEPENDANCE_1,
+	DEPENDANCE_2
 }
 
 
@@ -13,6 +14,9 @@ current_type = obj_joueur
 
 current_player = noone
 mode_edition = EDITEUR_MODE.NORMAL
+
+begin_arrow = noone
+current_arrow = noone
 
 image_alpha=0.5
 

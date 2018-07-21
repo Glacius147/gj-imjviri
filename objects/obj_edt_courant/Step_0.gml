@@ -61,6 +61,8 @@ else // On clique pour poser l'objet
 			obj_list[nb_obj] = instance_create_layer(x+16*8,y+19*8,"Instances",obj_mur);
 			obj_list[nb_obj].image_index = 2;
 			nb_obj ++;
+			obj_list[nb_obj] = instance_create_layer(x,y,"Instances",obj_fantome);
+			nb_obj ++;
 			
 		}
 	} else if current_type == obj_joueur and current_player !=noone
@@ -183,10 +185,29 @@ if mouse_check_button_released(mb_right)
 }
 
 
-if mode_edition = EDITEUR_MODE.DEPENDANCE{
-	
-	
-	
-	
-	
+if mode_edition = EDITEUR_MODE.DEPENDANCE_1{
+	//1er clic :
+
+	if mouse_check_button_pressed(mb_left)
+	{
+		//On vérifie qu'on a bien cliqué sur un activant
+		x = round((mouse_x-8) / 16)*16+8;
+		y = round((mouse_y-8) / 16)*16+8;
+		item = instance_position(mouse_x,mouse_y,obj_master);
+		if item != noone and item.activant{
+		{	//Changement de mode & d'opacité.
+			mode_edition = EDITEUR_MODE.DEPENDANCE_2
+			with obj_master
+			{
+				if activant{
+					image_alpha = 0.5
+				} else if activable
+				{
+					image_alpha = 1	
+				}
+			}
+		
+		begin_arrow = item
+		}
+	}
 }
