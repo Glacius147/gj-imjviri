@@ -36,16 +36,12 @@ if mode = MENU_MODE.JEU || mode = MENU_MODE.UP || mode = MENU_MODE.DOWN || mode 
 {
 	if view_current == 0
 	{
-	cam = view_camera[0];
-	camera_set_view_size(cam, zone_jeu_w,zone_jeu_h*(1-percent));
-	//view_set_hport(view_current,3*zone_jeu_h*(1-percent));
-	//view_hport[0] =  3*zone_jeu_h*(1-percent);
+	camera_set_view_size(view_camera[0], zone_jeu_w,zone_jeu_h*(1-percent));
+	view_set_hport(view_current,3*zone_jeu_h*(1-percent));
 	}
 	else
 	{
-	cam = view_camera[1];
-	camera_set_view_size(cam, zone_jeu_w,zone_jeu_h*(percent)+64);
-//	camera_set_view_pos(view_camera[1],4097 ,2752 - 176 * (percent));
-//	view_hport[1] =  3*(zone_jeu_h*(percent)+64);
+	camera_set_view_size(view_camera[1], zone_jeu_w, zone_jeu_h*(percent)+64);
+	camera_set_view_pos(view_camera[1],4097 ,2752 - zone_jeu_h * (percent));
 	}
 }
