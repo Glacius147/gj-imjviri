@@ -14,7 +14,9 @@
         "d7d06761-1c61-468d-ad0b-6f157274e1dc",
         "8eafca8a-4df6-41d4-bc71-a8557243a44b",
         "57d61530-7571-405a-bf42-d2305a81a2ba",
-        "9f514fe8-1ca3-4ebf-847b-27cc374a022b"
+        "9f514fe8-1ca3-4ebf-847b-27cc374a022b",
+        "8d4ea07d-8a97-4b38-a4a9-276c883207bb",
+        "109b2d08-1249-4a22-a287-94fea0afee38"
     ],
     "filterType": "GMSprite",
     "folderName": "donjon",
