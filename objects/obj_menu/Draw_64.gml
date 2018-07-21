@@ -4,6 +4,13 @@
 
 if mode = MENU_MODE.MENU
 {
+	
+	x1 = (0.5 - 3/8*percent)*w;
+	x2 = (0.5 + 3/8*percent)*w;
+
+	y1 = (0.5 - 3/8*percent)*h;
+	y2 = (0.5 + 3/8*percent)*h;
+
 	draw_set_halign(fa_right);
 	draw_set_valign(fa_bottom);
 	draw_set_font(font_menu);
@@ -33,3 +40,6 @@ if mode = MENU_MODE.MENU
 		draw_text(menu_x,menu_y - menu_itemheight * i * 1.5,txt);		
 	}	
 }
+
+
+		draw_text(50,50,string(percent));	

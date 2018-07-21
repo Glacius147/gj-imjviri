@@ -89,6 +89,34 @@
             "value": "2752",
             "varName": "y_b",
             "varType": 0
+        },
+        {
+            "id": "6e43de49-3fcc-4d3c-8c25-915f9f140f08",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "176",
+            "varName": "zone_jeu_h",
+            "varType": 0
+        },
+        {
+            "id": "ccce341c-bec6-4c12-9eac-216864d739b3",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "256",
+            "varName": "zone_jeu_w",
+            "varType": 0
         }
     ],
     "solid": false,

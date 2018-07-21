@@ -1,6 +1,6 @@
 /// @descr interface en jeu
 
-if mode = MENU_MODE.JEU
+if mode = MENU_MODE.JEU || mode = MENU_MODE.UP || mode = MENU_MODE.DOWN || mode = MENU_MODE.PAUSE
 {
 	draw_set_color(c_blue);
 	draw_rectangle(x_b + 15,y_b + 6,x_b + 84,y_b + 59,false);
@@ -27,4 +27,20 @@ if mode = MENU_MODE.JEU
 		if pv < i - 0.5 im_coeur = 2;
 		draw_sprite(spr_coeur,im_coeur,x_b + 175 + 13*(i-1),y_b + 18);
 	}
+}
+
+
+
+//gestion caméras
+if mode = MENU_MODE.JEU || mode = MENU_MODE.UP || mode = MENU_MODE.DOWN || mode = MENU_MODE.PAUSE
+{
+//	view_set_camera(0, view_camera[0]);
+//	camera_set_view_pos(view_camera[0], 0,0);
+//	camera_set_view_size(view_camera[0], zone_jeu_w,zone_jeu_h*(1-percent));
+if view_current == 0
+{
+	view_hport[0] =  zone_jeu_h*(1-percent);
+	camera_set_view_size(view_camera[0], zone_jeu_w, zone_jeu_h*(1-percent));
+}
+
 }

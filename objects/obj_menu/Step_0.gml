@@ -1,5 +1,6 @@
 /// @description Gestion affichage du cadre
 
+scr_input();
 
 if mode = MENU_MODE.MENU
 {
@@ -9,7 +10,7 @@ if mode = MENU_MODE.MENU
 	//controls clavier
 	if menu_control
 	{
-		scr_input();
+		//deplacement dans le menu
 		if k_up && !touche_enfoncee
 		{
 			menu_curseur = scr_wrap(menu_curseur + 1, 0 , menu_item - 1); 
@@ -23,8 +24,10 @@ if mode = MENU_MODE.MENU
 
 		}
 		
+		//pour eviter un deplacement par frame quand on laisse apuyé sur haut/bas
 		if !k_down && !k_up 			touche_enfoncee = false;
 		
+		//validation d'un item
 		if k_attaque || k_start
 		{
 			menu_x_target = w + 200;
@@ -33,6 +36,7 @@ if mode = MENU_MODE.MENU
 		}
 	}
 	
+		//changement de room
 	if (menu_x > w + 150) && (menu_selection != -1)
 	{
 		switch menu_selection
@@ -40,23 +44,25 @@ if mode = MENU_MODE.MENU
 			case 2 : default: scr_transition(TRANS_MODE.GOTO,room_editeur); break;
 			case 0 : game_end(); break;
 			case 1 : scr_transition(TRANS_MODE.GOTO,room_jeu); break;
+			case 3 : default: scr_transition(TRANS_MODE.GOTO,room_charge); break;
 		}
 		menu_selection = -1;
 		mode = MENU_MODE.JEU;
 	}	
 }
 
+if mode = MENU_MODE.JEU && k_start mode = MENU_MODE.UP;
 
 
-
+		//gestion des transitions
 if mode != MENU_MODE.JEU
 {
-	if mode = MENU_MODE.FADE
+	if mode = MENU_MODE.FADE || mode = MENU_MODE.DOWN
 	{
 		percent = max(0,percent*0.9-0.01);		
 	}
 	
-	if mode = MENU_MODE.INTRO
+	if mode = MENU_MODE.INTRO || mode = MENU_MODE.UP
 	{
 		percent = min(1,percent+(1-percent)*0.1+0.01);		
 	}
@@ -65,6 +71,7 @@ if mode != MENU_MODE.JEU
 	{
 		switch mode
 		{
+			//transition du menu de depart avec ecran noir
 			case MENU_MODE.INTRO:
 			{
 				mode = MENU_MODE.PAUSE
@@ -73,16 +80,21 @@ if mode != MENU_MODE.JEU
 			case MENU_MODE.FADE:
 			{
 				mode = MENU_MODE.JEU;
-				with obj_tir speed = 12;
 				break;
-			}		
+			}	
+			//transitions de la pause en jeu
+			case MENU_MODE.UP:
+			{
+				mode = MENU_MODE.PAUSE;
+				break;
+			}
+			case MENU_MODE.DOWN:
+			{
+				mode = MENU_MODE.JEU;
+				break;
+			}
 		}
 	}
 }
 
 
-x1 = (0.5 - 3/8*percent)*w;
-x2 = (0.5 + 3/8*percent)*w;
-
-y1 = (0.5 - 3/8*percent)*h;
-y2 = (0.5 + 3/8*percent)*h;

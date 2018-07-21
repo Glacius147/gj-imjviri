@@ -30,13 +30,16 @@ enum MENU_MODE
 	FADE,
 	INTRO,
 	MENU,
-	CONSTRUCTION
+	CONSTRUCTION,
+	UP,
+	DOWN
 }
 
 mode = MENU_MODE.MENU;
 
 percent = 0;
 
+menu[3] = "Chargement d'un donjon";
 menu[2] = "Création d'un donjon";
 menu[1] = "Exploration d'un donjon";
 menu[0] = "Quitter";
