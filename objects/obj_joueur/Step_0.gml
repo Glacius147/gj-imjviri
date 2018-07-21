@@ -1,6 +1,6 @@
 /// @desc Déplacement et action du perso
 
-if obj_menu.mode = MENU_MODE.JEU
+if obj_menu.mode = MENU_MODE.JEU && frames_immobile <= 0
 {
 	scr_input();
 	
@@ -89,6 +89,11 @@ if obj_menu.mode = MENU_MODE.JEU
 	// application du mouvement
 	hsp = (k_right - k_left)*vitesse_marche;
 	vsp = (k_down - k_up)*vitesse_marche;
+	
+	if t_salle = TYPE_SALLE.SOUS_TERRE && !position_meeting(x,y,objp_echelles) && !position_meeting(x,y+8,objp_echelles)
+	{
+		vsp = 1.5;
+	}
 
 	// on arrete le mouvement en cas d'attaque
 	if (k_attaque && !attaque) 
@@ -119,11 +124,11 @@ if obj_menu.mode = MENU_MODE.JEU
 	scr_animation();
 	
 	// gestion dégats infligés
-	
 	if attaque scr_attaque();
 	
-	// gestion dégats reçus
-	
-	
-	
 }
+else
+{
+	if frames_immobile > 0 frames_immobile --;
+}
+

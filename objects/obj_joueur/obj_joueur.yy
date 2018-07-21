@@ -276,6 +276,20 @@
             "value": "spr_epee",
             "varName": "objet_a",
             "varType": 0
+        },
+        {
+            "id": "b2b8bfd9-b05f-4fb5-8c59-5a14ef24412a",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "frames_immobile",
+            "varType": 0
         }
     ],
     "solid": false,

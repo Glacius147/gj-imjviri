@@ -1,14 +1,14 @@
 {
-    "id": "b0a47c4b-f460-437a-b245-42ecabb44947",
+    "id": "67e155ca-8451-44c2-b16c-5334f8d71db8",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_echelles",
+    "name": "objp_echelles",
     "eventList": [
         
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "67e155ca-8451-44c2-b16c-5334f8d71db8",
+    "parentObjectId": "00000000-0000-0000-0000-000000000000",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -24,6 +24,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "de515af3-0fdb-4ecd-9294-02ce7ef6c05a",
+    "spriteId": "00000000-0000-0000-0000-000000000000",
     "visible": true
 }

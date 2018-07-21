@@ -1,33 +1,33 @@
 {
-    "id": "6c66c4fc-42dd-49bc-b7cf-8df1cf1217a3",
+    "id": "9a6ae936-0da8-49fc-8403-8371d6bde9fc",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_escalier_bis",
+    "name": "obj_escalier_remonte",
     "eventList": [
         {
-            "id": "c1e37fba-aae8-4f7c-ac63-ec33de7d7af7",
+            "id": "397e7cf9-6220-45c6-993c-cc876bba2fe1",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 25,
             "eventtype": 7,
-            "m_owner": "6c66c4fc-42dd-49bc-b7cf-8df1cf1217a3"
+            "m_owner": "9a6ae936-0da8-49fc-8403-8371d6bde9fc"
         },
         {
-            "id": "0d454dcc-d655-4b27-85bc-e0235447cc9e",
+            "id": "8320b86a-dd0b-42c0-8d55-8078f2034adf",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 8,
-            "m_owner": "6c66c4fc-42dd-49bc-b7cf-8df1cf1217a3"
+            "enumb": 1,
+            "eventtype": 3,
+            "m_owner": "9a6ae936-0da8-49fc-8403-8371d6bde9fc"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "ecc6472e-0ffe-4374-adcb-097042aed299",
+    "parentObjectId": "d6c33cd1-23d3-4fc7-a8f7-b739c79c8dce",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -43,7 +43,7 @@
     "physicsStartAwake": true,
     "properties": [
         {
-            "id": "b1046401-0491-4dd9-b907-6239f1d5d09d",
+            "id": "a25eb82e-a129-4bd3-8e2c-99f5db825c25",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -55,6 +55,20 @@
             "value": "0",
             "varName": "destination",
             "varType": 0
+        },
+        {
+            "id": "1965cf93-4454-4344-a444-6884009948b3",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "de_retour",
+            "varType": 3
         }
     ],
     "solid": false,
