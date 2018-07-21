@@ -52,19 +52,19 @@ if mode = MENU_MODE.MENU
 }
 
 if mode = MENU_MODE.JEU && k_start mode = MENU_MODE.UP;
-
+if mode = MENU_MODE.PAUSE && k_start mode = MENU_MODE.DOWN;
 
 		//gestion des transitions
 if mode != MENU_MODE.JEU
 {
 	if mode = MENU_MODE.FADE || mode = MENU_MODE.DOWN
 	{
-		percent = max(0,percent*0.9-0.01);		
+		percent = max(0,percent - 0.01);		
 	}
 	
 	if mode = MENU_MODE.INTRO || mode = MENU_MODE.UP
 	{
-		percent = min(1,percent+(1-percent)*0.1+0.01);		
+		percent = min(1,percent + 0.01);		
 	}
 	
 	if (percent = 0) or (percent = 1)
