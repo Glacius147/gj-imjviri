@@ -194,7 +194,7 @@ if mode_edition = EDITEUR_MODE.DEPENDANCE_1{
 		x = round((mouse_x-8) / 16)*16+8;
 		y = round((mouse_y-8) / 16)*16+8;
 		item = instance_position(mouse_x,mouse_y,obj_master);
-		if item != noone and item.activant{
+		if item != noone and item.activant
 		{	//Changement de mode & d'opacité.
 			mode_edition = EDITEUR_MODE.DEPENDANCE_2
 			with obj_master
