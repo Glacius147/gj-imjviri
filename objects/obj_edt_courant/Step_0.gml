@@ -10,7 +10,9 @@ c_y = mouse_y
 var current_room_x = floor(c_x/256)
 var current_room_y = floor(c_y/176)
 
-
+//Mode d'édition normal
+if mode_edition == EDITEUR_MODE.NORMAL
+{
 if mouse_check_button_released(mb_left)
 {
 if c_x>(4096+5*16) // on est dans la barre de selection
@@ -175,6 +177,16 @@ if mouse_check_button_released(mb_right)
 		}
 	}
 	}
+	
+	
+}
+}
+
+
+if mode_edition = EDITEUR_MODE.DEPENDANCE{
+	
+	
+	
 	
 	
 }

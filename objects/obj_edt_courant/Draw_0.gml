@@ -19,7 +19,7 @@ if current_type == obj_mur_salle.object_index
 
 item = instance_position(x,y,obj_master);
 
-if (x<4096 and item == noone)
+if (x<4096 )//and item == noone)
 {
 draw_self()
 }
