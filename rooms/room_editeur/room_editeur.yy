@@ -263,7 +263,7 @@
         "Height": 2816,
         "inheritRoomSettings": false,
         "modelName": "GMRoomSettings",
-        "persistent": false,
+        "persistent": true,
         "mvc": "1.0",
         "Width": 4352
     },

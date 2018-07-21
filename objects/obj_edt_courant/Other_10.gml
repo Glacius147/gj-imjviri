@@ -39,6 +39,6 @@ ds_map_destroy(i_map);
 
 var buff = buffer_create(string_byte_length(str), buffer_fixed, 1);
 buffer_write(buff, buffer_text, str);
-buffer_save(buff, "svg_lvl1.json");
+buffer_save(buff, file);
 buffer_delete(buff)
 
