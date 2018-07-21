@@ -82,6 +82,7 @@ else // On clique pour poser l'objet
 		if item == noone and created_room[current_room_x,current_room_y]
 		{
 			obj_list[nb_obj] = instance_create_layer(x,y,"Instances",current_type);
+			
 			if current_type == obj_joueur
 			{
 				current_player = obj_list[nb_obj]
