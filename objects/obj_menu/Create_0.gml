@@ -49,3 +49,19 @@ menu_curseur = 2;
 
 
 
+// Table correspondance id objet/id sauvegarde
+
+global.list_item[0] = string(obj_mur_salle);
+global.list_item[1] = string(obj_joueur);
+global.list_item[2] = string(obj_bloc);
+global.list_item[3] = string(obj_blop);
+
+
+global.map_item_index = ds_map_create()
+var i;
+nb_item = array_length_1d(global.list_item);
+for (i = 0; i<nb_item; i+=1)
+{
+	coress = global.list_item[i]
+	ds_map_add(global.map_item_index,coress,i)
+}

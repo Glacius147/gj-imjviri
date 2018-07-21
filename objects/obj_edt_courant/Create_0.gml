@@ -5,6 +5,12 @@
 sprite_index = spr_joueur_down
 current_type = obj_joueur
 
+
+
+
+
+
+
 //Pour que les objets ne bougent pas.
 obj_menu.mode = MENU_MODE.CONSTRUCTION
 
