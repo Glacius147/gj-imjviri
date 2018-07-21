@@ -111,6 +111,14 @@
             }
         },
         {
+            "Key": "20adcd43-7739-4d97-9c29-d00b702244c7",
+            "Value": {
+                "id": "e325f43d-b957-46b5-a6f1-f315741f0528",
+                "resourcePath": "scripts\\scr_deplacement_vol\\scr_deplacement_vol.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "20e92edb-641a-4ac6-855a-1c212c494412",
             "Value": {
                 "id": "efc45761-e24e-4743-8346-611297aa28b9",
@@ -999,6 +1007,14 @@
             }
         },
         {
+            "Key": "e8381c17-0d08-42e1-a287-13f6280a61f0",
+            "Value": {
+                "id": "dd342f6a-9cb0-49f0-b587-4e80163d32b6",
+                "resourcePath": "objects\\objp_contour_salle\\objp_contour_salle.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "e8ace4f5-03c0-4db8-9fe4-0538341c6dc5",
             "Value": {
                 "id": "3352e99f-dc5e-46da-9b11-58c1755c666f",
@@ -1111,6 +1127,7 @@
         "db3a2587-1273-474a-8a37-1dbb9ff73901",
         "04b7cf86-d53c-4b3e-ad75-e090cd094e70",
         "ca8dd323-e839-4dad-96c4-662cd9e2be14",
+        "20adcd43-7739-4d97-9c29-d00b702244c7",
         "269edf4b-cf8a-434d-abc1-ace0444fc73a",
         "e7e2b6eb-4388-45d4-9d09-6e4541fd7ce2",
         "da189fd2-5bcf-4469-8cf4-6734552435e1",
