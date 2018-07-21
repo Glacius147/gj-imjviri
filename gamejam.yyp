@@ -79,6 +79,14 @@
             }
         },
         {
+            "Key": "0cd9e7cb-4325-4152-8f38-f0b0cd23d1da",
+            "Value": {
+                "id": "ca092127-ec8a-498f-aafe-91d49982abaf",
+                "resourcePath": "objects\\obj_load_room_edt\\obj_load_room_edt.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "109b2d08-1249-4a22-a287-94fea0afee38",
             "Value": {
                 "id": "0532cefc-12f6-4182-82d0-910dca970743",
