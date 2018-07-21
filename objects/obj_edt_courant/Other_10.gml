@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 
-
+file = obj_select.file
 
 var i_map = ds_map_create();
 var i ;
