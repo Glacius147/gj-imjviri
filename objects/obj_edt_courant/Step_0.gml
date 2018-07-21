@@ -123,6 +123,10 @@ if mouse_check_button_released(mb_right)
 	} else if has_nextroom and item.object_index == obj_porte_fermee
 	{
 		flag_cycle = true
+		var next_type = obj_mur_explosable
+	} else if has_nextroom and item.object_index == obj_mur_explosable
+	{
+		flag_cycle = true
 		var next_type = obj_mur
 	} 
 	if flag_cycle
