@@ -751,6 +751,14 @@
             }
         },
         {
+            "Key": "d49e5046-7044-40f6-afd0-7f2327f537f4",
+            "Value": {
+                "id": "f757f602-4eeb-4afc-ba2e-3748675fe7ee",
+                "resourcePath": "sprites\\spr_fleche1\\spr_fleche1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d504bc74-784f-47ac-9c46-f850832fc903",
             "Value": {
                 "id": "c1face25-fb4b-4666-8cfa-fa1899a623d0",

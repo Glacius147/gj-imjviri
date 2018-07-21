@@ -234,6 +234,10 @@ if mode_edition = EDITEUR_MODE.DEPENDANCE_2{
 		{
 			new_item =  instance_create_layer(begin_arrow.x,begin_arrow.y,"Instances",obj_dependance);
 			new_item.origine = scr_get_index(obj_list,begin_arrow)
+			new_item.destination = scr_get_index(obj_list,item)
+			new_item.image_angle = 
+			new_item.image_xscale = 1;
+			new_item.image_xscale = 1;
 		}
 		
 	}
