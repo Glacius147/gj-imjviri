@@ -163,8 +163,8 @@
             "animationSpeedType": "0",
             "colour": { "Value": 4294967295 },
             "depth": 300,
-            "grid_x": 32,
-            "grid_y": 32,
+            "grid_x": 16,
+            "grid_y": 16,
             "hierarchyFrozen": false,
             "hierarchyVisible": true,
             "hspeed": 0,
@@ -187,7 +187,7 @@
             "visible": true,
             "vspeed": 0,
             "vtiled": false,
-            "x": 3584,
+            "x": 4096,
             "y": 0
         },
         {

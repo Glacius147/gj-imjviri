@@ -3,11 +3,6 @@
 
 //
 
-for (var i = 0; i < condition; ++i) {
-    for (var j = 0; j < condition; ++i) {
-	    
-	}
-}
 
 
 var buff = buffer_load("svg_lvl1.json");
