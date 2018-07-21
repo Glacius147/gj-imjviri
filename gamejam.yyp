@@ -79,6 +79,14 @@
             }
         },
         {
+            "Key": "109b2d08-1249-4a22-a287-94fea0afee38",
+            "Value": {
+                "id": "0532cefc-12f6-4182-82d0-910dca970743",
+                "resourcePath": "views\\109b2d08-1249-4a22-a287-94fea0afee38.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "1946a26a-55d9-40e5-8363-e82c5d4fd577",
             "Value": {
                 "id": "789349b6-53af-40e4-afb9-91c2343627bb",
@@ -311,6 +319,14 @@
             }
         },
         {
+            "Key": "6c66c4fc-42dd-49bc-b7cf-8df1cf1217a3",
+            "Value": {
+                "id": "6eb8bc59-3318-4914-ba01-ee56e3749db4",
+                "resourcePath": "objects\\obj_escalier_bis\\obj_escalier_bis.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "6d238858-ce9b-4863-8373-9eacf1655ce7",
             "Value": {
                 "id": "8d61fcb3-45f0-46d8-879c-aebcaf6bc448",
@@ -380,6 +396,14 @@
                 "id": "5392b400-28ed-4fa7-9633-13a92c09bf11",
                 "resourcePath": "sprites\\spr_mask_salle\\spr_mask_salle.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "77780913-421a-4fc3-8cbd-7e0e8907c82e",
+            "Value": {
+                "id": "abf07f7d-7d43-497e-94d3-5e3d6fe48fd6",
+                "resourcePath": "objects\\obj_mur_sousterrains\\obj_mur_sousterrains.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -491,6 +515,14 @@
             "Value": {
                 "id": "977e6c9a-9c25-4e24-a963-b35169e38336",
                 "resourcePath": "sprites\\spr_epee\\spr_epee.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "8d4ea07d-8a97-4b38-a4a9-276c883207bb",
+            "Value": {
+                "id": "3a3e8fbc-23f1-4580-aa8c-d539943f92a5",
+                "resourcePath": "sprites\\spr_escalier\\spr_escalier.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -639,6 +671,14 @@
             }
         },
         {
+            "Key": "a9e6f6c4-2d13-426b-b0d1-4ba593e83557",
+            "Value": {
+                "id": "24e668f6-a2dc-4462-97a6-a7903b0706ce",
+                "resourcePath": "sprites\\spr_sousterrains\\spr_sousterrains.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "ab68fc50-3eb1-47f6-b11b-4f38e39ec3b7",
             "Value": {
                 "id": "af084375-270b-4a8f-b118-e839b96cb3d9",
@@ -651,6 +691,14 @@
             "Value": {
                 "id": "c47d4d8f-adc1-4bbc-85cd-4aaeabc9a299",
                 "resourcePath": "objects\\obj_edt_fleche\\obj_edt_fleche.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "b0a47c4b-f460-437a-b245-42ecabb44947",
+            "Value": {
+                "id": "4ae23e9c-15be-46bd-97e3-030e63d63bec",
+                "resourcePath": "objects\\obj_echelles\\obj_echelles.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -807,6 +855,14 @@
             }
         },
         {
+            "Key": "de515af3-0fdb-4ecd-9294-02ce7ef6c05a",
+            "Value": {
+                "id": "1278ea4c-5073-4f62-b30b-88b120cb7645",
+                "resourcePath": "sprites\\spr_echelles\\spr_echelles.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "e11e736e-1e38-494c-b4f2-53fe1bdaecdf",
             "Value": {
                 "id": "fac92e1f-d519-4907-86e7-a7c54603cf65",
@@ -924,6 +980,14 @@
                 "id": "fbed2fe8-5fb2-4f04-81c7-5714532a7bc0",
                 "resourcePath": "scripts\\scr_approche\\scr_approche.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "f3ca83fc-8228-4bd2-b4ae-fbd95709d634",
+            "Value": {
+                "id": "aeddf3c5-e75e-415a-bde7-a6f5c3b4b1b2",
+                "resourcePath": "objects\\obj_escalier\\obj_escalier.yy",
+                "resourceType": "GMObject"
             }
         },
         {

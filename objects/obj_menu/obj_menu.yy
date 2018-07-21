@@ -131,6 +131,20 @@
             "value": "0",
             "varName": "percent2",
             "varType": 0
+        },
+        {
+            "id": "a715c98c-dd1a-4e47-9526-91bfdae1f751",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "percent",
+            "varType": 0
         }
     ],
     "solid": false,
