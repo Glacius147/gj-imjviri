@@ -208,11 +208,13 @@ if mode_edition = EDITEUR_MODE.DEPENDANCE_1{
 			}
 		
 		begin_arrow = item
+		
 		}
 	}
 }
 
 if mode_edition = EDITEUR_MODE.DEPENDANCE_2{
+	image_angle =  point_direction(begin_arrow.x, begin_arrow.y, mouse_x, mouse_y);
 	if mouse_check_button_released(mb_left)
 	{
 		//Dans tous les cas on revient en mode 1
@@ -235,9 +237,9 @@ if mode_edition = EDITEUR_MODE.DEPENDANCE_2{
 			new_item =  instance_create_layer(begin_arrow.x,begin_arrow.y,"Instances",obj_dependance);
 			new_item.origine = scr_get_index(obj_list,begin_arrow)
 			new_item.destination = scr_get_index(obj_list,item)
-			new_item.image_angle = 
+			new_item.image_angle = point_direction(begin_arrow.x, begin_arrow.y, item.x, item_y);
 			new_item.image_xscale = 1;
-			new_item.image_xscale = 1;
+			new_item.image_yscale = 1;
 		}
 		
 	}
