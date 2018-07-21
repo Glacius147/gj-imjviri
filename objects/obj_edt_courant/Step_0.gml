@@ -13,7 +13,7 @@ var current_room_y = floor(c_y/176)
 
 if mouse_check_button_released(mb_left)
 {
-if c_x>(4096+4*16) // on est dans la barre de selection
+if c_x>(4096+5*16) // on est dans la barre de selection
 {
 	item = instance_position(c_x,c_y,obj_master)
 	if item != noone
@@ -27,10 +27,10 @@ if c_x>(4096+4*16) // on est dans la barre de selection
 else if c_x>4096 // On est dans la minimap
 {
 	//Position de la souris dans la caméra de l'interface
-	c_y = mouse_y - camera_get_view_y(view_camera[1])
-	c_x = mouse_x - camera_get_view_x(view_camera[1])
+	c_y = mouse_y - camera_get_view_y(view_camera[1]) - 6*3
+	c_x = mouse_x - camera_get_view_x(view_camera[1]) - 15*3
 	col = floor(c_x/4)
-	row = floor(c_y/4)
+	row = floor(c_y/3)
 	camera_set_view_pos(view_camera[0],col*256 ,row*176);
 	
 }
@@ -43,17 +43,19 @@ else // On clique pour poser l'objet
 		y = current_room_y*176
 		if !created_room[current_room_x,current_room_y]
 		{
-			instance_create_layer(x,y,"Instances",current_type)
-			created_room[current_room_x,current_room_y] = true
+			obj_list[nb_obj] = instance_create_layer(x,y,"Instances",current_type);
+			created_room[current_room_x,current_room_y] = true;
+			nb_obj ++;
 		}
 	} else // par défaut
 	{
-		x = round((mouse_x-8) / 16)*16+8
-		y = round((mouse_y-8) / 16)*16+8
-		item = instance_position(x,y,obj_master)
+		x = round((mouse_x-8) / 16)*16+8;
+		y = round((mouse_y-8) / 16)*16+8;
+		item = instance_position(x,y,obj_master);
 		if item == noone and created_room[current_room_x,current_room_y]
 		{
-			instance_create_layer(x,y,"Instances",current_type)
+			obj_list[nb_obj] = instance_create_layer(x,y,"Instances",current_type);
+			nb_obj ++;
 		}
 	}
 	

@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+if view_current == 0
+{
 //Détermination du type d'objet
 if current_type == obj_mur_salle.object_index
 	{
@@ -16,6 +18,7 @@ if current_type == obj_mur_salle.object_index
 if x<4096
 {
 draw_self()
+}
 }
 /*else
 {
