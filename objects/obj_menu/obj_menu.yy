@@ -117,6 +117,20 @@
             "value": "256",
             "varName": "zone_jeu_w",
             "varType": 0
+        },
+        {
+            "id": "17f1a9ff-de4b-44c1-8346-48aeee5adddb",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "percent2",
+            "varType": 0
         }
     ],
     "solid": false,

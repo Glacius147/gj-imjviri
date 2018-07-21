@@ -5,13 +5,12 @@
 var x_to = argument0;
 var y_to = argument1;
 
-obj_joueur.room_current_x += x_to;
-obj_joueur.room_current_y += y_to;
 
-obj_joueur.x += x_to*55;
-obj_joueur.y += y_to*55;
+obj_menu.percent2 = 0;
 
-if view_current == 0
-{
-camera_set_view_pos(view_camera[0],camera_get_view_x(view_camera[0]) + x_to* 256,camera_get_view_y(view_camera[0]) + y_to* 176)
-}
+obj_menu.mode = MENU_MODE.CHANGEMENT_SALLE;
+obj_menu.x_to = x_to;
+obj_menu.y_yo = y_to;
+obj_menu.x_cam_depart = camera_get_view_x(view_camera[0]);
+obj_menu.y_cam_depart = camera_get_view_y(view_camera[0]);
+
