@@ -239,6 +239,14 @@
             }
         },
         {
+            "Key": "7754823f-7aba-4b7f-804d-eb820f4b3106",
+            "Value": {
+                "id": "5392b400-28ed-4fa7-9633-13a92c09bf11",
+                "resourcePath": "sprites\\spr_mask_salle\\spr_mask_salle.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "7de92fa5-aa8a-490b-99b2-9d0a6ba1c272",
             "Value": {
                 "id": "f8a3866e-9ffd-4c55-a1f4-4447b34d0bb6",
