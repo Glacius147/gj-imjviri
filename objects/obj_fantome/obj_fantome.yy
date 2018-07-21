@@ -1,19 +1,19 @@
 {
-    "id": "42539f72-2986-4812-97ae-fbdfd8419f2d",
+    "id": "e2139d93-6ec8-4c62-b6d9-2e4bf953ebc6",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "objp_item",
+    "name": "obj_fantome",
     "eventList": [
         
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": [
         {
-            "id": "9db6f5fc-28d2-4adf-a8a1-a127237bf9ea",
+            "id": "cd0900b0-3c94-4626-aa38-233b7f0c1965",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "d6c33cd1-23d3-4fc7-a8f7-b739c79c8dce",
-            "propertyId": "0dec6461-7c55-4cc6-8a4f-dba7d8133036",
+            "propertyId": "41aac493-dafc-4917-a01a-702818a9e297",
             "value": "True"
         }
     ],

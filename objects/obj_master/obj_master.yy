@@ -50,6 +50,48 @@
             "value": "0",
             "varName": "room_origine_y",
             "varType": 0
+        },
+        {
+            "id": "0dec6461-7c55-4cc6-8a4f-dba7d8133036",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "activable",
+            "varType": 3
+        },
+        {
+            "id": "41aac493-dafc-4917-a01a-702818a9e297",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "activant",
+            "varType": 3
+        },
+        {
+            "id": "88f1a07a-3ee1-4364-96e1-a80c89b720a6",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "True",
+            "varName": "actif",
+            "varType": 3
         }
     ],
     "solid": false,
