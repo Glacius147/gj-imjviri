@@ -8,12 +8,12 @@ for (i = 0; i<nb_obj; i++)
 {
 	//if obj_list[i].object_index == obj_mur_salle
 	{
-	item_list_ds = ds_list_create();
-	ds_list_add(item_list_ds, obj_list[i].object_index);
-	ds_list_add(item_list_ds, obj_list[i].x);
-	ds_list_add(item_list_ds, obj_list[i].y);
-	ds_list_add(item_list_ds, obj_list[i].image_index);
-	ds_map_add_list(i_map, "item"+string(i), item_list_ds);
+	item_map_ds = ds_map_create();
+	ds_map_add(item_map_ds, "type",obj_list[i].object_index);
+	ds_map_add(item_map_ds, "x",obj_list[i].x);
+	ds_map_add(item_map_ds, "y",obj_list[i].y);
+	ds_map_add(item_map_ds, "sprite",obj_list[i].image_index);
+	ds_map_add_map(i_map, "item"+string(i), item_map_ds);
 			
 	}
 }
