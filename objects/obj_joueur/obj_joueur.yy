@@ -190,6 +190,20 @@
             "value": "0",
             "varName": "room_current_y",
             "varType": 0
+        },
+        {
+            "id": "1be0c0c2-4f60-4594-b0ab-07c36e1f58e2",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "clef",
+            "varType": 0
         }
     ],
     "solid": false,

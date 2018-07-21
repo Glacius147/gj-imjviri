@@ -199,6 +199,14 @@
             }
         },
         {
+            "Key": "645e6b92-1f18-431a-becd-2da5194861b9",
+            "Value": {
+                "id": "0d348fb4-9462-476d-99e4-030091c1c054",
+                "resourcePath": "objects\\obj_clef\\obj_clef.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "66948f79-49cc-485c-a351-c5a5576d8c8b",
             "Value": {
                 "id": "5d98d07b-9da8-448d-aa9d-9e946046a52b",
