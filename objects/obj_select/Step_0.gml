@@ -1,7 +1,7 @@
 /// @description Detecte clic slot
 // You can write your code in this editor
 
-if obj_menu.mode == MENU_MODE.SELECT_SAVE or  obj_menu.mode == MENU_MODE.SELECT_LOAD or  obj_menu.mode == MENU_MODE.SELECT_SAVENLAUNCH
+if obj_menu.mode == MENU_MODE.SELECT_SAVE or  obj_menu.mode == MENU_MODE.SELECT_LOAD or  obj_menu.mode == MENU_MODE.SELECT_SAVENLAUNCH or obj_menu.mode == MENU_MODE.SELECT_LOAD_EDT
 {
 	if mouse_check_button_released(mb_left)
 	{
@@ -21,12 +21,18 @@ if obj_menu.mode == MENU_MODE.SELECT_SAVE or  obj_menu.mode == MENU_MODE.SELECT_
 		{
 	
 			file =  "svg_slot"+string(other.slot)+".json";
-			obj_menu.mode = MENU_MODE.CONSTRUCTION
 			room_goto(room_editeur)
 
 		}
 	
 		if obj_menu.mode == MENU_MODE.SELECT_SAVENLAUNCH
+		{
+	
+			file =  "svg_slot"+string(other.slot)+".json";
+			room_goto(room_editeur)
+
+		}
+		if obj_menu.mode == MENU_MODE.SELECT_LOAD_EDT
 		{
 	
 			file =  "svg_slot"+string(other.slot)+".json";
