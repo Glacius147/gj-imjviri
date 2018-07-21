@@ -87,14 +87,6 @@
             }
         },
         {
-            "Key": "22e11543-2386-4d22-9a6c-1cbb98c04ce5",
-            "Value": {
-                "id": "21746728-fdf6-4776-a4fa-3df18bed6079",
-                "resourcePath": "objects\\obj_interface\\obj_interface.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "269edf4b-cf8a-434d-abc1-ace0444fc73a",
             "Value": {
                 "id": "f83b33c1-2b22-4d3e-b8e9-39b47506cc02",

@@ -6,7 +6,7 @@ k_up = keyboard_check(vk_up) || (gamepad_axis_value(0,gp_axislv) < -0.3);
 k_down = keyboard_check(vk_down) || (gamepad_axis_value(0,gp_axislv) > 0.3);
 k_attaque = keyboard_check_pressed(ord("B")) || gamepad_button_check_pressed(0,gp_face1);
 k_objet = keyboard_check_pressed(ord("N")) || gamepad_button_check_pressed(0,gp_face2);
-
+k_start = keyboard_check_pressed(vk_enter) || gamepad_button_check_pressed(0,gp_start);
 
 
 //On emepche d'aller a gauche & a droite en meme temps
