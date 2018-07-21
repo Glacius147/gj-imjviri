@@ -28,8 +28,16 @@ else if c_x>4096 // On est dans la minimap
 }
 else // On clique pour poser l'objet
 {
-	x = round((mouse_x-8) / 16)*16+8
-	y = round((mouse_y-8) / 16)*16+8
+	//Détermination du type d'objet
+	if current_type == obj_mur_salle.object_index
+	{
+		x = floor((mouse_x) / 256)*256
+		y = floor((mouse_y) / 176)*176
+	} else // par défaut
+	{
+		x = round((mouse_x-8) / 16)*16+8
+		y = round((mouse_y-8) / 16)*16+8
+	}
 	item = instance_position(x,y,obj_master)
 	if item == noone
 	{
