@@ -13,7 +13,7 @@ obj_joueur.y = copine.y;
 obj_joueur.t_salle = TYPE_SALLE.SURFACE;
 obj_joueur.frames_immobile = 30;
 
-with copine  instance_change(obj_escalier_remonte);
+with copine  instance_change(obj_escalier_remonte,false);
 
 if view_current == 0
 {
