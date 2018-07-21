@@ -186,7 +186,7 @@ if mouse_check_button_released(mb_right)
 
 
 if mode_edition = EDITEUR_MODE.DEPENDANCE_1{
-	//1er clic :
+	//1er pression :
 
 	if mouse_check_button_pressed(mb_left)
 	{
@@ -210,4 +210,32 @@ if mode_edition = EDITEUR_MODE.DEPENDANCE_1{
 		begin_arrow = item
 		}
 	}
+}
+
+if mode_edition = EDITEUR_MODE.DEPENDANCE_2{
+	if mouse_check_button_released(mb_left)
+	{
+		//Dans tous les cas on revient en mode 1
+		mode_edition = EDITEUR_MODE.DEPENDANCE_1
+		with obj_master
+			{
+				if !activant{
+					image_alpha = .5
+				} else
+				{
+					image_alpha = 1	
+				}
+			}
+		
+		x = round((mouse_x-8) / 16)*16+8;
+		y = round((mouse_y-8) / 16)*16+8;
+		item = instance_position(mouse_x,mouse_y,obj_master);
+		if item != noone and item.activable
+		{
+			new_item =  instance_create_layer(begin_arrow.x,begin_arrow.y,"Instances",obj_dependance);
+			new_item.origine = scr_get_index(obj_list,begin_arrow)
+		}
+		
+	}
+	
 }
