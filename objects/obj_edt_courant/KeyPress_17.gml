@@ -13,6 +13,11 @@ switch (mode_edition) {
 				image_alpha = 1	
 			}
 		}
+		
+		with (obj_dependance)
+		{
+			image_alpha = 1
+		}
 		sprite_index = -1
 		current_type = obj_dependance
         break;
@@ -22,6 +27,14 @@ switch (mode_edition) {
 		{
 				image_alpha = 1	
 		}
+		with (obj_dependance)
+		{
+			image_alpha = 0.2	
+		}
+		sprite_index = -1
+		image_angle = 0
+		image_xscale = 1
+		current_type = noone
         break;
 	case EDITEUR_MODE.DEPENDANCE_2:
         mode_edition = EDITEUR_MODE.NORMAL
@@ -30,6 +43,14 @@ switch (mode_edition) {
 		{
 			image_alpha = 1	
 		}
+		with (obj_dependance)
+		{
+			image_alpha = 0.2	
+		}
+		sprite_index = -1
+		image_angle = 0
+		image_xscale = 1
+		current_type = noone
         break;
     default:
         // code here

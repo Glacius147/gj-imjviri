@@ -21,7 +21,7 @@ if current_type == obj_mur_salle.object_index
 
 item = instance_position(x,y,obj_master);
 
-if (x<4096 )//and item == noone)
+if (x<4096 and current_type != noone)
 {
 draw_self()
 }
@@ -31,15 +31,15 @@ else if item != noone and (item.object_index == obj_mur or item.object_index == 
 }
 
 }
+else if mode_edition = EDITEUR_MODE.DEPENDANCE_2
+	{
+	if mouse_x<4096
+	{
+		draw_self()	
+	}
+	}
 
-} else if mode_edition = EDITEUR_MODE.DEPENDANCE_2{
-if mouse_x<4096
-{
-	draw_self()	
-}
-	
-	
-}
+} 
 
 
 

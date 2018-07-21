@@ -61,7 +61,7 @@ else // On clique pour poser l'objet
 			obj_list[nb_obj] = instance_create_layer(x+16*8,y+19*8,"Instances",obj_mur);
 			obj_list[nb_obj].image_index = 2;
 			nb_obj ++;
-			obj_list[nb_obj] = instance_create_layer(x,y,"Instances",obj_fantome);
+			obj_list[nb_obj] = instance_create_layer(x+8,y+8,"Instances",obj_fantome);
 			nb_obj ++;
 			
 		}
@@ -194,6 +194,10 @@ if mode_edition = EDITEUR_MODE.DEPENDANCE_1{
 		x = round((mouse_x-8) / 16)*16+8;
 		y = round((mouse_y-8) / 16)*16+8;
 		item = instance_position(mouse_x,mouse_y,obj_master);
+		if item.object_index = obj_mur_salle
+		{
+			item = instance_position(mouse_x,mouse_y,obj_fantome);
+		}
 		if item != noone and item.activant
 		{	//Changement de mode & d'opacité.
 			mode_edition = EDITEUR_MODE.DEPENDANCE_2
@@ -215,6 +219,10 @@ if mode_edition = EDITEUR_MODE.DEPENDANCE_1{
 
 if mode_edition = EDITEUR_MODE.DEPENDANCE_2{
 	image_angle =  point_direction(begin_arrow.x, begin_arrow.y, mouse_x, mouse_y);
+	with begin_arrow
+	{
+		other.image_xscale = distance_to_point(mouse_x,mouse_y)/32
+	}
 	if mouse_check_button_released(mb_left)
 	{
 		//Dans tous les cas on revient en mode 1
@@ -231,15 +239,22 @@ if mode_edition = EDITEUR_MODE.DEPENDANCE_2{
 		
 		x = round((mouse_x-8) / 16)*16+8;
 		y = round((mouse_y-8) / 16)*16+8;
+		image_angle =0
+		image_xscale = 1
 		item = instance_position(mouse_x,mouse_y,obj_master);
 		if item != noone and item.activable
 		{
 			new_item =  instance_create_layer(begin_arrow.x,begin_arrow.y,"Instances",obj_dependance);
 			new_item.origine = scr_get_index(obj_list,begin_arrow)
 			new_item.destination = scr_get_index(obj_list,item)
+			new_item.origine_id = begin_arrow
+			new_item.destination_id = item
 			new_item.image_angle = point_direction(begin_arrow.x, begin_arrow.y, item.x, item.y);
-			new_item.image_xscale = 1;
-			new_item.image_yscale = 1;
+			with begin_arrow
+			{
+				other.new_item.image_xscale = distance_to_point(other.item.x,other.item.y)/32
+			}
+			//image_xscale = distance_to_point(mouse_x,mouse_y)/32;
 			obj_list[nb_obj] = new_item
 			nb_obj++
 		}

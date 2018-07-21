@@ -5,7 +5,7 @@
 
 
 var i_map = ds_map_create();
-var i 
+var i ;
 for (i = 0; i<nb_obj; i++)
 {
 	//if obj_list[i].object_index == obj_mur_salle

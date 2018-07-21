@@ -8,8 +8,8 @@ enum EDITEUR_MODE{
 
 
 
-sprite_index = spr_joueur_down
-current_type = obj_joueur
+sprite_index = -1
+current_type = noone
 
 
 current_player = noone
