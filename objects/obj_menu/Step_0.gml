@@ -108,14 +108,15 @@ if mode = MENU_MODE.CHANGEMENT_SALLE
 	camera_set_view_pos(view_camera[0], x_cam_depart + percent2*x_to* 256,y_cam_depart + percent2*y_to* 176)
 	}
 
+		obj_joueur.x = x_joueur_depart + percent2*x_to*64;
+		obj_joueur.y = y_joueur_depart + percent2*y_to*64;
 	
 	if percent2 = 1
 	{
 		obj_joueur.room_current_x += x_to;
 		obj_joueur.room_current_y += y_to;
 
-		obj_joueur.x += x_to*64;
-		obj_joueur.y += y_to*64;
+		mode = MENU_MODE.JEU
 	}
 }
 
