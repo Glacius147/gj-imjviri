@@ -164,6 +164,20 @@
             "value": "0",
             "varName": "vitesse_bat",
             "varType": 0
+        },
+        {
+            "id": "4c232f18-b58d-45c7-8d72-14d17026559d",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0.25",
+            "varName": "image_speed",
+            "varType": 0
         }
     ],
     "solid": false,

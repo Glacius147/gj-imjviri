@@ -655,6 +655,22 @@
             }
         },
         {
+            "Key": "9d8c4826-ccd2-4c20-9852-47950851d049",
+            "Value": {
+                "id": "cbec42fb-dcc1-467d-b356-ef0e2143b3ac",
+                "resourcePath": "rooms\\room_select\\room_select.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "9dc53527-3318-4fe6-b9b0-3470d5eb714d",
+            "Value": {
+                "id": "2b189c12-ada0-438b-8171-d34cedb999da",
+                "resourcePath": "sprites\\spr_select_save\\spr_select_save.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "9f4c9a2e-54d6-45e2-af76-57d8a1e788fe",
             "Value": {
                 "id": "6fa03162-c79a-4816-91cd-0532526ab781",
