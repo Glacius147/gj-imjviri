@@ -25,7 +25,7 @@ touche_enfoncee = false;
 
 enum MENU_MODE
 {
-	OFF,
+	JEU,
 	PAUSE,
 	FADE,
 	INTRO,

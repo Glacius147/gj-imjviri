@@ -42,14 +42,14 @@ if mode = MENU_MODE.MENU
 			case 1 : scr_transition(TRANS_MODE.GOTO,room_jeu); break;
 		}
 		menu_selection = -1;
-		mode = MENU_MODE.OFF;
+		mode = MENU_MODE.JEU;
 	}	
 }
 
 
 
 
-if mode != MENU_MODE.OFF
+if mode != MENU_MODE.JEU
 {
 	if mode = MENU_MODE.FADE
 	{
@@ -72,7 +72,7 @@ if mode != MENU_MODE.OFF
 			}
 			case MENU_MODE.FADE:
 			{
-				mode = MENU_MODE.OFF;
+				mode = MENU_MODE.JEU;
 				with obj_tir speed = 12;
 				break;
 			}		

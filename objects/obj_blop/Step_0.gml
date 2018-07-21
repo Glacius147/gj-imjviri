@@ -1,6 +1,6 @@
 /// @desc Déplacement et action du perso
 
-if obj_menu.mode = MENU_MODE.OFF
+if obj_menu.mode = MENU_MODE.JEU
 {
 		
 
