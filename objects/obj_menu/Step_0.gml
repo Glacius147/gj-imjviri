@@ -25,7 +25,7 @@ if mode = MENU_MODE.MENU
 		
 		if !k_down && !k_up 			touche_enfoncee = false;
 		
-		if k_attaque
+		if k_attaque || k_start
 		{
 			menu_x_target = w + 200;
 			menu_selection = menu_curseur;
