@@ -1,8 +1,9 @@
-/// @description load lvl
+/// @description Charge un lvl sauvegardé
 // You can write your code in this editor
 
+//
 
-file = obj_select.file
+
 
 var buff = buffer_load(file);
 map = json_decode(buffer_read(buff, buffer_text));
@@ -15,7 +16,7 @@ for (i = 0; i < 16; i += 1)
 {
 	for (j = 0; j < 16; j += 1)
 	{
-		created_room[i , j] = false
+		obj_menu.created_room[i , j] = false
 	}
 }
 
@@ -44,24 +45,20 @@ for (i = 0; i < size; i++;)
 		var new_item = instance_create_layer(item_x,item_y,"salles",item_type)
 		salle_x = round(item_x/256)
 		salle_y = round(item_y/176)
-		created_room[salle_x,salle_y] = true
+		obj_menu.created_room[salle_x,salle_y] = true
 	} else if object_is_ancestor(item_type, objp_objet_mobil)
 	{
-		var new_item = instance_create_layer(item_x,item_y,"Instances",item_type)
+		var new_item = instance_create_layer(item_x,item_y,"mob",item_type)
 	} else if item_type == string(obj_dependance)
 	{
 		origines[count] = item[? "origine"];
 		destinations[count] = item[? "destination"];
 		count++
-		var new_item = instance_create_layer(item_x,item_y,"Instances",item_type);
-		new_item.origine = item[? "origine"];
-		new_item.destination = item[? "destination"];
-		new_item.origine_id = list_obj[new_item.origine];
-		new_item.destination_id = list_obj[new_item.destination];
+		var new_item = noone;
 	} 
 	else
 	{
-		var new_item = instance_create_layer(item_x,item_y,"Instances",item_type)
+		var new_item = instance_create_layer(item_x,item_y,"items",item_type)
 	}
 	if item_type == string(obj_escalier)
 	{
@@ -77,6 +74,10 @@ for (i = 0; i < size; i++;)
 	list_obj[i] = new_item
 }
 
+for (var i = 1; i < array_length_1d(origines); ++i) {
+    list_obj[origines[i]].objets_dependants[array_length_1d(list_obj[origines[i]])] = list_obj[destinations[i]]
+	list_obj[destinations[i]].actif = false;
+}
 
 
 with obj_joueur
