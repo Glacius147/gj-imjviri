@@ -41,5 +41,3 @@ if mode = MENU_MODE.MENU
 	}	
 }
 
-
-	//	draw_text(50,50,string(percent));	

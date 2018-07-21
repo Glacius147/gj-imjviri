@@ -247,6 +247,14 @@
             }
         },
         {
+            "Key": "789f2c9d-c0df-4f02-8d09-a047f20e9891",
+            "Value": {
+                "id": "972f31bf-fb2d-4738-aff1-da8f336bbfb4",
+                "resourcePath": "sprites\\spr_mur\\spr_mur.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "7de92fa5-aa8a-490b-99b2-9d0a6ba1c272",
             "Value": {
                 "id": "f8a3866e-9ffd-4c55-a1f4-4447b34d0bb6",
@@ -431,6 +439,14 @@
             }
         },
         {
+            "Key": "c89e4b24-7232-49c5-ac2f-c605664e603b",
+            "Value": {
+                "id": "aca0f051-6ef7-440c-9fd8-84c72031b0f5",
+                "resourcePath": "scripts\\scr_changement_salle\\scr_changement_salle.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "c8a1f67a-fe98-4d9a-b1b8-061fb7262998",
             "Value": {
                 "id": "db2f36d7-ceea-4171-9583-d1823933e92c",
@@ -514,7 +530,7 @@
             "Key": "d7d06761-1c61-468d-ad0b-6f157274e1dc",
             "Value": {
                 "id": "90fb341e-2932-47cd-9054-7d5d8f7b6c3f",
-                "resourcePath": "sprites\\spr_mur\\spr_mur.yy",
+                "resourcePath": "sprites\\spr_porte_fermee\\spr_porte_fermee.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -641,7 +657,8 @@
         "ca8dd323-e839-4dad-96c4-662cd9e2be14",
         "269edf4b-cf8a-434d-abc1-ace0444fc73a",
         "e7e2b6eb-4388-45d4-9d09-6e4541fd7ce2",
-        "da189fd2-5bcf-4469-8cf4-6734552435e1"
+        "da189fd2-5bcf-4469-8cf4-6734552435e1",
+        "c89e4b24-7232-49c5-ac2f-c605664e603b"
     ],
     "tutorial": ""
 }
