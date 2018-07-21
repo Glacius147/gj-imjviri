@@ -127,6 +127,14 @@
             }
         },
         {
+            "Key": "39206c04-0357-49fe-82bf-e9f668581883",
+            "Value": {
+                "id": "f85cea6c-e515-4d50-a9de-c8821cff9b4d",
+                "resourcePath": "scripts\\scr_is_room_adj\\scr_is_room_adj.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "3b242514-a6be-4a6d-9c3e-28fcfe2b477d",
             "Value": {
                 "id": "0c75b026-d979-4653-95e2-f5e17ce76e1a",
@@ -723,7 +731,8 @@
         "e7e2b6eb-4388-45d4-9d09-6e4541fd7ce2",
         "da189fd2-5bcf-4469-8cf4-6734552435e1",
         "c89e4b24-7232-49c5-ac2f-c605664e603b",
-        "f1bc672d-450c-4429-ac6b-99447088efba"
+        "f1bc672d-450c-4429-ac6b-99447088efba",
+        "39206c04-0357-49fe-82bf-e9f668581883"
     ],
     "tutorial": ""
 }
