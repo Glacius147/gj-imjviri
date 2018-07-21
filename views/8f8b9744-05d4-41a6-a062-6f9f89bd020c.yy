@@ -7,7 +7,8 @@
         "7f964f8c-21aa-434f-8996-7abdcf0d615b",
         "f5e03ca1-28a0-4e3e-aa45-7c76c614328f",
         "3b242514-a6be-4a6d-9c3e-28fcfe2b477d",
-        "0163593c-64fa-45cf-a54a-591165b2aeb8"
+        "0163593c-64fa-45cf-a54a-591165b2aeb8",
+        "a56d9920-4fb3-47bb-ac8d-65232ca5c859"
     ],
     "filterType": "GMObject",
     "folderName": "objet mobils",
