@@ -63,6 +63,14 @@
             }
         },
         {
+            "Key": "09c3ab21-28c3-45aa-8af8-a6015b276648",
+            "Value": {
+                "id": "42eeb0f3-584a-4bb6-bbcc-5b18987dd7e6",
+                "resourcePath": "sprites\\spr_bombe_explosion\\spr_bombe_explosion.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0af4a921-3e54-4705-9c68-48e26526e677",
             "Value": {
                 "id": "b0674428-e23b-4358-a31d-6941f775f646",
@@ -84,6 +92,14 @@
                 "id": "98f3a381-e2b1-4a6e-b5c1-a092af2967e6",
                 "resourcePath": "views\\1c59bf08-53f4-4d7e-890e-7a7569b31b35.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "20e92edb-641a-4ac6-855a-1c212c494412",
+            "Value": {
+                "id": "efc45761-e24e-4743-8346-611297aa28b9",
+                "resourcePath": "sprites\\spr_bombe\\spr_bombe.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -183,6 +199,14 @@
             }
         },
         {
+            "Key": "42539f72-2986-4812-97ae-fbdfd8419f2d",
+            "Value": {
+                "id": "b74f84b3-07f2-4adf-bb9a-8f694d184f70",
+                "resourcePath": "objects\\objp_item\\objp_item.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "47abc805-88b3-4968-a256-62aa8d1392fa",
             "Value": {
                 "id": "cac867ae-a821-48c3-bb77-ad6135ad8541",
@@ -196,6 +220,14 @@
                 "id": "4bccad66-a48a-41d4-9035-24617070d553",
                 "resourcePath": "sprites\\spr_blop_mort\\spr_blop_mort.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "4d517188-f937-4529-9ea5-afb919523b3e",
+            "Value": {
+                "id": "04e64706-5d17-4599-a926-37609e96a1ed",
+                "resourcePath": "objects\\obj_bombe_posee\\obj_bombe_posee.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -220,6 +252,14 @@
                 "id": "7d91c94f-d8ee-4809-892f-6201a8572a4c",
                 "resourcePath": "views\\608dcfbe-d6e7-42ff-98cc-1b2fd08c9156.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "638b8639-3fc0-4bea-a04d-8ebcad5c99de",
+            "Value": {
+                "id": "825a338f-1c37-42dd-8bb6-af01be7de85a",
+                "resourcePath": "objects\\obj_bombe_loot\\obj_bombe_loot.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -420,6 +460,14 @@
                 "id": "e5ce21f6-53f4-4be1-8da4-957b89c5d6c9",
                 "resourcePath": "sprites\\spr_coeur\\spr_coeur.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "96d9391c-629b-49f2-95fb-5c0fcd0f5fe2",
+            "Value": {
+                "id": "66453961-b190-491b-abbf-65d5bb4683d0",
+                "resourcePath": "scripts\\scr_objet_use\\scr_objet_use.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -647,6 +695,14 @@
             }
         },
         {
+            "Key": "e11e736e-1e38-494c-b4f2-53fe1bdaecdf",
+            "Value": {
+                "id": "fac92e1f-d519-4907-86e7-a7c54603cf65",
+                "resourcePath": "objects\\obj_bombe_explose\\obj_bombe_explose.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "e1fbf5be-45e0-4fef-8d1b-ce2286c7a162",
             "Value": {
                 "id": "7c112b00-ba14-43ed-95f3-bee7664bcfa6",
@@ -757,6 +813,14 @@
                 "resourcePath": "sprites\\spr_blop_right\\spr_blop_right.yy",
                 "resourceType": "GMSprite"
             }
+        },
+        {
+            "Key": "ff1587d0-0dcc-44cf-8fbe-244e19dc8eec",
+            "Value": {
+                "id": "07e848e2-a17b-4f02-81cf-62b97ad75da0",
+                "resourcePath": "sprites\\spr_bombe_posee\\spr_bombe_posee.yy",
+                "resourceType": "GMSprite"
+            }
         }
     ],
     "script_order": [
@@ -772,7 +836,8 @@
         "da189fd2-5bcf-4469-8cf4-6734552435e1",
         "c89e4b24-7232-49c5-ac2f-c605664e603b",
         "f1bc672d-450c-4429-ac6b-99447088efba",
-        "39206c04-0357-49fe-82bf-e9f668581883"
+        "39206c04-0357-49fe-82bf-e9f668581883",
+        "96d9391c-629b-49f2-95fb-5c0fcd0f5fe2"
     ],
     "tutorial": ""
 }

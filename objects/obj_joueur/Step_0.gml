@@ -109,6 +109,7 @@ if obj_menu.mode = MENU_MODE.JEU
 		if k_down dir_attaque = DIR.DOWN;
 		if k_right dir_attaque = DIR.RIGHT;
 		if k_left dir_attaque = DIR.LEFT;
+		if k_objet scr_objet_use();
 	}
 
 	//déplacement

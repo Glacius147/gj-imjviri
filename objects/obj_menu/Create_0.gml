@@ -36,6 +36,13 @@ enum MENU_MODE
 	CHANGEMENT_SALLE
 }
 
+
+enum OBJET_HOLD
+{
+	BOMBE,
+	AUCUN
+}
+
 mode = MENU_MODE.MENU;
 
 percent = 0;
