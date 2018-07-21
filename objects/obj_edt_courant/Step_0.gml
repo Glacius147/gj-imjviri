@@ -46,6 +46,20 @@ else // On clique pour poser l'objet
 			obj_list[nb_obj] = instance_create_layer(x,y,"Instances",current_type);
 			created_room[current_room_x,current_room_y] = true;
 			nb_obj ++;
+			//Ajout de 4 murs
+			obj_list[nb_obj] = instance_create_layer(x+3*8,y+11*8,"Instances",obj_mur);
+			obj_list[nb_obj].image_index = 3;
+			nb_obj ++;
+			obj_list[nb_obj] = instance_create_layer(x+29*8,y+11*8,"Instances",obj_mur);
+			obj_list[nb_obj].image_index = 1;
+			nb_obj ++;
+			obj_list[nb_obj] = instance_create_layer(x+16*8,y+3*8,"Instances",obj_mur);
+			obj_list[nb_obj].image_index = 0;
+			nb_obj ++;
+			obj_list[nb_obj] = instance_create_layer(x+16*8,y+19*8,"Instances",obj_mur);
+			obj_list[nb_obj].image_index = 2;
+			nb_obj ++;
+			
 		}
 	} else // par défaut
 	{
@@ -62,4 +76,17 @@ else // On clique pour poser l'objet
 	
 	
 }
+}
+
+if mouse_check_button_released(mb_right)
+{
+	x = round((mouse_x-8) / 16)*16+8;
+	y = round((mouse_y-8) / 16)*16+8;
+	item = instance_position(x,y,obj_master);
+	if item.object_index == obj_mur
+	{
+			
+		
+	}
+	
 }

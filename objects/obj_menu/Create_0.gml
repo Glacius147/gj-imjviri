@@ -55,6 +55,8 @@ global.list_item[0] = string(obj_mur_salle);
 global.list_item[1] = string(obj_joueur);
 global.list_item[2] = string(obj_bloc);
 global.list_item[3] = string(obj_blop);
+global.list_item[4] = string(obj_mur);
+global.list_item[5] = string(obj_porte);
 
 
 global.map_item_index = ds_map_create()
