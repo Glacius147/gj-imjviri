@@ -21,7 +21,7 @@
             "id": "e1c83787-0e97-43a9-b664-3bcd64c97487",
             "depth": 0,
             "grid_x": 16,
-            "grid_y": 16,
+            "grid_y": 8,
             "hierarchyFrozen": false,
             "hierarchyVisible": true,
             "inheritLayerDepth": false,
