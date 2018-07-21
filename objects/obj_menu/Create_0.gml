@@ -65,6 +65,13 @@ global.list_item[2] = string(obj_bloc);
 global.list_item[3] = string(obj_blop);
 global.list_item[4] = string(obj_mur);
 global.list_item[5] = string(obj_porte);
+global.list_item[6] = string(obj_porte_bloquee);
+global.list_item[7] = string(obj_porte_fermee);
+global.list_item[8] = string(obj_porte);
+global.list_item[9] = string(obj_clef);
+global.list_item[10] = string(obj_bombe_loot);
+global.list_item[11] = string(obj_coeur);
+global.list_item[12] = string(obj_moblin);
 
 
 global.map_item_index = ds_map_create()
