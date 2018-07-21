@@ -37,11 +37,7 @@ enum MENU_MODE
 }
 
 
-enum OBJET_HOLD
-{
-	BOMBE,
-	AUCUN
-}
+
 
 mode = MENU_MODE.MENU;
 

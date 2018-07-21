@@ -225,7 +225,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "110",
+            "value": "10",
             "varName": "bombes",
             "varType": 0
         },
@@ -239,8 +239,22 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "OBJET_HOLD.BOMBE",
+            "value": "spr_bombe",
             "varName": "objet_b",
+            "varType": 0
+        },
+        {
+            "id": "50b881f2-cf17-49a3-85b1-7dc885dc8155",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "spr_epee",
+            "varName": "objet_a",
             "varType": 0
         }
     ],
