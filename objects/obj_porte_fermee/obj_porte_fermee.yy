@@ -1,8 +1,8 @@
 {
-    "id": "ab68fc50-3eb1-47f6-b11b-4f38e39ec3b7",
+    "id": "7eb17201-b6ff-443d-9bb7-411db44d7d9d",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_mur",
+    "name": "obj_porte_fermee",
     "eventList": [
         
     ],
@@ -24,7 +24,7 @@
     "physicsStartAwake": true,
     "properties": [
         {
-            "id": "772c2aa6-22b3-40bd-b946-f4cb6da14bea",
+            "id": "31ae6fce-63fe-4a6c-acc8-ebfcb6b59ae1",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -36,23 +36,9 @@
             "value": "0",
             "varName": "image_angle",
             "varType": 0
-        },
-        {
-            "id": "ce57bb6e-5deb-4fe3-aefd-270ba2f19cae",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0",
-            "varName": "image_index",
-            "varType": 0
         }
     ],
     "solid": false,
-    "spriteId": "789f2c9d-c0df-4f02-8d09-a047f20e9891",
+    "spriteId": "d7d06761-1c61-468d-ad0b-6f157274e1dc",
     "visible": true
 }

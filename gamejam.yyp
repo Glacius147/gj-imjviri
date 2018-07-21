@@ -167,6 +167,14 @@
             }
         },
         {
+            "Key": "57d61530-7571-405a-bf42-d2305a81a2ba",
+            "Value": {
+                "id": "26c27481-c3eb-4b93-9900-ce008a0c8b21",
+                "resourcePath": "sprites\\spr_sol\\spr_sol.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "583fedc3-23d5-49a2-a6d3-4a396676758b",
             "Value": {
                 "id": "9f4c3585-8f37-47c8-aa98-52622279d5cb",
@@ -260,6 +268,14 @@
                 "id": "f8a3866e-9ffd-4c55-a1f4-4447b34d0bb6",
                 "resourcePath": "shaders\\shader_blink\\shader_blink.yy",
                 "resourceType": "GMShader"
+            }
+        },
+        {
+            "Key": "7eb17201-b6ff-443d-9bb7-411db44d7d9d",
+            "Value": {
+                "id": "c855837d-8148-4704-bea9-06aa4745e0dc",
+                "resourcePath": "objects\\obj_porte_fermee\\obj_porte_fermee.yy",
+                "resourceType": "GMObject"
             }
         },
         {
