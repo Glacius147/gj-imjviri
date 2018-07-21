@@ -1,4 +1,6 @@
 /// @descr HP ++
-
-other.bombes += 4;
-instance_destroy();
+if actif
+{
+	other.bombes += 4;
+	instance_destroy();
+}

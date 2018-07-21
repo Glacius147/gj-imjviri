@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "obj_master",
     "eventList": [
-        
+        {
+            "id": "2926dc87-67a6-43e6-99ad-27b6b1e3af2e",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 15,
+            "eventtype": 7,
+            "m_owner": "d6c33cd1-23d3-4fc7-a8f7-b739c79c8dce"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
@@ -92,6 +101,20 @@
             "value": "True",
             "varName": "actif",
             "varType": 3
+        },
+        {
+            "id": "c8fd5e37-93bb-4e78-8c34-70935463c4fa",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "objets_dependants",
+            "varType": 6
         }
     ],
     "solid": false,
