@@ -63,7 +63,7 @@ switch objet_b
 		{
 			with instance_create_layer(x_t1,y_t1,"mob",obj_affichage_item_use) 
 			{
-				sprite_index = spr_torche;
+				sprite_index = spr_flammes;
 			}
 			break;
 		}

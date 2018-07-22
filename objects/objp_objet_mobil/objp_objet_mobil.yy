@@ -320,7 +320,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "15",
+            "value": "30",
             "varName": "frames_invulnerable",
             "varType": 0
         },
