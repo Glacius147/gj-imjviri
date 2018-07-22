@@ -5,14 +5,12 @@
 file = obj_select.file
 
 //Vidange de l'éditeur
-if is_array(obj_list)
-{
-	for (var i = 0; i < nb_obj; ++i) {
-	    instance_destroy(obj_list[i])
-	}
-	nb_obj = 0;
-	obj_list = noone;
+for (var i = 0; i < nb_obj; ++i) {
+	instance_destroy(obj_list[| i])
 }
+nb_obj = 0;
+ds_list_clear(obj_list);
+
 
 //Chargement
 var buff = buffer_load(file);
@@ -43,7 +41,7 @@ var size;
 size = ds_map_size(map);
 nb_obj = size
 for (i = 0; i < size; i++;)
-	{
+{
 	item = map[? "item"+string(i)];
 	item_type = global.list_item[item[? "type"]];
 	item_x = item[? "x"];
@@ -66,10 +64,8 @@ for (i = 0; i < size; i++;)
 		destinations[count] = item[? "destination"];
 		count++
 		var new_item = instance_create_layer(item_x,item_y,"Instances",item_type);
-		new_item.origine = item[? "origine"];
-		new_item.destination = item[? "destination"];
-		new_item.origine_id = obj_list[new_item.origine];
-		new_item.destination_id = obj_list[new_item.destination];
+		new_item.origine_id = obj_list[| item[? "origine"]];
+		new_item.destination_id = obj_list[| item[? "destination"]];
 	} else
 	{
 		var new_item = instance_create_layer(item_x,item_y,"Instances",item_type)
@@ -85,7 +81,7 @@ for (i = 0; i < size; i++;)
 	new_item.room_origine_x = item_px;
 	new_item.room_origine_y = item_py;
 	}
-	obj_list[i] = new_item
+	ds_list_add(obj_list,new_item)
 	if item_type == string(obj_joueur){	
 		current_player = new_item
 	}

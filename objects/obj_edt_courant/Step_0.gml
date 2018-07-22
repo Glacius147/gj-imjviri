@@ -49,23 +49,23 @@ else // On clique pour poser l'objet
 		y = current_room_y*176
 		//if !created_room[current_room_x,current_room_y]
 		{
-			obj_list[nb_obj] = instance_create_layer(x,y,"salles",obj_mur_salle);
+			ds_list_add(obj_list,instance_create_layer(x,y,"salles",obj_mur_salle));
 			created_room[current_room_x,current_room_y] = true;
 			nb_obj ++;
 			//Ajout de 4 murs
-			obj_list[nb_obj] = instance_create_layer(x+3*8,y+11*8,"Instances",obj_mur);
-			obj_list[nb_obj].image_index = 1;
+			ds_list_add(obj_list,instance_create_layer(x+3*8,y+11*8,"Instances",obj_mur));
+			obj_list[| nb_obj].image_index = 1;
 			nb_obj ++;
-			obj_list[nb_obj] = instance_create_layer(x+29*8,y+11*8,"Instances",obj_mur);
-			obj_list[nb_obj].image_index = 3;
+			ds_list_add(obj_list,instance_create_layer(x+29*8,y+11*8,"Instances",obj_mur));
+			obj_list[| nb_obj].image_index = 3;
 			nb_obj ++;
-			obj_list[nb_obj] = instance_create_layer(x+16*8,y+3*8,"Instances",obj_mur);
-			obj_list[nb_obj].image_index = 0;
+			ds_list_add(obj_list,instance_create_layer(x+16*8,y+3*8,"Instances",obj_mur));
+			obj_list[| nb_obj].image_index = 0;
 			nb_obj ++;
-			obj_list[nb_obj] = instance_create_layer(x+16*8,y+19*8,"Instances",obj_mur);
-			obj_list[nb_obj].image_index = 2;
+			ds_list_add(obj_list,instance_create_layer(x+16*8,y+19*8,"Instances",obj_mur));
+			obj_list[| nb_obj].image_index = 2;
 			nb_obj ++;
-			obj_list[nb_obj] = instance_create_layer(x+8,y+8,"Instances",obj_fantome);
+			ds_list_add(obj_list,instance_create_layer(x+8,y+8,"Instances",obj_fantome));
 			nb_obj ++;
 			
 		}
@@ -77,7 +77,9 @@ else // On clique pour poser l'objet
 		if item == noone and created_room[current_room_x,current_room_y]
 		{
 			new_item = instance_create_layer(x,y,"Instances",current_type);
-			obj_list = scr_array_replace(obj_list,current_player,new_item)
+			old_position = ds_list_find_index(obj_list,current_player)
+			ds_list_replace(obj_list,old_position,new_item)
+			//obj_list = scr_array_replace(obj_list,current_player,new_item)
 			instance_destroy(current_player)
 			current_player = new_item
 		}
@@ -89,14 +91,14 @@ else // On clique pour poser l'objet
 		item = instance_position(x,y,obj_master);
 		if item == noone and created_room[current_room_x,current_room_y]
 		{
-			obj_list[nb_obj] = instance_create_layer(x,y,"Instances",current_type);
+			ds_list_add(obj_list,instance_create_layer(x,y,"Instances",current_type));
 			
 			if current_type == obj_joueur
 			{
-				current_player = obj_list[nb_obj]
+				current_player = obj_list[| nb_obj]
 			} else if current_type == obj_escalier
 			{
-				obj_list[nb_obj].destination = dest
+				obj_list[| nb_obj].destination = dest
 			}
 			nb_obj ++;
 		}
@@ -161,7 +163,9 @@ if mouse_check_button_released(mb_right)
 			new_item.image_angle = item.image_angle
 		}
 		new_item.mask_index = spr_mur
-		obj_list = scr_array_replace(obj_list,item,new_item)
+		old_position = ds_list_find_index(obj_list,item)
+		ds_list_replace(obj_list,old_position,new_item)
+		//obj_list = scr_array_replace(obj_list,item,new_item)
 		instance_destroy(item)
 		if flag_change_mirror
 		{
@@ -181,8 +185,10 @@ if mouse_check_button_released(mb_right)
 			new_item.image_angle = item.image_angle
 		}
 		new_item.mask_index = spr_mur
-		obj_list = scr_array_replace(obj_list,item,new_item)
-		instance_destroy(item)	
+		old_position = ds_list_find_index(obj_list,item)
+		ds_list_replace(obj_list,old_position,new_item)
+		//obj_list = scr_array_replace(obj_list,item,new_item)
+		instance_destroy(item)
 		}
 	}
 	}
@@ -201,7 +207,7 @@ if mode_edition = EDITEUR_MODE.DEPENDANCE_1{
 		x = round((mouse_x-8) / 16)*16+8;
 		y = round((mouse_y-8) / 16)*16+8;
 		item = instance_position(mouse_x,mouse_y,obj_master);
-		if item.object_index = obj_mur_salle
+		if item != noone and item.object_index = obj_mur_salle
 		{
 			item = instance_position(mouse_x,mouse_y,obj_fantome);
 		}
@@ -252,8 +258,8 @@ if mode_edition = EDITEUR_MODE.DEPENDANCE_2{
 		if item != noone and item.activable
 		{
 			new_item =  instance_create_layer(begin_arrow.x,begin_arrow.y,"Instances",obj_dependance);
-			new_item.origine = scr_get_index(obj_list,begin_arrow)
-			new_item.destination = scr_get_index(obj_list,item)
+			//new_item.origine = scr_get_index(obj_list,begin_arrow)
+			//new_item.destination = scr_get_index(obj_list,item)
 			new_item.origine_id = begin_arrow
 			new_item.destination_id = item
 			new_item.image_angle = point_direction(begin_arrow.x, begin_arrow.y, item.x, item.y);
@@ -262,7 +268,7 @@ if mode_edition = EDITEUR_MODE.DEPENDANCE_2{
 				other.new_item.image_xscale = distance_to_point(other.item.x,other.item.y)/32
 			}
 			//image_xscale = distance_to_point(mouse_x,mouse_y)/32;
-			obj_list[nb_obj] = new_item
+			ds_list_add(obj_list,new_item)
 			nb_obj++
 		}
 		

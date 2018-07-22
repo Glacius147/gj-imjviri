@@ -36,7 +36,7 @@ for (i = 0; i < 16; i += 1)
 }
 
 nb_obj = 0
-obj_list = noone;
+obj_list = ds_list_create();;
 
 //Message d'erreur à afficher & indicateur de progression de la fenetre
 error_message = ""
