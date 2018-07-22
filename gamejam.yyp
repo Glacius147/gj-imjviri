@@ -63,6 +63,14 @@
             }
         },
         {
+            "Key": "041c924f-e8ca-467f-86dc-64bedcda6187",
+            "Value": {
+                "id": "905f6ca6-6ccc-4a57-91e4-e052be1ba20e",
+                "resourcePath": "sprites\\spr_bloc_metal\\spr_bloc_metal.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "04b7cf86-d53c-4b3e-ad75-e090cd094e70",
             "Value": {
                 "id": "909fbebc-64d6-43cd-9a72-4fa3fe4048ac",
@@ -103,11 +111,27 @@
             }
         },
         {
+            "Key": "0e5ea5f4-b92a-44ca-b714-c944dd314f88",
+            "Value": {
+                "id": "526c5f69-50a0-45db-b795-8aa80c60b3f9",
+                "resourcePath": "sprites\\spr_joueur_magnis\\spr_joueur_magnis.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "109b2d08-1249-4a22-a287-94fea0afee38",
             "Value": {
                 "id": "0532cefc-12f6-4182-82d0-910dca970743",
                 "resourcePath": "views\\109b2d08-1249-4a22-a287-94fea0afee38.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "15b8f48d-21cc-452c-b7a0-bab5453619c2",
+            "Value": {
+                "id": "8dba3da0-69ac-4dfd-9f85-9bf138d4b3c0",
+                "resourcePath": "objects\\obj_bloc_torche\\obj_bloc_torche.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -147,6 +171,14 @@
             "Value": {
                 "id": "273d274f-9a01-46b6-a712-7639ce48bb5f",
                 "resourcePath": "objects\\obj_gel\\obj_gel.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "1ff3c85a-62c2-4b50-b211-2255baef5d75",
+            "Value": {
+                "id": "e855a06d-8ea5-4322-9bd4-b043015fc7c2",
+                "resourcePath": "objects\\obj_coeur_cont\\obj_coeur_cont.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -303,6 +335,14 @@
             }
         },
         {
+            "Key": "43a45790-eaca-45c3-aec6-3142df206b0e",
+            "Value": {
+                "id": "47cf99f0-b490-4b8c-b4ad-7c6cb9524dba",
+                "resourcePath": "sprites\\spr_bloc_torche\\spr_bloc_torche.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "47abc805-88b3-4968-a256-62aa8d1392fa",
             "Value": {
                 "id": "cac867ae-a821-48c3-bb77-ad6135ad8541",
@@ -428,6 +468,14 @@
                 "id": "b0df1696-a384-42c5-b035-15f580a7e11a",
                 "resourcePath": "sprites\\spr_intro\\spr_intro.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "6c3cf918-bfa6-4185-8d04-98d327b69988",
+            "Value": {
+                "id": "fb0daae4-1093-45c8-a451-8c0ad7045178",
+                "resourcePath": "objects\\obj_torche_loot\\obj_torche_loot.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1231,6 +1279,14 @@
             }
         },
         {
+            "Key": "eac29b58-2346-4ac2-b98b-4b338e73dff1",
+            "Value": {
+                "id": "2922ee4a-4690-4a56-a60e-e9f83e9d836b",
+                "resourcePath": "objects\\obj_magnis_loot\\obj_magnis_loot.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "ecc6472e-0ffe-4374-adcb-097042aed299",
             "Value": {
                 "id": "0e4f39ea-d812-49a8-b242-b274537d1127",
@@ -1323,6 +1379,14 @@
             "Value": {
                 "id": "8d4c69f1-25fb-4e1d-92c2-3d424b120608",
                 "resourcePath": "objects\\obj_select\\obj_select.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "fe61859c-db98-472a-930f-bffe261a253d",
+            "Value": {
+                "id": "1add5488-776f-450a-9c54-bfd02cbdbb0a",
+                "resourcePath": "objects\\obj_bloc_metal\\obj_bloc_metal.yy",
                 "resourceType": "GMObject"
             }
         },

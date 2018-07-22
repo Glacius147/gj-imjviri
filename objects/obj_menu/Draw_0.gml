@@ -2,6 +2,11 @@
 
 if mode = MENU_MODE.JEU || mode = MENU_MODE.UP || mode = MENU_MODE.DOWN || mode = MENU_MODE.PAUSE || mode = MENU_MODE.CHANGEMENT_SALLE
 {
+	//correction bug d'affichage
+	draw_set_color(c_black);
+	draw_rectangle(x_b + 254,y_b - 176 ,x_b + 256,y_b + 176,false);
+
+	//cadres map	
 	draw_set_color(c_blue);
 	draw_rectangle(x_b + 6,y_b + 6,x_b + 75,y_b + 59,false);
 	scr_mini_map();
@@ -19,13 +24,13 @@ if mode = MENU_MODE.JEU || mode = MENU_MODE.UP || mode = MENU_MODE.DOWN || mode 
 	if instance_exists(obj_joueur) 
 	{
 		draw_sprite(obj_joueur.objet_a,0,x_b + 129,y_b + 40);
-		draw_sprite(obj_joueur.objet_b,0,x_b + 163,y_b + 40);
+		if obj_joueur.objet_b != 0 draw_sprite(obj_joueur.objet_b,0,x_b + 163,y_b + 40);
 	}
 
 	//affichage choix objet & contour map
 	scr_9box(spr_9box,x_b + 100, y_b -150, x_b + 230, y_b -112);
 	
-	draw_set_color(c_navy);
+	draw_set_color(c_blue);
 	draw_rectangle(x_b + 50, y_b -110, x_b + 230, y_b -10, false);
 
 	//placement des coeurs
@@ -46,8 +51,18 @@ if mode = MENU_MODE.JEU || mode = MENU_MODE.UP || mode = MENU_MODE.DOWN || mode 
 		if pv >= i im_coeur = 0;
 		if pv = i - 0.5 im_coeur = 1;
 		if pv < i - 0.5 im_coeur = 2;
-		draw_sprite(spr_coeur,im_coeur,x_b + 194 + 13*(i-1),y_b + 18);
+		draw_sprite(spr_coeur,im_coeur,x_b + 185 + 13*(i-1),y_b + 18);
 	}
+	
+	for (i = 6; i <= min(pv_max,10); i++)
+	{
+		if pv >= i im_coeur = 0;
+		if pv = i - 0.5 im_coeur = 1;
+		if pv < i - 0.5 im_coeur = 2;
+		draw_sprite(spr_coeur,im_coeur,x_b + 185 + 13*(i-6),y_b + 33);
+	}	
+	
+	
 	
 	// placement des clefs et des bombes
 	draw_sprite(spr_clef,0,x_b + 90,y_b + 20);

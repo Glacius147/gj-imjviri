@@ -3,9 +3,9 @@
 	//annime le perso dans la direction de son déplacement
 	
 	//animation de frappe
-if attaque
+if attaque || magnis_actif
 {
-	sprite_index = spr_attaque;
+	if magnis_actif sprite_index = spr_joueur_magnis else sprite_index = spr_attaque;
 	//choix de la direction
 	switch dir_attaque
 	{
@@ -81,7 +81,7 @@ else
 	if immobile 
 	{
 		//si fin d'attaque
-		if sprite_index = spr_attaque
+		if sprite_index = spr_attaque || sprite_index = spr_joueur_magnis
 		{
 			switch dir_attaque
 			{

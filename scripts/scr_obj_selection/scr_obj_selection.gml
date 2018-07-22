@@ -12,6 +12,7 @@ taille_liste = 3;
 
 
 //num de l'item selectionné
+objet_b_num = -1;
 if obj_joueur.objet_b = spr_cryo objet_b_num = 0;  
 if obj_joueur.objet_b = spr_bombe objet_b_num = 1; 
 if obj_joueur.objet_b = spr_magnis objet_b_num = 2;  
@@ -32,7 +33,7 @@ if obj_joueur.map draw_sprite(spr_map,0,x_b + 30 , y_b - 100);
 
 	
 //9 box sur l'item selectionné
-scr_9box(spr_9box_red,x_b + 104 + 30*objet_b_num, y_b -146, x_b + 132 + 30*objet_b_num, y_b -117); 
+if objet_b_num != -1 scr_9box(spr_9box_red,x_b + 104 + 30*objet_b_num, y_b -146, x_b + 132 + 30*objet_b_num, y_b -117); 
 
 scr_input();
 

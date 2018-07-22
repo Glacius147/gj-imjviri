@@ -4,6 +4,8 @@ if obj_menu.mode = MENU_MODE.JEU && frames_immobile <= 0
 {
 	scr_input();
 	
+	if 	magnis_actif && !k_objet_d magnis_actif = false;
+	
 	// On ne prend en compte que la direction la plus recente (l autre est dans dir_precedente)
 	switch dir_actuelle
 	{
@@ -108,6 +110,8 @@ if obj_menu.mode = MENU_MODE.JEU && frames_immobile <= 0
 		vsp = 0;
 	}
 
+
+
 	if !attaque
 	{
 		if k_up dir_attaque = DIR.UP;
@@ -118,7 +122,7 @@ if obj_menu.mode = MENU_MODE.JEU && frames_immobile <= 0
 	}
 
 	//déplacement
-	scr_deplacement();
+	if !magnis_actif	scr_deplacement();
 	
 	//animation
 	scr_animation();
