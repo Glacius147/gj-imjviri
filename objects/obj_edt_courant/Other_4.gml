@@ -1,4 +1,4 @@
-/// @description lance save en cas de retour
+/// @description lance save/load en cas de retour
 // You can write your code in this editor
 
 if obj_select.file != ""
@@ -12,11 +12,4 @@ if obj_select.file != ""
 	}
 }
 
-if obj_menu.mode == MENU_MODE.SELECT_SAVENLAUNCH
-{
-	obj_menu.mode = MENU_MODE.JEU
-	room_goto(room_charge)	
-} else 
-{
-	obj_menu.mode = MENU_MODE.CONSTRUCTION
-}
+alarm_set(0,1)
