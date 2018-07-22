@@ -139,7 +139,7 @@ if mode_edition == EDITEUR_MODE.NORMAL
 							current_player = new_item
 						}
 					}
-					else if (x<4096 and current_type != noone and current_type != obj_dragon) or (object_is_ancestor(current_type.object_index,objp_item) or current_type.object_index = obj_bat  ) // par défaut (si il y a un truc à peindre)
+					else if current_type != noone and ((x<4096 and current_type != obj_dragon) or (object_is_ancestor(current_type.object_index,objp_item) or current_type.object_index = obj_bat  ))
 					{
 						if created_room[current_room_x,current_room_y]
 						{
