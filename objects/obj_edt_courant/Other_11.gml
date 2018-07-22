@@ -26,10 +26,11 @@ var destinations;
 origines[0]=noone;
 destinations[0] = noone;
 var count=1;
-var list_obj;
+
 
 var size;
 size = ds_map_size(map);
+nb_obj = size
 for (i = 0; i < size; i++;)
 	{
 	item = map[? "item"+string(i)];
@@ -56,8 +57,8 @@ for (i = 0; i < size; i++;)
 		var new_item = instance_create_layer(item_x,item_y,"Instances",item_type);
 		new_item.origine = item[? "origine"];
 		new_item.destination = item[? "destination"];
-		new_item.origine_id = list_obj[new_item.origine];
-		new_item.destination_id = list_obj[new_item.destination];
+		new_item.origine_id = obj_list[new_item.origine];
+		new_item.destination_id = obj_list[new_item.destination];
 	} else
 	{
 		var new_item = instance_create_layer(item_x,item_y,"Instances",item_type)
@@ -73,7 +74,7 @@ for (i = 0; i < size; i++;)
 	new_item.room_origine_x = item_px;
 	new_item.room_origine_y = item_py;
 	}
-	list_obj[i] = new_item
+	obj_list[i] = new_item
 	if item_type == string(obj_joueur){	
 		current_player = new_item
 	}
