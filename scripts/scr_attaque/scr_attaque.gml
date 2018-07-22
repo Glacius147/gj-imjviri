@@ -13,30 +13,29 @@ switch dir_attaque
 	case DIR.RIGHT :
 	{
 		x_t1 += portee;
-		x_t2 += portee/2;
 		break;
 	}
 	case DIR.LEFT :
 	{
-		x_t1 -= portee;		
-		x_t2 -= portee/2;		
+		x_t1 -= portee;			
 		break;
 	}
 	case DIR.UP :
 	{
 		y_t1 -= portee;
-		y_t2 -= portee/2;
 		break;
 	}
 	case DIR.DOWN :
 	{
 		y_t1 += portee;
-		y_t2 += portee/2;
 		break;
 	}
 }
 
-with instance_position(x_t1,y_t1,objp_enemy)
+mask_t = mask_index;
+mask_index = spr_mask_epee;
+
+with instance_place(x_t1,y_t1,objp_enemy)
 {
 	if !invulnerable
 	{
@@ -48,14 +47,4 @@ with instance_position(x_t1,y_t1,objp_enemy)
 	}
 }
 
-with instance_position(x_t2,y_t2,objp_enemy)
-{
-	if !invulnerable
-	{
-		invulnerable = true;
-		alarm[1] = frames_invulnerable;
-		pv -= other.degats;
-		blink = 6;
-		event_user(0);
-	}
-}
+mask_index = mask_t;
