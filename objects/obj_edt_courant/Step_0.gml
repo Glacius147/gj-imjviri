@@ -1,6 +1,9 @@
 /// @description 
 // You can write your code in this editor
 
+
+nb_obj = ds_list_size(obj_list)
+
 if obj_menu.mode == MENU_MODE.CONSTRUCTION
 {
 c_x = mouse_x
@@ -49,6 +52,7 @@ else  // On clique pour poser l'objet
 		y = current_room_y*176
 		//if !created_room[current_room_x,current_room_y]
 		{
+			nb_obj = ds_list_size(obj_list)
 			ds_list_add(obj_list,instance_create_layer(x,y,"salles",obj_mur_salle));
 			created_room[current_room_x,current_room_y] = true;
 			nb_obj ++;
@@ -93,6 +97,7 @@ else  // On clique pour poser l'objet
 		{
 			ds_list_add(obj_list,instance_create_layer(x,y,"Instances",current_type));
 			
+			nb_obj ++;
 			if current_type == obj_joueur
 			{
 				current_player = obj_list[| nb_obj]
@@ -101,7 +106,6 @@ else  // On clique pour poser l'objet
 				obj_list[| nb_obj].destination = dest;
 				obj_list[| nb_obj].mask_index = spr_bloc;
 			}
-			nb_obj ++;
 		}
 	}
 	
@@ -291,6 +295,7 @@ if  mode_edition = EDITEUR_MODE.ERASER
 				if origine_id == other.item or destination_id == other.item{
 					pos = ds_list_find_index(other.obj_list,id);
 					ds_list_delete(other.obj_list,pos);
+					other.nb_obj--
 					instance_destroy(id);
 				}
 			}
@@ -298,6 +303,7 @@ if  mode_edition = EDITEUR_MODE.ERASER
 			{
 				current_player = noone	
 			}
+			nb_obj--
 			instance_destroy(item)
 		} else if  item != noone and item.object_index == obj_mur_salle
 		{
@@ -306,9 +312,9 @@ if  mode_edition = EDITEUR_MODE.ERASER
 			for(var i = 0; i < nb_obj; i++) 
 			{
 				var c_item = obj_list[| i];
-				if c_item.room_origine_x == current_room_x and c_item.room_origine_y == current_room_y and item.object_index != obj_mur and item.object_index != obj_fantome
+				if c_item.room_origine_x == current_room_x and c_item.room_origine_y == current_room_y and item.object_index != obj_mur_salle and item.object_index != obj_mur and item.object_index != obj_fantome
 				{
-					flag = false	;
+					flag = false;
 					break;
 				}
 			}
@@ -322,10 +328,13 @@ if  mode_edition = EDITEUR_MODE.ERASER
 					{
 						pos = ds_list_find_index(other.obj_list,id);
 						ds_list_delete(other.obj_list,pos);
+						other.nb_obj--
 						instance_destroy(id);
 					}
 				}
 				//et finalement on détruit la salle
+				nb_obj--
+				created_room[current_room_x,current_room_y] = false
 				instance_destroy(item)
 			}	
 		}
@@ -339,6 +348,7 @@ if  mode_edition = EDITEUR_MODE.ERASER
 		{
 			pos = ds_list_find_index(obj_list,item)
 			ds_list_delete(obj_list,pos)
+			nb_obj--
 			instance_destroy(item)
 		}
 	}
