@@ -36,37 +36,45 @@ switch dir_attaque
 	}
 }
 
-mask_t = mask_index;
-mask_index = spr_mask_epee;
 
-with instance_place(x_t1,y_t1,objp_enemy)
+obj_frappe.degats = degats;
+
+obj_frappe.x = x_t1;
+obj_frappe.y = y_t1;
+
+with obj_frappe
 {
-	if !invulnerable
+	with instance_place(x,y,objp_enemy)
 	{
-		invulnerable = true;
-		alarm[1] = frames_invulnerable;
-		pv -= other.degats;
-		blink = 6;
-		event_user(0);
-		audio_sound_pitch(son_epee,random_range(0.8,1.2));
-		audio_play_sound(son_epee,2,0);
+		if !invulnerable
+		{
+			invulnerable = true;
+			alarm[1] = frames_invulnerable;
+			pv -= other.degats;
+			blink = 6;
+			event_user(0);
+			audio_sound_pitch(son_epee,random_range(0.8,1.2));
+			audio_play_sound(son_epee,2,0);
+		}
 	}
 }
 
+obj_frappe.x = x_t2;
+obj_frappe.y = y_t2;
 
-with instance_place(x_t2,y_t2,objp_enemy)
+with obj_frappe
 {
-	if !invulnerable
+	with instance_place(x,y,objp_enemy)
 	{
-		invulnerable = true;
-		alarm[1] = frames_invulnerable;
-		pv -= other.degats;
-		blink = 6;
-		event_user(0);
-		audio_sound_pitch(son_epee,random_range(0.8,1.2));
-		audio_play_sound(son_epee,2,0);
-
+		if !invulnerable
+		{
+			invulnerable = true;
+			alarm[1] = frames_invulnerable;
+			pv -= other.degats;
+			blink = 6;
+			event_user(0);
+			audio_sound_pitch(son_epee,random_range(0.8,1.2));
+			audio_play_sound(son_epee,2,0);
+		}
 	}
 }
-
-mask_index = mask_t;
