@@ -8,4 +8,5 @@ enum MODE_PIC
 	INACTIF
 }
 
+collision = obj_joueur.id
 
