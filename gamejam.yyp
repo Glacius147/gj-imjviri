@@ -119,6 +119,14 @@
             }
         },
         {
+            "Key": "0aeff42c-efaa-42e3-8ee0-b3220c848d29",
+            "Value": {
+                "id": "b665eb18-c921-497b-825b-dc8df6f4cf41",
+                "resourcePath": "sprites\\spr_bloc_interupteur\\spr_bloc_interupteur.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0af4a921-3e54-4705-9c68-48e26526e677",
             "Value": {
                 "id": "b0674428-e23b-4358-a31d-6941f775f646",
@@ -452,6 +460,14 @@
                 "id": "dfaf36df-7960-452d-9131-5a4a5e09c1bb",
                 "resourcePath": "fonts\\font_hub\\font_hub.yy",
                 "resourceType": "GMFont"
+            }
+        },
+        {
+            "Key": "49ecb0ab-5edb-4635-af32-eba4e52e96df",
+            "Value": {
+                "id": "58ee0082-943a-4ad7-9e96-e0778ab9d2fe",
+                "resourcePath": "sprites\\spr_bottes_fer\\spr_bottes_fer.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -940,6 +956,14 @@
                 "id": "4e6629a4-127c-488f-9936-92afa0c54530",
                 "resourcePath": "views\\8f8b9744-05d4-41a6-a062-6f9f89bd020c.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "9009abe1-aa06-4cd7-a753-7586bd5154ec",
+            "Value": {
+                "id": "42ad3629-9e3a-466a-bcdd-1bc75b51ba4d",
+                "resourcePath": "objects\\obj_bottes_fer\\obj_bottes_fer.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1635,6 +1659,14 @@
             "Value": {
                 "id": "fabf93d1-9eb9-4afb-8db2-fe228dd03254",
                 "resourcePath": "objects\\obj_bloc_explosable\\obj_bloc_explosable.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "f0458313-19e8-4bf5-8a16-8c5a3e242387",
+            "Value": {
+                "id": "f8434d09-f163-471e-8e4a-af98a60d148d",
+                "resourcePath": "objects\\obj_bloc_inter\\obj_bloc_inter.yy",
                 "resourceType": "GMObject"
             }
         },
