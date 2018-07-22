@@ -6,8 +6,6 @@ file = obj_select.file
 
 
 
-
-
 nb_obj = ds_list_size(obj_list)
 
 var i_map = ds_map_create();
