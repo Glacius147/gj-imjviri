@@ -22,13 +22,16 @@ var i;
 var j;
 for (i = 0; i < 17; i += 1)
 {
-	if i==16 and j<6
+	for (j = 0; j < 16; j += 1)
+	{
+		if i==16 and j<6
 		{
 			created_room[i , j] = true
 		}else
 		{
 			created_room[i , j] = false
 		}
+	}
 }
 
 
