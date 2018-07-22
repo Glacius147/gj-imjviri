@@ -10,8 +10,8 @@ if room == room_select{
 	{
 		if file_exists("svg_slot"+string(i)+".json")
 		{
-			temps = ini_read_string("save", "save"+string(i), "(inconnu)");
-			menu[i] = "SLOT "+string(i+1)
+			temps = ini_read_string("save", "save"+string(i), "(date inconnue)");
+			menu[i] = "SLOT "+string(i+1)+" : "+temps
 		} else
 		{
 			menu[i] = "SLOT "+string(i+1)+ " (VIDE)"
