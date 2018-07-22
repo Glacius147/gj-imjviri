@@ -751,6 +751,14 @@
             }
         },
         {
+            "Key": "8527ef2b-20e8-4d68-aec2-eee1397e779c",
+            "Value": {
+                "id": "2927166b-2bf2-472e-a8c3-f7e1c585e8d0",
+                "resourcePath": "sprites\\spr_torche\\spr_torche.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "85f6454e-b540-4e5c-9d2d-e2d8efb827b7",
             "Value": {
                 "id": "aa32e7d8-b918-47db-b4d1-1946be71f116",
@@ -1082,7 +1090,7 @@
             "Key": "ac69b450-46a2-45a2-99b2-bacec902c197",
             "Value": {
                 "id": "d2b86026-f46c-4a4f-b469-2e26ee2afd28",
-                "resourcePath": "sprites\\spr_torche\\spr_torche.yy",
+                "resourcePath": "sprites\\spr_flammes\\spr_flammes.yy",
                 "resourceType": "GMSprite"
             }
         },
