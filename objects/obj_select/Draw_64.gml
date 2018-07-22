@@ -3,6 +3,46 @@
 
 if obj_menu.mode == MENU_MODE.SELECT_SAVE or  obj_menu.mode == MENU_MODE.SELECT_LOAD or  obj_menu.mode == MENU_MODE.SELECT_SAVENLAUNCH or obj_menu.mode == MENU_MODE.SELECT_LOAD_EDT
 {
+	
+
+	draw_set_halign(fa_left);
+	draw_set_valign(fa_middle);
+	draw_set_font(font_menu);
+	fee_index += fee_speed
+	for (i=0; i < menu_item; i++)
+	{
+		var offset = 2;
+		var txt = menu[i];
+		if (menu_curseur == i)
+		{
+			draw_sprite_stretched(spr_fee,floor(fee_index),menu_x - 20*offset,menu_y + menu_itemheight * i * 1.5 -18-offset,menu_itemheight,menu_itemheight)
+			//txt = string_insert("> ", txt,0);
+			var col = c_white;
+		}
+		else
+		{
+			var col = c_gray;
+		}
+		
+
+		draw_set_color(c_black);
+		draw_text(menu_x - offset,menu_y + menu_itemheight * i * 1.5 + offset,txt);	
+		draw_text(menu_x - offset,menu_y + menu_itemheight * i * 1.5 - offset,txt);	
+		draw_text(menu_x + offset,menu_y + menu_itemheight * i * 1.5 + offset,txt);	
+		draw_text(menu_x + offset,menu_y + menu_itemheight * i * 1.5 - offset,txt);	
+
+
+		draw_set_color(col);
+		draw_text(menu_x,menu_y + menu_itemheight * i * 1.5,txt);		
+	}	
+}	
+	
+	
+
+
+
+/*
+{
 for (var i = 0; i < 3; ++i) {
     for (var j = 0 ; j < 2; ++j){
 		if !file_exists("svg_slot"+string(i+3*j)+".json")	
@@ -14,3 +54,4 @@ for (var i = 0; i < 3; ++i) {
 	}
 }
 }
+*/
