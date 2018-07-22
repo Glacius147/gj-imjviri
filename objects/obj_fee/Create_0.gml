@@ -1,5 +1,5 @@
 /// @desc lancement de l'alarm
-
+//alarm[3] = 300;
 
 
 mode = MODE_BAT.REPOS;

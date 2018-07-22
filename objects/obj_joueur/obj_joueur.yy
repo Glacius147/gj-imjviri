@@ -304,6 +304,48 @@
             "value": "True",
             "varName": "cryo",
             "varType": 3
+        },
+        {
+            "id": "f121b492-10a7-43ec-aa9e-4bdaa871e99e",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "True",
+            "varName": "bombes_possede",
+            "varType": 3
+        },
+        {
+            "id": "109243ea-b1aa-4988-a7be-a9f3476eb4a0",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "magnetis",
+            "varType": 3
+        },
+        {
+            "id": "5828b23d-e3bd-4218-a5f4-04cc1a4e5674",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "torche",
+            "varType": 3
         }
     ],
     "solid": false,
