@@ -37,4 +37,8 @@ for (i = 0; i < 16; i += 1)
 
 nb_obj = 0
 
+//Message d'erreur à afficher & indicateur de progression de la fenetre
+error_message = ""
+percent_error = 0
+
 
