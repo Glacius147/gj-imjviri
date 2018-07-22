@@ -5,7 +5,7 @@
     "name": "obj_bloc_piques",
     "eventList": [
         {
-            "id": "d29d2dc3-f06d-44d0-93a4-9af297f95376",
+            "id": "9527170f-a236-47e2-9b5d-8c6d14b451cf",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
@@ -15,13 +15,33 @@
             "m_owner": "65263acb-d8e2-4653-9696-a1c4f9583a71"
         },
         {
-            "id": "6a7510ae-e849-475b-9863-8a96b9cc6079",
+            "id": "4d6f4ce8-9351-488e-9681-2fac746586f8",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 1,
+            "enumb": 0,
             "eventtype": 3,
+            "m_owner": "65263acb-d8e2-4653-9696-a1c4f9583a71"
+        },
+        {
+            "id": "94d36c82-da81-4836-a84a-67c58a019e0b",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "65263acb-d8e2-4653-9696-a1c4f9583a71"
+        },
+        {
+            "id": "268446a5-2660-466c-8a56-7651f1e1c113",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 11,
+            "eventtype": 7,
             "m_owner": "65263acb-d8e2-4653-9696-a1c4f9583a71"
         }
     ],
@@ -141,6 +161,34 @@
             "resourceFilter": 1023,
             "value": "1",
             "varName": "degats",
+            "varType": 0
+        },
+        {
+            "id": "54ad3e59-804e-4e9b-a57c-509a39211cbe",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "2",
+            "varName": "vitesse_marche",
+            "varType": 0
+        },
+        {
+            "id": "f5f92bc3-66a0-4699-b6bd-4736a1f423ba",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "1",
+            "varName": "vitesse_retour",
             "varType": 0
         }
     ],
