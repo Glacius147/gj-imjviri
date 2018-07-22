@@ -8,5 +8,4 @@ enum MODE_PIC
 	INACTIF
 }
 
-mode = MODE_PIC.REPOS
 
