@@ -16,208 +16,207 @@ current_room_y = floor(c_y/176)
 
 //Mode d'édition normal
 if mode_edition == EDITEUR_MODE.NORMAL
-{
-if mouse_check_button_released(mb_left)
-{
-if c_x>(4096+5*16) and c_y>1024 // on est dans la barre de selection
-{
-	item = instance_position(c_x,c_y,obj_master)
-	if item != noone
 	{
+	if mouse_check_button_released(mb_left)
+	{
+		if c_x>(4096+5*16) and c_y>1024 // on est dans la barre de selection
+		{
+			item = instance_position(c_x,c_y,obj_master)
+			if item != noone
+			{
 		
-		sprite_index = item.sprite_index
-		current_type = item.object_index
-		if current_type == obj_escalier
-		{
-			dest = item.destination	
-		}
-	}
-}
-else if c_x>4096 and c_y>1024 // On est dans la minimap
-{
-	//Position de la souris dans la caméra de l'interface
-	c_y = mouse_y - camera_get_view_y(view_camera[1]) - 6
-	c_x = mouse_x - camera_get_view_x(view_camera[1]) - 15
-	col = floor(c_x/4)
-	row = floor(c_y/3)
-	camera_set_view_pos(view_camera[0],col*256 ,row*176);
-	
-}
-else  // On clique pour poser l'objet
-{
-	//Si la salle est vide on la crée
-	if c_x<=4096 and !created_room[current_room_x,current_room_y]//current_type == obj_mur_salle
-	{
-		x = current_room_x*256
-		y = current_room_y*176
-		//if !created_room[current_room_x,current_room_y]
-		{
-			nb_obj = ds_list_size(obj_list)
-			ds_list_add(obj_list,instance_create_layer(x,y,"salles",obj_mur_salle));
-			created_room[current_room_x,current_room_y] = true;
-			nb_obj ++;
-			//Ajout de 4 murs
-			ds_list_add(obj_list,instance_create_layer(x+3*8,y+11*8,"Instances",obj_mur));
-			obj_list[| nb_obj].image_index = 1;
-			nb_obj ++;
-			ds_list_add(obj_list,instance_create_layer(x+29*8,y+11*8,"Instances",obj_mur));
-			obj_list[| nb_obj].image_index = 3;
-			nb_obj ++;
-			ds_list_add(obj_list,instance_create_layer(x+16*8,y+3*8,"Instances",obj_mur));
-			obj_list[| nb_obj].image_index = 0;
-			nb_obj ++;
-			ds_list_add(obj_list,instance_create_layer(x+16*8,y+19*8,"Instances",obj_mur));
-			obj_list[| nb_obj].image_index = 2;
-			nb_obj ++;
-			ds_list_add(obj_list,instance_create_layer(x+8,y+8,"Instances",obj_fantome));
-			nb_obj ++;
-			
-		}
-	} else if current_type == obj_joueur and current_player !=noone
-	{
-		x = round((mouse_x-8) / 16)*16+8;
-		y = round((mouse_y-8) / 16)*16+8;
-		item = instance_position(x,y,obj_master);
-		if item == noone and created_room[current_room_x,current_room_y]
-		{
-			new_item = instance_create_layer(x,y,"Instances",current_type);
-			old_position = ds_list_find_index(obj_list,current_player)
-			ds_list_replace(obj_list,old_position,new_item)
-			//obj_list = scr_array_replace(obj_list,current_player,new_item)
-			instance_destroy(current_player)
-			current_player = new_item
-		}
-	}
-	else if (x<4096 and current_type != noone) or (object_is_ancestor(current_type.object_index,objp_item) or current_type.object_index = obj_bat  ) // par défaut (si il y a un truc à peindre)
-	{
-		x = round((mouse_x-8) / 16)*16+8;
-		y = round((mouse_y-8) / 16)*16+8;
-		item = instance_position(x,y,obj_master);
-		if item == noone and created_room[current_room_x,current_room_y]
-		{
-			ds_list_add(obj_list,instance_create_layer(x,y,"Instances",current_type));
-			
-			if current_type == obj_joueur
-			{
-				current_player = obj_list[| nb_obj]
-			} else if current_type == obj_escalier
-			{
-				obj_list[| nb_obj].destination = dest;
-				obj_list[| nb_obj].mask_index = spr_bloc;
-			}
-			nb_obj ++;
-		} //Si on clic un escalier
-		else if item.object_index == obj_escalier
-		{
-			with obj_escalier_bis
-			{
-				if destination == other.item.destination{ //on cherche celui avec le meme id
-					camera_set_view_pos(view_camera[0],room_origine_x*256 ,176*room_origine_y);
-				}
-			}
-		} //Si on clic un escalier retour
-		else if item.object_index == obj_escalier_bis
-		{
-			with obj_escalier
-			{
-				if x<4096 and destination == other.item.destination{ //on cherche celui avec le meme id
-					camera_set_view_pos(view_camera[0],room_origine_x*256 ,176*room_origine_y);
+				sprite_index = item.sprite_index
+				current_type = item.object_index
+				if current_type == obj_escalier
+				{
+					dest = item.destination	
 				}
 			}
 		}
+		else if c_x>4096 and c_y>1024 // On est dans la minimap
+		{
+			//Position de la souris dans la caméra de l'interface
+			c_y = mouse_y - camera_get_view_y(view_camera[1]) - 6
+			c_x = mouse_x - camera_get_view_x(view_camera[1]) - 15
+			col = floor(c_x/4)
+			row = floor(c_y/3)
+			camera_set_view_pos(view_camera[0],col*256 ,row*176);
+	
+		}
+		else  // On clique pour poser l'objet
+		{
+			//Si la salle est vide on la crée
+			if c_x<=4096 and !created_room[current_room_x,current_room_y]//current_type == obj_mur_salle
+			{
+				x = current_room_x*256
+				y = current_room_y*176
+				nb_obj = ds_list_size(obj_list)
+				ds_list_add(obj_list,instance_create_layer(x,y,"salles",obj_mur_salle));
+				created_room[current_room_x,current_room_y] = true;
+				nb_obj ++;
+				//Ajout de 4 murs
+				ds_list_add(obj_list,instance_create_layer(x+3*8,y+11*8,"Instances",obj_mur));
+				obj_list[| nb_obj].image_index = 1;
+				nb_obj ++;
+				ds_list_add(obj_list,instance_create_layer(x+29*8,y+11*8,"Instances",obj_mur));
+				obj_list[| nb_obj].image_index = 3;
+				nb_obj ++;
+				ds_list_add(obj_list,instance_create_layer(x+16*8,y+3*8,"Instances",obj_mur));
+				obj_list[| nb_obj].image_index = 0;
+				nb_obj ++;
+				ds_list_add(obj_list,instance_create_layer(x+16*8,y+19*8,"Instances",obj_mur));
+				obj_list[| nb_obj].image_index = 2;
+				nb_obj ++;
+				ds_list_add(obj_list,instance_create_layer(x+8,y+8,"Instances",obj_fantome));
+				nb_obj ++;
+			
+			} else
+			{
+				x = round((mouse_x-8) / 16)*16+8;
+				y = round((mouse_y-8) / 16)*16+8;
+				item = instance_position(x,y,obj_master);
+				if item != noone
+				{
+					if item.object_index == obj_escalier
+					{
+						with obj_escalier_bis
+						{
+							if destination == other.item.destination{ //on cherche celui avec le meme id
+								camera_set_view_pos(view_camera[0],room_origine_x*256 ,176*room_origine_y);
+							}
+						}
+					} //Si on clic un escalier retour
+					else if item.object_index == obj_escalier_bis
+					{
+						with obj_escalier
+						{
+							if x<4096 and destination == other.item.destination{ //on cherche celui avec le meme id
+								camera_set_view_pos(view_camera[0],room_origine_x*256 ,176*room_origine_y);
+							}
+						}
+					}
+				}
+				else // pas de conflit d'objet
+				{
+					if current_type == obj_joueur and current_player !=noone
+					{
+						if created_room[current_room_x,current_room_y]
+						{
+							new_item = instance_create_layer(x,y,"Instances",current_type);
+							old_position = ds_list_find_index(obj_list,current_player)
+							ds_list_replace(obj_list,old_position,new_item)
+							//obj_list = scr_array_replace(obj_list,current_player,new_item)
+							instance_destroy(current_player)
+							current_player = new_item
+						}
+					}
+					else if (x<4096 and current_type != noone) or (object_is_ancestor(current_type.object_index,objp_item) or current_type.object_index = obj_bat  ) // par défaut (si il y a un truc à peindre)
+					{
+						if created_room[current_room_x,current_room_y]
+						{
+							ds_list_add(obj_list,instance_create_layer(x,y,"Instances",current_type));
+			
+							if current_type == obj_joueur
+							{
+								current_player = obj_list[| nb_obj]
+							} else if current_type == obj_escalier
+							{
+								obj_list[| nb_obj].destination = dest;
+								obj_list[| nb_obj].mask_index = spr_bloc;
+							}
+							nb_obj ++;
+						}
+					} 
+				}
+			}	
+		}
 	}
-	
-	
-	
-}
-}
 
-if mouse_check_button_released(mb_right)
-{
-	x = round((mouse_x-8) / 16)*16+8;
-	y = round((mouse_y-8) / 16)*16+8;
-	item = instance_position(mouse_x,mouse_y,obj_master);
-	if item != noone
+
+	if mouse_check_button_released(mb_right)
 	{
-	test = item.object_index
-	test2 = obj_mur
-	test3 = obj_porte
-	nextroom = scr_is_room_adj(x,y)
-	has_nextroom = nextroom[0];
-	var flag_cycle = false
-	var flag_change_mirror = true
-	if has_nextroom and item.object_index == obj_mur
-	{
-		flag_cycle = true
-		var next_type = obj_porte
-	} else if has_nextroom and item.object_index == obj_porte
-	{
-		flag_cycle = true
-		flag_change_mirror = false
-		var next_type = obj_porte_bloquee
-	} else if has_nextroom and item.object_index == obj_porte_bloquee
-	{
-		flag_cycle = true
-		var next_type = obj_porte_fermee
-	} else if has_nextroom and item.object_index == obj_porte_fermee
-	{
-		flag_cycle = true
-		var next_type = obj_mur_explosable
-	} else if has_nextroom and item.object_index == obj_mur_explosable
-	{
-		flag_cycle = true
-		var next_type = obj_mur
-	} 
-	if flag_cycle
-	{
+		x = round((mouse_x-8) / 16)*16+8;
+		y = round((mouse_y-8) / 16)*16+8;
+		item = instance_position(mouse_x,mouse_y,obj_master);
+		if item != noone
+		{
+			test = item.object_index
+			test2 = obj_mur
+			test3 = obj_porte
+			nextroom = scr_is_room_adj(x,y)
+			has_nextroom = nextroom[0];
+			var flag_cycle = false
+			var flag_change_mirror = true
+			if has_nextroom and item.object_index == obj_mur
+			{
+				flag_cycle = true
+				var next_type = obj_porte
+			} else if has_nextroom and item.object_index == obj_porte
+			{
+				flag_cycle = true
+				flag_change_mirror = false
+				var next_type = obj_porte_bloquee
+			} else if has_nextroom and item.object_index == obj_porte_bloquee
+			{
+				flag_cycle = true
+				var next_type = obj_porte_fermee
+			} else if has_nextroom and item.object_index == obj_porte_fermee
+			{
+				flag_cycle = true
+				var next_type = obj_mur_explosable
+			} else if has_nextroom and item.object_index == obj_mur_explosable
+			{
+				flag_cycle = true
+				var next_type = obj_mur
+			} 
+			if flag_cycle
+			{
 	
-		new_x = item.x
-		new_y = item.y
-		new_item =  instance_create_layer(new_x,new_y,"Instances",next_type);
-		if next_type == obj_mur_explosable
-		{
-			new_item.image_index = round(item.image_angle/90)
-		} else if next_type == obj_mur
-		{
-			new_item.image_index = item.image_index	
-		} else if next_type == obj_porte
-			new_item.image_angle = 90*item.image_index
-		else {
-			new_item.image_angle = item.image_angle
-		}
-		new_item.mask_index = spr_mur
-		old_position = ds_list_find_index(obj_list,item)
-		ds_list_replace(obj_list,old_position,new_item)
-		//obj_list = scr_array_replace(obj_list,item,new_item)
-		instance_destroy(item)
-		if flag_change_mirror
-		{
-		item = nextroom[1]
-		new_x = item.x
-		new_y = item.y
-		new_item =  instance_create_layer(new_x,new_y,"Instances",next_type);
-		if next_type == obj_mur_explosable
-		{
-			new_item.image_index = round(item.image_angle/90)
-		} else if next_type == obj_mur
-		{
-			new_item.image_index = item.image_index	
-		} else if next_type == obj_porte
-			new_item.image_angle = 90*item.image_index
-		else {
-			new_item.image_angle = item.image_angle
-		}
-		new_item.mask_index = spr_mur
-		old_position = ds_list_find_index(obj_list,item)
-		ds_list_replace(obj_list,old_position,new_item)
-		//obj_list = scr_array_replace(obj_list,item,new_item)
-		instance_destroy(item)
+				new_x = item.x
+				new_y = item.y
+				new_item =  instance_create_layer(new_x,new_y,"Instances",next_type);
+				if next_type == obj_mur_explosable
+				{
+					new_item.image_index = round(item.image_angle/90)
+				} else if next_type == obj_mur
+				{
+					new_item.image_index = item.image_index	
+				} else if next_type == obj_porte
+					new_item.image_angle = 90*item.image_index
+				else {
+					new_item.image_angle = item.image_angle
+				}
+				new_item.mask_index = spr_mur
+				old_position = ds_list_find_index(obj_list,item)
+				ds_list_replace(obj_list,old_position,new_item)
+				//obj_list = scr_array_replace(obj_list,item,new_item)
+				instance_destroy(item)
+				if flag_change_mirror
+				{
+					item = nextroom[1]
+					new_x = item.x
+					new_y = item.y
+					new_item =  instance_create_layer(new_x,new_y,"Instances",next_type);
+					if next_type == obj_mur_explosable
+					{
+						new_item.image_index = round(item.image_angle/90)
+					} else if next_type == obj_mur
+					{
+						new_item.image_index = item.image_index	
+					} else if next_type == obj_porte
+						new_item.image_angle = 90*item.image_index
+					else {
+						new_item.image_angle = item.image_angle
+					}
+					new_item.mask_index = spr_mur
+					old_position = ds_list_find_index(obj_list,item)
+					ds_list_replace(obj_list,old_position,new_item)
+					//obj_list = scr_array_replace(obj_list,item,new_item)
+					instance_destroy(item)
+				}
+			}
 		}
 	}
-	}
-	
-	
-}
 }
 
 
