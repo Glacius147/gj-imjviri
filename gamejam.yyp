@@ -199,6 +199,14 @@
             }
         },
         {
+            "Key": "25378316-f2f7-4390-bea9-aa4491aa1e5c",
+            "Value": {
+                "id": "f8fefab7-5b88-4a65-b414-591f5acfa28b",
+                "resourcePath": "objects\\obj_bouton_test\\obj_bouton_test.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "25ec1fef-06c8-40b5-ae4b-6490bbb25ff1",
             "Value": {
                 "id": "c77b7b8f-a422-445f-afee-a274e2113534",
@@ -927,6 +935,14 @@
             }
         },
         {
+            "Key": "a7f19bf3-5274-43d7-8f13-e97c3a54400c",
+            "Value": {
+                "id": "83dd1502-2931-4e2a-a406-121fc5684e42",
+                "resourcePath": "objects\\obj_bouton_load\\obj_bouton_load.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "a93ff6bf-99f5-44a8-8cec-02c4f83077e2",
             "Value": {
                 "id": "f2560696-98b4-4aa2-8180-024a8c6a407a",
@@ -1143,6 +1159,14 @@
             }
         },
         {
+            "Key": "d718c795-9b9a-4314-950a-7cd20f228879",
+            "Value": {
+                "id": "86fd6bc4-391c-4895-ad4b-2bec61900af0",
+                "resourcePath": "objects\\obj_bouton_save\\obj_bouton_save.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "d7d06761-1c61-468d-ad0b-6f157274e1dc",
             "Value": {
                 "id": "90fb341e-2932-47cd-9054-7d5d8f7b6c3f",
@@ -1268,6 +1292,14 @@
                 "id": "b2f0cba2-c2fb-4891-a1e6-d8a6dd1b3e88",
                 "resourcePath": "objects\\obj_cryo_loot\\obj_cryo_loot.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "e6fd8dd6-bd80-433d-8aec-a50a0ebde9ba",
+            "Value": {
+                "id": "350dc24a-10ec-4588-81c6-1f97608416d9",
+                "resourcePath": "views\\e6fd8dd6-bd80-433d-8aec-a50a0ebde9ba.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
