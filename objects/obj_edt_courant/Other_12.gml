@@ -9,7 +9,12 @@ room_goto(room_select)
 
 }
 else {
-	obj_menu.mode = MENU_MODE.PAUSE_EDT
 	error_message = "IL FAUT PLACER LE HERO !\n\n\n (RETOUR : ENTREE)"
+	message_halign = fa_center
+	message_valign = fa_center
+	message_font = font_menu
+	message_x = 768/2
+	message_y = 360
+	obj_menu.mode = MENU_MODE.PAUSE_EDT
 	
 }
