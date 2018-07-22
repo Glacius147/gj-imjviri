@@ -599,6 +599,14 @@
             }
         },
         {
+            "Key": "89872af3-0769-4a9e-8144-c4660d3ce33c",
+            "Value": {
+                "id": "10c87f4b-8d5f-4e89-843e-dc9f87a1fec3",
+                "resourcePath": "objects\\obj_map\\obj_map.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "899e50c2-9161-4faf-9a6d-ea916a487e15",
             "Value": {
                 "id": "6fa1fb7b-2d39-4143-8fb2-a801b82c3cee",
@@ -1012,6 +1020,14 @@
                 "id": "19509701-7cdd-457c-b2d8-49f24636187e",
                 "resourcePath": "objects\\obj_mur_sousterrains2\\obj_mur_sousterrains2.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "d9a4fda9-1f2b-401a-ad82-be0117930d1c",
+            "Value": {
+                "id": "23bab7a5-8922-4140-aa0d-4a1bb5389972",
+                "resourcePath": "sprites\\spr_map\\spr_map.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
