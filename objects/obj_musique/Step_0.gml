@@ -12,7 +12,12 @@ if obj_menu.mode != mode
 				
 			if t_salle = TYPE_SALLE.SOUS_TERRE	scr_musique_change(son_musique_under);
 			break;	
-		}	
+		}
+		case MENU_MODE.CONSTRUCTION :
+		{
+			scr_musique_change(son_musique_under)
+			break;
+		}
 	}
 	
 }
