@@ -471,6 +471,14 @@
             }
         },
         {
+            "Key": "65263acb-d8e2-4653-9696-a1c4f9583a71",
+            "Value": {
+                "id": "5239cdee-8e4a-4114-8115-a9152855839d",
+                "resourcePath": "objects\\obj_bloc_piques\\obj_bloc_piques.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "66948f79-49cc-485c-a351-c5a5576d8c8b",
             "Value": {
                 "id": "5d98d07b-9da8-448d-aa9d-9e946046a52b",
@@ -1063,6 +1071,14 @@
             }
         },
         {
+            "Key": "c07923b7-f615-42e6-85de-8935dd2d2381",
+            "Value": {
+                "id": "d336ab14-3280-458e-acd8-fb8af68082fa",
+                "resourcePath": "sprites\\spr_bloc_statue\\spr_bloc_statue.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "c28509b3-2202-4123-b8c1-8b96f5ec462a",
             "Value": {
                 "id": "ce9e81f6-1e6c-4f20-b1f2-af581b89ab12",
@@ -1167,6 +1183,14 @@
             }
         },
         {
+            "Key": "d421c7e5-f99f-4852-82bf-ccae932a97de",
+            "Value": {
+                "id": "c6937492-1442-4e86-ab3e-2e647604e1bf",
+                "resourcePath": "objects\\obj_bloc_statue\\obj_bloc_statue.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "d49e5046-7044-40f6-afd0-7f2327f537f4",
             "Value": {
                 "id": "f757f602-4eeb-4afc-ba2e-3748675fe7ee",
@@ -1220,6 +1244,14 @@
                 "id": "19509701-7cdd-457c-b2d8-49f24636187e",
                 "resourcePath": "objects\\obj_mur_sousterrains2\\obj_mur_sousterrains2.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "d8a7b977-4945-4ca8-8a89-43816c7479ec",
+            "Value": {
+                "id": "8bcb3e83-d333-469f-bd5c-54a6ddefb2ff",
+                "resourcePath": "sprites\\spr_joueur_attaque_master_sword\\spr_joueur_attaque_master_sword.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
