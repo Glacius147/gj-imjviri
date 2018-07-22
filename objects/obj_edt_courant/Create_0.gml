@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description init de l'éditeur
 // You can write your code in this editor
 enum EDITEUR_MODE{
 	NORMAL,
@@ -8,8 +8,8 @@ enum EDITEUR_MODE{
 
 
 
-sprite_index = -1
-current_type = noone
+sprite_index = spr_joueur_down
+current_type = obj_joueur
 
 
 current_player = noone
@@ -36,6 +36,7 @@ for (i = 0; i < 16; i += 1)
 }
 
 nb_obj = 0
+obj_list = noone;
 
 //Message d'erreur à afficher & indicateur de progression de la fenetre
 error_message = ""

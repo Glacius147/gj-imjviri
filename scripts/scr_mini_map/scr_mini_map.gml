@@ -2,7 +2,7 @@
 //mini map
 
 	
-	draw_rectangle(x_b + 6,y_b + 6,x_b + 75,y_b + 59,false);
+	//draw_rectangle(x_b + 6,y_b + 6,x_b + 75,y_b + 59,false);
 	
 	draw_set_color(c_black);
 

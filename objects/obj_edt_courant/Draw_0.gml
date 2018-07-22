@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description affiche pinceau/erreurs
 // You can write your code in this editor
 
 if view_current == 0 and obj_menu.mode == MENU_MODE.CONSTRUCTION

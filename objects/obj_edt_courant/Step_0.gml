@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description 
 // You can write your code in this editor
 
 if obj_menu.mode == MENU_MODE.CONSTRUCTION
@@ -42,14 +42,14 @@ else if c_x>4096 // On est dans la minimap
 }
 else // On clique pour poser l'objet
 {
-	//Détermination du type d'objet
-	if current_type == obj_mur_salle
+	//Si la salle est vide on la crée
+	if !created_room[current_room_x,current_room_y]//current_type == obj_mur_salle
 	{
 		x = current_room_x*256
 		y = current_room_y*176
-		if !created_room[current_room_x,current_room_y]
+		//if !created_room[current_room_x,current_room_y]
 		{
-			obj_list[nb_obj] = instance_create_layer(x,y,"salles",current_type);
+			obj_list[nb_obj] = instance_create_layer(x,y,"salles",obj_mur_salle);
 			created_room[current_room_x,current_room_y] = true;
 			nb_obj ++;
 			//Ajout de 4 murs
