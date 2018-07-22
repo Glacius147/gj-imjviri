@@ -9,7 +9,8 @@
         "a7f19bf3-5274-43d7-8f13-e97c3a54400c",
         "25378316-f2f7-4390-bea9-aa4491aa1e5c",
         "8a6ec309-7676-4877-8ac9-5db717a0acd1",
-        "934a5913-80bc-400f-8990-4ba32eb61ab0"
+        "934a5913-80bc-400f-8990-4ba32eb61ab0",
+        "6ee9f329-31f5-4bfb-992b-93fdf8b70597"
     ],
     "filterType": "GMObject",
     "folderName": "interface_edt",

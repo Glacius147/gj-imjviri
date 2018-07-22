@@ -53,7 +53,7 @@ for (i = 0; i < 16; i += 1)
 		draw_set_color(c_black);
 		draw_set_halign(fa_center);
 		draw_set_valign(fa_middle);
-		draw_set_font(font_hub);
+		draw_set_font(font_menu);
 		draw_text(768/2,360,error_message)	
 	}
 	

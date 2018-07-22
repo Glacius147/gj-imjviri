@@ -687,6 +687,14 @@
             }
         },
         {
+            "Key": "6ee9f329-31f5-4bfb-992b-93fdf8b70597",
+            "Value": {
+                "id": "caf16377-1dd1-46ad-8072-877059ee2a18",
+                "resourcePath": "objects\\obj_bouton_aide\\obj_bouton_aide.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "6faaa6d5-b7c1-4bc3-abd8-5119347fe6de",
             "Value": {
                 "id": "2726ca73-c51c-4a83-9cd1-e1f3cd694086",
@@ -1651,6 +1659,14 @@
             "Value": {
                 "id": "2ace9b1a-4344-4344-9415-dd70bda3b7bf",
                 "resourcePath": "sprites\\spr_bat_right\\spr_bat_right.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "e3355a4b-5d02-45e1-852c-d7dc2a6e79e3",
+            "Value": {
+                "id": "88b8591b-b8b1-41e9-b004-6f10aba788fa",
+                "resourcePath": "sprites\\spr_aide\\spr_aide.yy",
                 "resourceType": "GMSprite"
             }
         },
