@@ -10,6 +10,8 @@ switch(mode_edition)
 {
 	case EDITEUR_MODE.ERASER:
 		mode_edition = EDITEUR_MODE.NORMAL
+		sprite_index = -1;
+		current_type= noone;
 		break;
 	case EDITEUR_MODE.ERASER_DEP:
 		mode_edition = EDITEUR_MODE.DEPENDANCE_1
@@ -31,8 +33,8 @@ switch(mode_edition)
 		break;
 	case EDITEUR_MODE.NORMAL:
 		mode_edition = EDITEUR_MODE.ERASER
-		sprite_index = -1
-		current_type = noone
+		sprite_index = spr_eraser;
+		current_type = noone;
 		break;
 	case EDITEUR_MODE.DEPENDANCE_1:
 	case EDITEUR_MODE.DEPENDANCE_2://au cas ou mais normalement useless
@@ -45,7 +47,7 @@ switch(mode_edition)
 		{
 			image_alpha = 1
 		}
-		sprite_index = -1
+		sprite_index = spr_eraser
 		current_type = noone
 		break;
 	
