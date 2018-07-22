@@ -400,20 +400,6 @@
             "varType": 0
         },
         {
-            "id": "a6f4603b-7548-45fb-b012-c47e7d490960",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0",
-            "varName": "torche_active",
-            "varType": 3
-        },
-        {
             "id": "8a9e0a20-4e07-4f12-a469-5b53ac630fe8",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
