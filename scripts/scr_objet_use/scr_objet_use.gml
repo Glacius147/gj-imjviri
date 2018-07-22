@@ -12,22 +12,22 @@ switch dir_attaque
 {
 	case DIR.RIGHT :
 	{
-		x_t1 += portee;
+		x_t1 += 16;
 		break;
 	}
 	case DIR.LEFT :
 	{
-		x_t1 -= portee;			
+		x_t1 -= 16;			
 		break;
 	}
 	case DIR.UP :
 	{
-		y_t1 -= portee;
+		y_t1 -= 16;
 		break;
 	}
 	case DIR.DOWN :
 	{
-		y_t1 += portee;
+		y_t1 += 16;
 		break;
 	}
 }
