@@ -46,8 +46,18 @@ if mode = MENU_MODE.JEU || mode = MENU_MODE.UP || mode = MENU_MODE.DOWN || mode 
 		if pv >= i im_coeur = 0;
 		if pv = i - 0.5 im_coeur = 1;
 		if pv < i - 0.5 im_coeur = 2;
-		draw_sprite(spr_coeur,im_coeur,x_b + 194 + 13*(i-1),y_b + 18);
+		draw_sprite(spr_coeur,im_coeur,x_b + 190 + 13*(i-1),y_b + 18);
 	}
+	
+	for (i = 6; i <= min(pv_max,10); i++)
+	{
+		if pv >= i im_coeur = 0;
+		if pv = i - 0.5 im_coeur = 1;
+		if pv < i - 0.5 im_coeur = 2;
+		draw_sprite(spr_coeur,im_coeur,x_b + 190 + 13*(i-1),y_b + 3);
+	}	
+	
+	
 	
 	// placement des clefs et des bombes
 	draw_sprite(spr_clef,0,x_b + 90,y_b + 20);

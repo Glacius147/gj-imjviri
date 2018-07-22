@@ -151,6 +151,14 @@
             }
         },
         {
+            "Key": "1ff3c85a-62c2-4b50-b211-2255baef5d75",
+            "Value": {
+                "id": "e855a06d-8ea5-4322-9bd4-b043015fc7c2",
+                "resourcePath": "objects\\obj_coeur_cont\\obj_coeur_cont.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "20adcd43-7739-4d97-9c29-d00b702244c7",
             "Value": {
                 "id": "e325f43d-b957-46b5-a6f1-f315741f0528",
