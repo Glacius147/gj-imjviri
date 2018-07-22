@@ -1,2 +1,3 @@
 /// @desc  degats !
-event_user(1);
+if collision = obj_joueur.id event_user(1);
+
