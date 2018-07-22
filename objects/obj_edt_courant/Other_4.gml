@@ -12,7 +12,7 @@ if obj_select.file != ""
 	}
 }
 
-if obj_menu.mode = MENU_MODE.SELECT_SAVENLAUNCH
+if obj_menu.mode == MENU_MODE.SELECT_SAVENLAUNCH
 {
 	obj_menu.mode = MENU_MODE.JEU
 	room_goto(room_charge)	

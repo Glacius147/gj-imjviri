@@ -9,7 +9,7 @@ room_goto(room_select)
 
 }
 else {
-	obj_menu.mode = MENU_MODE.PAUSE
+	obj_menu.mode = MENU_MODE.PAUSE_EDT
 	error_message = "Il faut placer le héro !"
 	
 }
