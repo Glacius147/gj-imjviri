@@ -1,7 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-
+if obj_menu.mode == MENU_MODE.CONSTRUCTION
+{
 c_x = mouse_x
 c_y = mouse_y
 
@@ -266,5 +267,18 @@ if mode_edition = EDITEUR_MODE.DEPENDANCE_2{
 		}
 		
 	}
+	
+}
+
+} else if obj_menu.mode == MENU_MODE.PAUSE
+{
+	scr_input()
+	if k_start
+	{
+		obj_menu.mode = MENU_MODE.CONSTRUCTION
+	} else{
+		percent_error = min(percent_error+0.02,1)	
+	}
+	
 	
 }

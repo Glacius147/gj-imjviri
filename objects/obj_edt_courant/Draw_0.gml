@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if view_current == 0
+if view_current == 0 and obj_menu.mode == MENU_MODE.CONSTRUCTION
 {
 if mode_edition = EDITEUR_MODE.NORMAL{
 	
