@@ -28,7 +28,7 @@ if mode = MODE_PIC.RETOUR
 		if place_meeting(x+hsp,y,obj_joueur) event_user(1);
 		hsp = scr_approche(hsp,0,1);
 	}
-	x = scr_approche(x,xstart,hsp);
+	x = scr_approche(x,xstart,abs(hsp));
 	
 	//deplacement vertical
 	while (place_meeting(x,y+vsp,obj_master) && vsp != 0)
@@ -36,13 +36,11 @@ if mode = MODE_PIC.RETOUR
 		if place_meeting(x,y+vsp,obj_joueur) event_user(1);
 		vsp = scr_approche(vsp,0,1);
 	}
-	y = scr_approche(y,ystart,vsp);
+	y = scr_approche(y,ystart,abs(vsp));
 	
-	if vsp == 0 && hsp == 0 
-	{
-		vsp = vsp_base/2;
-		hsp = hsp_base/2;
-	}
+		vsp = - vsp_base/2;
+		hsp = - hsp_base/2;
+
 	if x = xstart && y = ystart mode = MODE_PIC.REPOS
 }
 
@@ -68,8 +66,8 @@ if mode = MODE_PIC.CHARGE
 	if vsp == 0 && hsp == 0 
 	{
 		mode = MODE_PIC.RETOUR
-		vsp = vsp_base/2;
-		hsp = hsp_base/2;
+		vsp = - vsp_base/2;
+		hsp = - hsp_base/2;
 	}
 }
 
