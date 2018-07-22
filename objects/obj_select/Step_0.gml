@@ -30,9 +30,9 @@ if obj_menu.mode == MENU_MODE.SELECT_SAVE or  obj_menu.mode == MENU_MODE.SELECT_
 		if !k_down && !k_up 			touche_enfoncee = false;
 		
 		if mouse_check_button_released(mb_left){
-			if mouse_x <350 and mouse_x > 176 and mouse_y>176 and mouse_y<176+9.5*menu_itemheight
+			if mouse_x <350 and mouse_x > 176 and mouse_y>176-2-menu_itemheight*.75 and mouse_y<176+9.5*menu_itemheight
 			{
-				menu_curseur = round((mouse_y-176)/(1.5*menu_itemheight))
+				menu_curseur = floor((mouse_y-176+2+.75*menu_itemheight)/(1.5*menu_itemheight))
 				k_start = true	
 			}
 		}

@@ -51,6 +51,7 @@ for (i = 0; i < size; i++;)
 		var new_item = instance_create_layer(item_x,item_y,"salles",item_type)
 		salle_x = round(item_x/256)
 		salle_y = round(item_y/176)
+		obj_menu.t_deco = item_sprite;
 		obj_menu.created_room[salle_x,salle_y] = true
 	} else if object_is_ancestor(item_type, objp_objet_mobil)
 	{
@@ -81,7 +82,7 @@ for (i = 0; i < size; i++;)
 }
 
 for (var i = 1; i < array_length_1d(origines); ++i) {
-    list_obj[origines[i]].objets_dependants[array_length_1d(list_obj[origines[i]])] = list_obj[destinations[i]]
+    list_obj[origines[i]].objets_dependants[array_length_1d(list_obj[origines[i]].objets_dependants)] = list_obj[destinations[i]]
 	list_obj[destinations[i]].actif = false;
 }
 
