@@ -4,7 +4,36 @@
     "mvc": "1.0",
     "name": "obj_bloc_statue",
     "eventList": [
-        
+        {
+            "id": "4e2fe924-24b8-4319-9761-8c5e518a2123",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 23,
+            "eventtype": 7,
+            "m_owner": "d421c7e5-f99f-4852-82bf-ccae932a97de"
+        },
+        {
+            "id": "f0fd988b-d6a0-4d57-b2c9-239827cc2065",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 2,
+            "eventtype": 3,
+            "m_owner": "d421c7e5-f99f-4852-82bf-ccae932a97de"
+        },
+        {
+            "id": "c3242cb5-ee31-44cf-849a-5a0e7cc9b233",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 1,
+            "eventtype": 3,
+            "m_owner": "d421c7e5-f99f-4852-82bf-ccae932a97de"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": [
@@ -109,6 +138,20 @@
             "value": "0",
             "varName": "vsp_ini",
             "varType": 0
+        },
+        {
+            "id": "8184c1e2-ed54-4c0b-b75f-f3c097bdee09",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "magnis_cible",
+            "varType": 3
         }
     ],
     "solid": false,
