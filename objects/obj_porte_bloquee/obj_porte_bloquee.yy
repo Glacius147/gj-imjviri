@@ -5,16 +5,6 @@
     "name": "obj_porte_bloquee",
     "eventList": [
         {
-            "id": "fb533b17-2677-428c-9815-b4f9a8642110",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 3,
-            "m_owner": "7eb17201-b6ff-443d-9bb7-411db44d7d9d"
-        },
-        {
             "id": "92a1456b-7b88-43fb-83b9-934a4cdde4c1",
             "modelName": "GMEvent",
             "mvc": "1.0",
@@ -22,6 +12,16 @@
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 25,
             "eventtype": 7,
+            "m_owner": "7eb17201-b6ff-443d-9bb7-411db44d7d9d"
+        },
+        {
+            "id": "ce39268e-98b4-409c-b3f9-e1e9d408f67b",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
             "m_owner": "7eb17201-b6ff-443d-9bb7-411db44d7d9d"
         }
     ],

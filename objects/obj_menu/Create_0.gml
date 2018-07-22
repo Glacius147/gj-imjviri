@@ -22,6 +22,14 @@ menu_control = true;
 
 touche_enfoncee = false;
 
+enum TYPE_DECO
+{
+	BOTW,
+	GLACE,
+	DESERT
+}
+
+t_deco = TYPE_DECO.GLACE;
 
 enum MENU_MODE
 {
