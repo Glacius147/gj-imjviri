@@ -190,6 +190,20 @@
             "value": "1",
             "varName": "vitesse_retour",
             "varType": 0
+        },
+        {
+            "id": "f8fe4a51-6684-4e05-8095-b7bb108e33bb",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "MODE_PIC.REPOS",
+            "varName": "mode",
+            "varType": 0
         }
     ],
     "solid": false,

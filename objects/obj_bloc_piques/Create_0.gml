@@ -4,7 +4,8 @@ enum MODE_PIC
 {
 	REPOS,
 	CHARGE,
-	RETOUR
+	RETOUR,
+	INACTIF
 }
 
 mode = MODE_PIC.REPOS
