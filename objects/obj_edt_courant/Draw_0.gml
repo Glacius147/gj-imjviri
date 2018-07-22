@@ -37,6 +37,7 @@ if view_current == 0 and obj_menu.mode == MENU_MODE.CONSTRUCTION
 		if mouse_x<4096
 		{
 			draw_self()	
+			draw_sprite_ext(spr_fleche_pointe,0,mouse_x,mouse_y,1,1,image_angle,c_white,image_alpha)
 		}
 	}
 	else if mode_edition = EDITEUR_MODE.ERASER or mode_edition = EDITEUR_MODE.ERASER_DEP
