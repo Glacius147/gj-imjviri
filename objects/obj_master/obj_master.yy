@@ -183,6 +183,20 @@
             "value": "0",
             "varName": "magnis_actif",
             "varType": 3
+        },
+        {
+            "id": "90ac1df5-0685-4fc7-b42f-091f63c04a81",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "torche_active",
+            "varType": 3
         }
     ],
     "solid": false,

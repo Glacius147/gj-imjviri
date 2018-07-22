@@ -2,14 +2,14 @@
 /// @arg x_destination
 /// @arg y_destination
 
-x_to = argument0;
-y_to = argument1;
+var x_to = argument0;
+var y_to = argument1;
 
 
 
 with obj_joueur
 {
-	if !place_meeting(x + other.x_to * 64,y + other.y_to * 64,objp_solide)
+	if !place_meeting(x + x_to * 64,y + y_to * 64,objp_solide)
 	{
 		obj_menu.percent2 = 0;
 
