@@ -89,6 +89,7 @@ global.list_item[24] = string(obj_fee);
 global.list_item[25] = string(obj_eau);
 global.list_item[26] = string(obj_coeur_cont);
 global.list_item[27] = string(obj_torche_loot);
+global.list_item[27] = string(obj_gel);
 
 
 global.map_item_index = ds_map_create()
