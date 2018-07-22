@@ -40,7 +40,7 @@ else if c_x>4096 // On est dans la minimap
 	camera_set_view_pos(view_camera[0],col*256 ,row*176);
 	
 }
-else // On clique pour poser l'objet
+else  // On clique pour poser l'objet
 {
 	//Si la salle est vide on la crée
 	if !created_room[current_room_x,current_room_y]//current_type == obj_mur_salle
@@ -84,7 +84,7 @@ else // On clique pour poser l'objet
 			current_player = new_item
 		}
 	}
-	else // par défaut
+	else if current_type != noone // par défaut (si il y a un truc à peindre)
 	{
 		x = round((mouse_x-8) / 16)*16+8;
 		y = round((mouse_y-8) / 16)*16+8;
@@ -274,6 +274,15 @@ if mode_edition = EDITEUR_MODE.DEPENDANCE_2{
 		}
 		
 	}
+	
+}
+
+if  mode_edition = EDITEUR_MODE.ERASER
+{
+	
+} else if mode_edition = EDITEUR_MODE.ERASER
+{
+	
 	
 }
 

@@ -1271,6 +1271,14 @@
             }
         },
         {
+            "Key": "d4155b93-9039-4d77-91f6-b4f6d4d6612f",
+            "Value": {
+                "id": "ed9aa7e8-a1ca-491d-b83c-cfcba7475fee",
+                "resourcePath": "sprites\\spr_eraser\\spr_eraser.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d421c7e5-f99f-4852-82bf-ccae932a97de",
             "Value": {
                 "id": "c6937492-1442-4e86-ab3e-2e647604e1bf",
