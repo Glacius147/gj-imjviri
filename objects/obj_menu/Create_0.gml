@@ -79,6 +79,7 @@ global.list_item[15] = string(obj_dependance);
 global.list_item[16] = string(obj_fantome);
 global.list_item[17] = string(obj_escalier);
 global.list_item[18] = string(obj_bat);
+global.list_item[19] = string(obj_map);
 
 
 global.map_item_index = ds_map_create()
