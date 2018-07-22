@@ -90,6 +90,19 @@ for (var i = 1; i < array_length_1d(origines); ++i) {
 	list_obj[destinations[i]].actif = false;
 }
 
+id_bg = layer_background_get_id("Background")
+if obj_menu.t_deco = TYPE_DECO.BOTW
+{
+	layer_background_change(id_bg,spr_sol)
+} else if obj_menu.t_deco = TYPE_DECO.GLACE
+{
+						
+	layer_background_change(id_bg,spr_sol_glace)
+}else if obj_menu.t_deco = TYPE_DECO.DESERT
+{
+						
+	layer_background_change(id_bg,spr_sol_desert)
+}
 
 with obj_joueur
 {

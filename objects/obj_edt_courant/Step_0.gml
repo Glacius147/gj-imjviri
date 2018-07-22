@@ -28,25 +28,24 @@ if mode_edition == EDITEUR_MODE.NORMAL
 				if item.object_index == obj_mur_salle
 				{
 					obj_menu.t_deco = (obj_menu.t_deco+1) mod obj_menu.nb_deco
-					/* GAEL EST UN TARE !!!
-					with objp_contour_salle
+					id_bg = layer_background_get_id("Backgrounds")
+					if obj_menu.t_deco = TYPE_DECO.BOTW
 					{
-						image_index+=4
-						if object_index == obj_mur{
-							image_index = (image_index + 4)// mod (4*obj_menu.nb_deco)
-						} else
-						{
-							image_index = (image_index + 1)// mod obj_menu.nb_deco	
-							
-							var a =3
-						}
+						layer_background_change(id_bg,spr_sol)
+					} else if obj_menu.t_deco = TYPE_DECO.GLACE
+					{
+						
+						layer_background_change(id_bg,spr_sol_glace)
+					}else if obj_menu.t_deco = TYPE_DECO.DESERT
+					{
+						
+						layer_background_change(id_bg,spr_sol_desert)
 					}
-					*/
-					
 				}
 				else
 				{
 					sprite_index = item.sprite_index
+					image_index = item.image_index
 					current_type = item.object_index
 					if current_type == obj_escalier
 					{
