@@ -1,9 +1,5 @@
 
 //contour map
-
-	
-	draw_set_color(c_navy);
-	draw_rectangle(x_b + 50, y_b -110, x_b + 230, y_b -10, false);
 	
 	draw_set_color(c_black);
 

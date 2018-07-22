@@ -27,6 +27,8 @@ if obj_joueur.magnetis draw_sprite(spr_magnis,0,x_b + 118 + 60,y_b - 133);
 if obj_joueur.torche draw_sprite(spr_torche,0,x_b + 118 + 90 , y_b - 133);
 
 
+if obj_joueur.map draw_sprite(spr_map,0,x_b + 30 , y_b - 100);
+
 
 	
 //9 box sur l'item selectionné

@@ -2,6 +2,8 @@
 
 scr_input();
 
+if mode = MENU_MODE.VICTOIRE scr_victoire()
+
 if mode = MENU_MODE.MENU
 {
 	//arrivée progressive du menu à l ecran
