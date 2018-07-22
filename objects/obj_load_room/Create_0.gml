@@ -53,7 +53,7 @@ for (i = 0; i < size; i++;)
 		salle_y = round(item_y/176)
 		obj_menu.t_deco = item_sprite;
 		obj_menu.created_room[salle_x,salle_y] = true
-	} else if (item_type == string(obj_eau) or item_type == string(obj_gel) or item_type == string(obj_bloc_inter) or item_type == string(obj_mur) or item_type == string(obj_mur_explosable))
+	} else if (item_type == string(obj_eau) or item_type == string(obj_gel) or item_type == string(obj_escalier) or item_type == string(obj_bloc_inter) or item_type == string(obj_mur) or item_type == string(obj_mur_explosable))
 	{
 		var new_item = instance_create_layer(item_x,item_y,"mur_exploses",item_type)
 	}

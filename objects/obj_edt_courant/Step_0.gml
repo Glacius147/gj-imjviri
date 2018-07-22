@@ -97,8 +97,9 @@ if mode_edition == EDITEUR_MODE.NORMAL
 				x = round((mouse_x-8) / 16)*16+8;
 				y = round((mouse_y-8) / 16)*16+8;
 				item = instance_position(x,y,obj_master);
-				if item != noone
+				if item != noone // Si il y a conflit d'objet, on pose pas sauf pt dragon
 				{
+					//Check des teleports escaliers
 					if item.object_index == obj_escalier
 					{
 						with obj_escalier_bis
@@ -138,21 +139,55 @@ if mode_edition == EDITEUR_MODE.NORMAL
 							current_player = new_item
 						}
 					}
+					else if current_type == obj_escalier //cas de l'escalier ou il faut vérifier si deja créé
+					{
+						if created_room[current_room_x,current_room_y]
+						{
+							flag_dejacree = noone
+							with obj_escalier
+							{
+								if x<4096 and destination == other.dest
+								{
+									other.flag_dejacree = id  	
+								}
+							}
+						
+							if flag_dejacree == noone //tout va bien
+							{
+								new_item = instance_create_layer(x,y,"Instances",current_type);
+								new_item.destination = dest
+								new_item.mask_index = spr_bloc;
+								ds_list_add(obj_list,new_item)
+								nb_obj++
+							} else //deja créé
+							{
+								flag_dejacree.x = x;
+								flag_dejacree.y = y;
+								flag_dejacree.actif = true
+								with (obj_dependance)
+								{
+									if destination_id == other.flag_dejacree
+									{
+										pos = ds_list_find_index(other.obj_list,id);
+										ds_list_delete(other.obj_list,pos);
+										other.nb_obj--
+										instance_destroy(id);
+									}
+								} 
+							}
+						}
+						
+					}
 					else if current_type != noone and ((x<4096 and current_type != obj_dragon) or (object_is_ancestor(current_type.object_index,objp_item) or current_type.object_index = obj_bat  ))
 					{
 						if created_room[current_room_x,current_room_y]
 						{
 							ds_list_add(obj_list,instance_create_layer(x,y,"Instances",current_type));
-			
-							if current_type == obj_joueur
+							nb_obj ++;
+							if current_type == obj_joueur//Cas du joueur non deja crée
 							{
 								current_player = obj_list[| nb_obj]
-							} else if current_type == obj_escalier
-							{
-								obj_list[| nb_obj].destination = dest;
-								obj_list[| nb_obj].mask_index = spr_bloc;
-							}
-							nb_obj ++;
+							} 
 						}
 					} 
 				}
