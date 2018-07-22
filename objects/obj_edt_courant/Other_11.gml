@@ -58,8 +58,9 @@ for (i = 0; i < size; i++;)
 	item_angle = item[? "angle"];
 	if item_type == string(obj_mur_salle){
 		var new_item = instance_create_layer(item_x,item_y,"salles",item_type)
-		salle_x = round(item_x/256)
-		salle_y = round(item_y/176)
+		salle_x = round(item_x/256);
+		salle_y = round(item_y/176);
+		obj_menu.t_deco = item_sprite;
 		created_room[salle_x,salle_y] = true
 	} else if object_is_ancestor(item_type, objp_objet_mobil)
 	{

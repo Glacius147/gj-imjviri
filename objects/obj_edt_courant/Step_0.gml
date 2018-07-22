@@ -8,9 +8,6 @@ if obj_menu.mode == MENU_MODE.CONSTRUCTION
 {
 c_x = mouse_x
 c_y = mouse_y
-
-
-
 current_room_x = floor(c_x/256)
 current_room_y = floor(c_y/176)
 
@@ -19,6 +16,10 @@ if mode_edition == EDITEUR_MODE.NORMAL
 	{
 	if mouse_check_button_released(mb_left)
 	{
+		c_x = mouse_x
+		c_y = mouse_y
+		current_room_x = floor(c_x/256)
+		current_room_y = floor(c_y/176)
 		if c_x>(4096+5*16) and c_y>1024 // on est dans la barre de selection
 		{
 			item = instance_position(c_x,c_y,obj_master)
@@ -330,10 +331,11 @@ if mode_edition = EDITEUR_MODE.DEPENDANCE_2{
 
 if  mode_edition = EDITEUR_MODE.ERASER
 {
-	if mouse_check_button_released(mb_left)
+	if mouse_check_button_released(mb_left) and (mouse_x<4096 or mouse_y<1024)
 	{
 		item = instance_position(mouse_x,mouse_y,obj_master);
-		if item != noone and item.object_index != obj_fantome and !object_is_ancestor(item.object_index,objp_contour_salle)
+		//On ne peut pas détruire certains trucs.
+		if item != noone and item.object_index != obj_fantome and  item.object_index != obj_escalier_bis and !object_is_ancestor(item.object_index,objp_contour_salle) 
 		{
 			pos = ds_list_find_index(obj_list,item)
 			ds_list_delete(obj_list,pos)

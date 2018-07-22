@@ -29,6 +29,13 @@ if obj_menu.mode == MENU_MODE.SELECT_SAVE or  obj_menu.mode == MENU_MODE.SELECT_
 		//pour eviter un deplacement par frame quand on laisse appuyé sur haut/bas
 		if !k_down && !k_up 			touche_enfoncee = false;
 		
+		if mouse_check_button_released(mb_left){
+			if mouse_x <350 and mouse_x > 176 and mouse_y>176-2-menu_itemheight*.75 and mouse_y<176+9.5*menu_itemheight
+			{
+				menu_curseur = floor((mouse_y-176+2+.75*menu_itemheight)/(1.5*menu_itemheight))
+				k_start = true	
+			}
+		}
 		//validation d'un item
 		if k_attaque || k_start
 		{
@@ -119,7 +126,16 @@ if menu_selection != -1 and (obj_menu.mode == MENU_MODE.SELECT_SAVE or  obj_menu
 
 		if obj_menu.mode == MENU_MODE.SELECT_SAVE
 		{
-	
+			temps = date_current_datetime();
+			minutes = date_get_minute(temps)
+			heures = date_get_hour(temps)
+			jour = date_get_day(temps)
+			mois = date_get_month(temps)
+			annee = date_get_year(temps)
+			time = string(heures)+"h"+string(minutes)+" le "+string(jour)+"/"+string(mois)+"/"+string(annee)
+			ini_open("data.ini")
+			ini_write_string("save", "save"+string(slot), time);
+			ini_close()
 			file =  "svg_slot"+string(other.slot)+".json";
 			room_goto(room_editeur)
 
@@ -128,6 +144,16 @@ if menu_selection != -1 and (obj_menu.mode == MENU_MODE.SELECT_SAVE or  obj_menu
 		if obj_menu.mode == MENU_MODE.SELECT_SAVENLAUNCH
 		{
 	
+			temps = date_current_datetime();
+			minutes = date_get_minute(temps)
+			heures = date_get_hour(temps)
+			jour = date_get_day(temps)
+			mois = date_get_month(temps)
+			annee = date_get_year(temps)
+			time = string(heures)+"h"+string(minutes)+" le "+string(jour)+"/"+string(mois)+"/"+string(annee)
+			ini_open("data.ini")
+			ini_write_string("save", "save"+string(slot), time);
+			ini_close()
 			file =  "svg_slot"+string(other.slot)+".json";
 			room_goto(room_editeur)
 
