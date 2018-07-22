@@ -8,9 +8,9 @@ if obj_menu.mode != mode
 	{
 		case MENU_MODE.JEU :
 		{
-			audio_pause_all();
-			if t_salle = TYPE_SALLE.SURFACE	audio_play_sound(son_musique,1,true);
-			if t_salle = TYPE_SALLE.SOUS_TERRE	audio_play_sound(son_musique_under,1,true);
+			if t_salle = TYPE_SALLE.SURFACE	scr_musique_change(son_musique)
+				
+			if t_salle = TYPE_SALLE.SOUS_TERRE	scr_musique_change(son_musique_under);
 			break;	
 		}	
 	}
@@ -27,14 +27,12 @@ if instance_exists(obj_joueur)
 		{
 			case TYPE_SALLE.SURFACE :
 			{
-				audio_pause_all();
-				audio_play_sound(son_musique,1,true);
+				scr_musique_change(son_musique)
 				break;	
 			}	
 			case TYPE_SALLE.SOUS_TERRE :
 			{
-				audio_pause_all();
-				audio_play_sound(son_musique_under,1,true);
+				scr_musique_change(son_musique_under);
 				break;	
 			}	
 		}

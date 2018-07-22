@@ -1,6 +1,6 @@
 /// @description ?
 
-if sprite_index = spr_torche 
+if sprite_index = spr_flammes
 {
 	with instance_place(x,y,obj_master) event_user(12);
 }

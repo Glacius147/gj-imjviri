@@ -4,7 +4,7 @@
 
 
 
-if room_origine_x = obj_joueur.room_current_x && room_origine_y = obj_joueur.room_current_y && !magnis_cible && obj_menu.mode = MENU_MODE.JEU
+if room_origine_x = obj_joueur.room_current_x && room_origine_y = obj_joueur.room_current_y && !magnis_cible && obj_menu.mode = MENU_MODE.JEU && !actif
 {
 	alarm_0 --
 	
