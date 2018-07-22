@@ -535,6 +535,14 @@
             }
         },
         {
+            "Key": "54292931-3c71-4ce6-9eef-fcf80f2a92b2",
+            "Value": {
+                "id": "f128f2e7-f071-4f04-8ca3-55983d29dcf4",
+                "resourcePath": "sprites\\spr_victoire\\spr_victoire.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "55f952f2-0b90-488b-81dd-bb76c361d706",
             "Value": {
                 "id": "32d699bd-17ac-453f-bcf2-86397bfd1b0a",
@@ -740,6 +748,14 @@
                 "id": "9484e79b-2de0-4f02-acff-35045574716b",
                 "resourcePath": "views\\76ca6ac9-c1da-452f-b4da-9e8bcea2379c.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "76ee1004-22a7-47a1-b0f3-f058d531cb43",
+            "Value": {
+                "id": "c03836c4-272e-4fe3-95f9-6455cb7b9c9a",
+                "resourcePath": "sprites\\spr_back_victoire\\spr_back_victoire.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1044,6 +1060,14 @@
                 "id": "66453961-b190-491b-abbf-65d5bb4683d0",
                 "resourcePath": "scripts\\scr_objet_use\\scr_objet_use.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "97cdf90f-41a7-44ef-8b23-5ae7cbd41806",
+            "Value": {
+                "id": "6407d5d0-c6b9-4f1f-b644-31cd499a4e98",
+                "resourcePath": "rooms\\room_victoire\\room_victoire.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -1436,6 +1460,14 @@
                 "id": "201c6a05-e913-4edc-b26b-b0fb92bf2cd4",
                 "resourcePath": "sprites\\spr_9box_red_full\\spr_9box_red_full.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "cf058627-1638-4cc1-bc45-11d71ae94de9",
+            "Value": {
+                "id": "7a08adcb-5ebb-4133-b9f9-ec55e89a6930",
+                "resourcePath": "objects\\obj_menu_victoire\\obj_menu_victoire.yy",
+                "resourceType": "GMObject"
             }
         },
         {
