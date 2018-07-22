@@ -329,7 +329,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0",
+            "value": "True",
             "varName": "magnetis",
             "varType": 3
         },
@@ -343,7 +343,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0",
+            "value": "True",
             "varName": "torche",
             "varType": 3
         }
