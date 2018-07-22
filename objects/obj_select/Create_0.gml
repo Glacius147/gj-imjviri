@@ -14,6 +14,10 @@ enum MODE_SELECT{
 	DELETE
 }
 
+
+offset_color = c_white;
+mode_sel = MODE_SELECT.NORMAL
+
 menu_x = (gui_margin);
 
 menu_y = gui_margin;

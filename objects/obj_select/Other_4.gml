@@ -2,6 +2,8 @@
 // You can write your code in this editor
 
 
+mode_sel = MODE_SELECT.NORMAL
+
 if room == room_select{
 	ini_open("data.ini")
 	for (var i = 0; i <6; i++)
@@ -21,3 +23,4 @@ if room == room_select{
 ini_close()
 
 menu_curseur = 0;
+menu_control = true;

@@ -4,7 +4,10 @@
 
 if obj_menu.mode == MENU_MODE.SELECT_SAVE or  obj_menu.mode == MENU_MODE.SELECT_LOAD or  obj_menu.mode == MENU_MODE.SELECT_SAVENLAUNCH or obj_menu.mode == MENU_MODE.SELECT_LOAD_EDT
 {
-
+	if menu_selection == -1
+	{
+		menu_control = true	
+	}
 	scr_input();
 	//controls clavier
 	if menu_control
@@ -30,7 +33,51 @@ if obj_menu.mode == MENU_MODE.SELECT_SAVE or  obj_menu.mode == MENU_MODE.SELECT_
 		if k_attaque || k_start
 		{
 			menu_selection = menu_curseur;
-			menu_control = false;	
+			if menu_selection = 6
+			{
+				if mode_sel == MODE_SELECT.NORMAL
+				{	
+					mode_sel = MODE_SELECT.DELETE
+					offset_color = c_red
+					menu_selection = -1
+				} else
+				{
+					mode_sel = MODE_SELECT.NORMAL
+					offset_color = c_white
+					menu_selection=-1
+				}
+			} else 
+			{
+				if mode_sel == MODE_SELECT.NORMAL
+				{	
+					if obj_menu.mode == MENU_MODE.SELECT_LOAD or obj_menu.mode == MENU_MODE.SELECT_LOAD_EDT
+					{
+						if file_exists("svg_slot"+string(menu_selection)+".json")
+						{
+							menu_control = false
+						} else
+						{
+							menu_selection = -1	
+						}
+					} else 
+					{
+						menu_control = false	
+					}
+				} else
+				{
+					if file_exists("svg_slot"+string(menu_selection)+".json")
+					{
+						file_delete("svg_slot"+string(menu_selection)+".json")
+						menu[menu_selection] = "SLOT " + string(menu_selection+1) + " (VIDE)" 
+						
+						mode_sel = MODE_SELECT.NORMAL
+						offset_color = c_white
+						menu_selection = -1
+					}
+					
+				}
+			}
+			
 		}
 	}
 	
@@ -53,13 +100,13 @@ if obj_menu.mode == MENU_MODE.SELECT_SAVE or  obj_menu.mode == MENU_MODE.SELECT_
 	}*/	
 }
 
-if menu_selection!=-1 and menu_selection!=6 and obj_menu.mode == MENU_MODE.SELECT_SAVE or  obj_menu.mode == MENU_MODE.SELECT_LOAD or  obj_menu.mode == MENU_MODE.SELECT_SAVENLAUNCH or obj_menu.mode == MENU_MODE.SELECT_LOAD_EDT
+if menu_selection != -1 and (obj_menu.mode == MENU_MODE.SELECT_SAVE or  obj_menu.mode == MENU_MODE.SELECT_LOAD or  obj_menu.mode == MENU_MODE.SELECT_SAVENLAUNCH or obj_menu.mode == MENU_MODE.SELECT_LOAD_EDT)
 {
 	//if mouse_check_button_released(mb_left)
 	{
 		//slot = floor(mouse_x/256)+3*floor(mouse_y/360)	
-		slot = menu_selection 
-		
+		slot = menu_selection ;
+		menu_selection = -1;
 		
 		if obj_menu.mode == MENU_MODE.SELECT_LOAD and file_exists("svg_slot"+string(slot)+".json")
 		{

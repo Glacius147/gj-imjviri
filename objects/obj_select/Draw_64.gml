@@ -15,7 +15,7 @@ if obj_menu.mode == MENU_MODE.SELECT_SAVE or  obj_menu.mode == MENU_MODE.SELECT_
 		var txt = menu[i];
 		if (menu_curseur == i)
 		{
-			draw_sprite_stretched(spr_fee,floor(fee_index),menu_x - 20*offset,menu_y + menu_itemheight * i * 1.5 -18-offset,menu_itemheight,menu_itemheight)
+			draw_sprite_general(spr_fee,floor(fee_index),0,0,16,16,menu_x - 20*offset,menu_y + menu_itemheight * i * 1.5 -18-offset,2,2,0,offset_color,offset_color,offset_color,offset_color,1)
 			//txt = string_insert("> ", txt,0);
 			var col = c_white;
 		}
