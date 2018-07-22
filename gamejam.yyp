@@ -191,6 +191,14 @@
             }
         },
         {
+            "Key": "192d6d30-f055-452b-961c-2dcdda5aec06",
+            "Value": {
+                "id": "c9d36ad1-98e2-4028-9581-5e63daf9f8f6",
+                "resourcePath": "objects\\objp_master_nongel\\objp_master_nongel.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "1946a26a-55d9-40e5-8363-e82c5d4fd577",
             "Value": {
                 "id": "789349b6-53af-40e4-afb9-91c2343627bb",
@@ -1211,6 +1219,14 @@
             "Value": {
                 "id": "d2b86026-f46c-4a4f-b469-2e26ee2afd28",
                 "resourcePath": "sprites\\spr_flammes\\spr_flammes.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "aeafb940-086f-4047-80dd-0cdbaf3c7921",
+            "Value": {
+                "id": "c2c6640a-d704-4b8d-b169-451b1b3f5355",
+                "resourcePath": "sprites\\spr_joueur_torche\\spr_joueur_torche.yy",
                 "resourceType": "GMSprite"
             }
         },

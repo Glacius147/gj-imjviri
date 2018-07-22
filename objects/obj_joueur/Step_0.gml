@@ -89,8 +89,11 @@ if obj_menu.mode = MENU_MODE.JEU && frames_immobile <= 0
 	}
 	
 	// application du mouvement
-	hsp = (k_right - k_left)*vitesse_marche;
-	vsp = (k_down - k_up)*vitesse_marche;
+	if !place_meeting(x,y,obj_gel) || (hsp == 0 && vsp == 0) || bottes_fer
+	{
+		hsp = (k_right - k_left)*vitesse_marche;
+		vsp = (k_down - k_up)*vitesse_marche;
+	}
 	
 	if t_salle = TYPE_SALLE.SOUS_TERRE && !position_meeting(x,y,objp_echelles) && !position_meeting(x,y+8,objp_echelles)
 	{
@@ -104,7 +107,7 @@ if obj_menu.mode = MENU_MODE.JEU && frames_immobile <= 0
 		alarm[0] = duree_sword;
 	}
 
-	if attaque
+	if attaque && (!place_meeting(x,y,obj_gel) || bottes_fer)
 	{
 		hsp = 0;
 		vsp = 0;
@@ -122,7 +125,7 @@ if obj_menu.mode = MENU_MODE.JEU && frames_immobile <= 0
 	}
 
 	//déplacement
-	if !magnis_actif	scr_deplacement();
+	if (!magnis_actif && !torche_active) || (place_meeting(x,y,obj_gel)&& !bottes_fer)	scr_deplacement();
 	
 	//animation
 	scr_animation();

@@ -65,6 +65,8 @@ switch objet_b
 			{
 				sprite_index = spr_flammes;
 			}
+			torche_active = true;
+			alarm[3] = 20;
 			break;
 		}
 }

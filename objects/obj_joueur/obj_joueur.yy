@@ -73,6 +73,16 @@
             "enumb": 0,
             "eventtype": 0,
             "m_owner": "3b242514-a6be-4a6d-9c3e-28fcfe2b477d"
+        },
+        {
+            "id": "ca43ddfc-acb4-49a0-8e10-40a2ec7e0557",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 3,
+            "eventtype": 2,
+            "m_owner": "3b242514-a6be-4a6d-9c3e-28fcfe2b477d"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -388,6 +398,34 @@
             "value": "ystart",
             "varName": "y_origine_salle",
             "varType": 0
+        },
+        {
+            "id": "a6f4603b-7548-45fb-b012-c47e7d490960",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "torche_active",
+            "varType": 3
+        },
+        {
+            "id": "8a9e0a20-4e07-4f12-a469-5b53ac630fe8",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "bottes_fer",
+            "varType": 3
         }
     ],
     "solid": false,
