@@ -12,6 +12,7 @@ enum EDITEUR_MODE{
 
 sprite_index = spr_joueur_down
 current_type = obj_joueur
+image_speed = 0
 
 
 current_player = noone

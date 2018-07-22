@@ -47,6 +47,7 @@ if mode_edition == EDITEUR_MODE.NORMAL
 				else
 				{
 					sprite_index = item.sprite_index
+					image_index = item.image_index
 					current_type = item.object_index
 					if current_type == obj_escalier
 					{
