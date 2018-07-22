@@ -47,7 +47,10 @@ switch objet_b
 	}
 	case spr_cryo :
 		{
-			with instance_position(x_t1,y_t1,obj_master) event_user(11);
+			with instance_create_layer(x_t1,y_t1,"mob",obj_affichage_item_use) 
+			{
+				sprite_index = spr_cryo;
+			}
 			break;
 		}
 	case spr_magnis :
@@ -58,7 +61,10 @@ switch objet_b
 		}
 	case spr_torche :
 		{
-			with instance_position(x_t1,y_t1,obj_master) event_user(12);
+			with instance_create_layer(x_t1,y_t1,"mob",obj_affichage_item_use) 
+			{
+				sprite_index = spr_torche;
+			}
 			break;
 		}
 }

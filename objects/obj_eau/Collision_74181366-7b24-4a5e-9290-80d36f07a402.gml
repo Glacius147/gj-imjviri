@@ -7,9 +7,9 @@ with other
 	
 	
 	invulnerable = true;
-	alarm[1] = 2*frames_invulnerable;
+	alarm[1] = 60;
 	pv -= 1;
-	blink = 16;
+	blink = 60;
 	event_user(0);	
-	
 }
+
