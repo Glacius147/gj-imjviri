@@ -55,6 +55,14 @@
             }
         },
         {
+            "Key": "01ac21f9-7144-4ad8-8e1b-07dcb3f8ec68",
+            "Value": {
+                "id": "452ef653-827f-43b9-abc4-3be5c7358dfe",
+                "resourcePath": "sprites\\spr_dragon_feu\\spr_dragon_feu.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "02613580-b508-42bc-a4b9-0f1f9e2924ba",
             "Value": {
                 "id": "8d45b42b-3a83-49d7-982e-5f979caf436d",
@@ -431,6 +439,14 @@
             }
         },
         {
+            "Key": "4ab26655-1669-48f3-8ad4-b52c7a93e13a",
+            "Value": {
+                "id": "0399907b-b3b5-4c4e-bcee-78e0b5a9295f",
+                "resourcePath": "sprites\\spr_dragon_mort\\spr_dragon_mort.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "4ba8bc06-61bd-443b-86d6-ee6b2f823c95",
             "Value": {
                 "id": "4bccad66-a48a-41d4-9035-24617070d553",
@@ -732,6 +748,14 @@
                 "id": "9c29743d-efbf-44ec-b22f-c3667a6724a2",
                 "resourcePath": "objects\\objp_objet_mobil\\objp_objet_mobil.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "7ffc84a0-54d4-4fc3-8f33-f03c017b0cfb",
+            "Value": {
+                "id": "4a185ca5-8b44-4b73-849b-f2f8d63147ce",
+                "resourcePath": "sprites\\spr_dragon\\spr_dragon.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1571,6 +1595,14 @@
             "Value": {
                 "id": "0e4f39ea-d812-49a8-b242-b274537d1127",
                 "resourcePath": "objects\\objp_solide\\objp_solide.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "ee0f5479-6908-4208-a123-adab16c63319",
+            "Value": {
+                "id": "dbf0de2c-ef47-4a6d-bff0-ae6b3f685120",
+                "resourcePath": "objects\\obj_dragon\\obj_dragon.yy",
                 "resourceType": "GMObject"
             }
         },
