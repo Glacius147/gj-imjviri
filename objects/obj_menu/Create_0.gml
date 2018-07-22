@@ -95,6 +95,7 @@ global.list_item[30] = string(obj_bloc_statue);
 global.list_item[31] = string(obj_bloc_torche);
 global.list_item[32] = string(obj_bloc_tourelle);
 global.list_item[33] = string(obj_gel);
+global.list_item[34] = string(obj_dragon);
 
 
 global.map_item_index = ds_map_create()

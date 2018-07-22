@@ -8,4 +8,10 @@ enum TYPE_SALLE
 	SOUS_TERRE
 }
 
-t_salle = TYPE_SALLE.SURFACE;
+if x>4096{
+	t_salle = TYPE_SALLE.SOUS_TERRE
+}
+else
+{
+	t_salle = TYPE_SALLE.SURFACE;
+}
