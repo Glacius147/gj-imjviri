@@ -120,7 +120,10 @@ if mode = MENU_MODE.CHANGEMENT_SALLE
 	{
 		obj_joueur.room_current_x += x_to;
 		obj_joueur.room_current_y += y_to;
-
+		
+		obj_joueur.x_origine_salle = x;
+		obj_joueur.y_origine_salle = y;
+		
 		mode = MENU_MODE.JEU
 	}
 }

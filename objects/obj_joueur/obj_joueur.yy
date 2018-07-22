@@ -360,6 +360,34 @@
             "value": "0",
             "varName": "map",
             "varType": 3
+        },
+        {
+            "id": "8440d51f-128c-43db-922b-50e701139ab2",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "xstart",
+            "varName": "x_origine_salle",
+            "varType": 0
+        },
+        {
+            "id": "4cd45c95-659d-4a8e-b0c6-6c554c7bb199",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "ystart",
+            "varName": "y_origine_salle",
+            "varType": 0
         }
     ],
     "solid": false,
