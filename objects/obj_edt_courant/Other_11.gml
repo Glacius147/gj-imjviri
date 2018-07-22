@@ -4,6 +4,17 @@
 
 file = obj_select.file
 
+//Vidange de l'éditeur
+if is_array(obj_list)
+{
+	for (var i = 0; i < nb_obj; ++i) {
+	    instance_destroy(obj_list[i])
+	}
+	nb_obj = 0;
+	obj_list = noone;
+}
+
+//Chargement
 var buff = buffer_load(file);
 map = json_decode(buffer_read(buff, buffer_text));
 buffer_delete(buff);
@@ -86,3 +97,17 @@ with obj_joueur
 {
 	event_user(1);
 }
+
+mode_edition = EDITEUR_MODE.NORMAL
+with obj_master
+{
+		image_alpha = 1	
+}
+with (obj_dependance)
+{
+	image_alpha = 0.2	
+}
+sprite_index = -1
+image_angle = 0
+image_xscale = 1
+current_type = noone

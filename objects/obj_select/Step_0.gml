@@ -7,8 +7,9 @@ if obj_menu.mode == MENU_MODE.SELECT_SAVE or  obj_menu.mode == MENU_MODE.SELECT_
 	{
 		slot = floor(mouse_x/256)+3*floor(mouse_y/360)	
 	
-	
-		if obj_menu.mode == MENU_MODE.SELECT_LOAD
+		
+		
+		if obj_menu.mode == MENU_MODE.SELECT_LOAD and file_exists("svg_slot"+string(slot)+".json")
 		{
 	
 			obj_menu.mode = MENU_MODE.JEU
@@ -32,15 +33,16 @@ if obj_menu.mode == MENU_MODE.SELECT_SAVE or  obj_menu.mode == MENU_MODE.SELECT_
 			room_goto(room_editeur)
 
 		}
-		if obj_menu.mode == MENU_MODE.SELECT_LOAD_EDT
+		if obj_menu.mode == MENU_MODE.SELECT_LOAD_EDT and file_exists("svg_slot"+string(slot)+".json")
 		{
 	
 			file =  "svg_slot"+string(other.slot)+".json";
 			room_goto(room_editeur)
 
 		}
-	
+		
 	
 	}
 }
+
 
