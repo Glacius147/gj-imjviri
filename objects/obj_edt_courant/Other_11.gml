@@ -58,8 +58,7 @@ for (i = 0; i < size; i++;)
 		new_item.destination = item[? "destination"];
 		new_item.origine_id = list_obj[new_item.origine];
 		new_item.destination_id = list_obj[new_item.destination];
-	} 
-	else
+	} else
 	{
 		var new_item = instance_create_layer(item_x,item_y,"Instances",item_type)
 	}
@@ -75,6 +74,9 @@ for (i = 0; i < size; i++;)
 	new_item.room_origine_y = item_py;
 	}
 	list_obj[i] = new_item
+	if item_type == string(obj_joueur){	
+		current_player = new_item
+	}
 }
 
 
