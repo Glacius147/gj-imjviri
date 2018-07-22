@@ -20,7 +20,7 @@ mode_edition = EDITEUR_MODE.NORMAL
 begin_arrow = noone
 current_arrow = noone
 
-image_alpha=0.5
+
 
 
 //Pour que les objets ne bougent pas.

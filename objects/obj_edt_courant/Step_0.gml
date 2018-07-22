@@ -8,8 +8,8 @@ c_y = mouse_y
 
 
 
-var current_room_x = floor(c_x/256)
-var current_room_y = floor(c_y/176)
+current_room_x = floor(c_x/256)
+current_room_y = floor(c_y/176)
 
 //Mode d'édition normal
 if mode_edition == EDITEUR_MODE.NORMAL
@@ -279,10 +279,69 @@ if mode_edition = EDITEUR_MODE.DEPENDANCE_2{
 
 if  mode_edition = EDITEUR_MODE.ERASER
 {
-	
-} else if mode_edition = EDITEUR_MODE.ERASER
+	if mouse_check_button_released(mb_left)
+	{
+		item = instance_position(mouse_x,mouse_y,obj_master);
+		if item != noone and item.object_index != obj_fantome and !object_is_ancestor(item.object_index,objp_contour_salle)
+		{
+			pos = ds_list_find_index(obj_list,item)
+			ds_list_delete(obj_list,pos)
+			with (obj_dependance)
+			{
+				if origine_id == other.item or destination_id == other.item{
+					pos = ds_list_find_index(other.obj_list,id);
+					ds_list_delete(other.obj_list,pos);
+					instance_destroy(id);
+				}
+			}
+			if item.object_index == obj_joueur
+			{
+				current_player = noone	
+			}
+			instance_destroy(item)
+		} else if  item != noone and item.object_index == obj_mur_salle
+		{
+			var flag = true
+			//On checke que la salle est vide.
+			for(var i = 0; i < nb_obj; i++) 
+			{
+				var c_item = obj_list[| i];
+				if c_item.room_origine_x == current_room_x and c_item.room_origine_y == current_room_y and item.object_index != obj_mur and item.object_index != obj_fantome
+				{
+					flag = false	;
+					break;
+				}
+			}
+			if flag // On détruit les trucs qui sont restés dans la salle
+			{
+				pos = ds_list_find_index(obj_list,item)
+				ds_list_delete(obj_list,pos)
+				with (obj_master)
+				{
+					if room_origine_x == other.current_room_x and room_origine_y == other.current_room_y
+					{
+						pos = ds_list_find_index(other.obj_list,id);
+						ds_list_delete(other.obj_list,pos);
+						instance_destroy(id);
+					}
+				}
+				//et finalement on détruit la salle
+				instance_destroy(item)
+			}	
+		}
+	}
+} else if mode_edition = EDITEUR_MODE.ERASER_DEP
 {
-	
+	if mouse_check_button_released(mb_left)
+	{
+		item = instance_position(mouse_x,mouse_y,obj_dependance);
+		if item != noone 
+		{
+			pos = ds_list_find_index(obj_list,item)
+			ds_list_delete(obj_list,pos)
+			instance_destroy(item)
+		}
+	}
 	
 }
 
