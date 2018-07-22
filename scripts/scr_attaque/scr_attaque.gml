@@ -48,6 +48,8 @@ with instance_place(x_t1,y_t1,objp_enemy)
 		pv -= other.degats;
 		blink = 6;
 		event_user(0);
+		audio_sound_pitch(son_epee,random_range(0.8,1.2));
+		audio_play_sound(son_epee,2,0);
 	}
 }
 
