@@ -41,7 +41,22 @@
     "physicsShape": 1,
     "physicsShapePoints": null,
     "physicsStartAwake": true,
-    "properties": null,
+    "properties": [
+        {
+            "id": "1ff4a99a-bfd8-4372-833f-dbdc6bffee09",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "2",
+            "varName": "vitesse_marche",
+            "varType": 0
+        }
+    ],
     "solid": false,
     "spriteId": "f24dcaea-c55c-4ea1-b6a9-f26c755ba92b",
     "visible": true
