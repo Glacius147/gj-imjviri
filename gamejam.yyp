@@ -599,6 +599,14 @@
             }
         },
         {
+            "Key": "84dd7a2f-7d90-47b0-bdac-0c1c83520372",
+            "Value": {
+                "id": "e98ba37c-171d-4cf6-92e1-40d0a63fcf1e",
+                "resourcePath": "datafiles_yy\\svg_slot5.json.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "85f6454e-b540-4e5c-9d2d-e2d8efb827b7",
             "Value": {
                 "id": "aa32e7d8-b918-47db-b4d1-1946be71f116",
