@@ -5,7 +5,7 @@
 
 with instance_place(x,y,obj_joueur)
 {
-	if !invulnerable
+	if !invulnerable && blink <= 0
 	{
 		invulnerable = true;
 		alarm[1] = frames_invulnerable;
