@@ -1,23 +1,14 @@
 {
-    "id": "8848ddfd-a1b8-425b-808c-aa86d5af7143",
+    "id": "df34de26-cd57-4399-a049-152c8f8115aa",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_mur_salle",
+    "name": "obj_porte_haut",
     "eventList": [
-        {
-            "id": "34be6a01-a788-4344-8090-cd999b52bdde",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 1,
-            "eventtype": 3,
-            "m_owner": "8848ddfd-a1b8-425b-808c-aa86d5af7143"
-        }
+        
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "e8381c17-0d08-42e1-a287-13f6280a61f0",
+    "parentObjectId": "00000000-0000-0000-0000-000000000000",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -31,10 +22,8 @@
     "physicsShape": 1,
     "physicsShapePoints": null,
     "physicsStartAwake": true,
-    "properties": [
-        
-    ],
+    "properties": null,
     "solid": false,
-    "spriteId": "a4e439ee-f247-41f4-b6ac-8058f2ac9a2b",
+    "spriteId": "2da54749-918d-4973-9f35-8743b68680b4",
     "visible": true
 }
