@@ -81,11 +81,14 @@ global.list_item[16] = string(obj_fantome);
 global.list_item[17] = string(obj_escalier);
 global.list_item[18] = string(obj_bat);
 global.list_item[19] = string(obj_map);
-global.list_item[19] = string(obj_triforce);
-global.list_item[19] = string(obj_master_sword);
-global.list_item[19] = string(obj_cryo_loot);
-global.list_item[19] = string(obj_fee);
-global.list_item[19] = string(obj_eau);
+global.list_item[20] = string(obj_triforce);
+global.list_item[21] = string(obj_master_sword);
+global.list_item[22] = string(obj_cryo_loot);
+global.list_item[23] = string(obj_magnis_loot);
+global.list_item[24] = string(obj_fee);
+global.list_item[25] = string(obj_eau);
+global.list_item[26] = string(obj_coeur_cont);
+global.list_item[27] = string(obj_torche_loot);
 
 
 global.map_item_index = ds_map_create()
