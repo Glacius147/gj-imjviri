@@ -21,7 +21,7 @@ if view_current == 0 and obj_menu.mode == MENU_MODE.CONSTRUCTION
 
 	item = instance_position(x,y,obj_master);
 
-	if (x<4096 and current_type != noone)
+	if ((x<4096 or y<=1024) and current_type != noone)
 	{
 	draw_self()
 	}

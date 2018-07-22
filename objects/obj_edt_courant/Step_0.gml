@@ -19,7 +19,7 @@ if mode_edition == EDITEUR_MODE.NORMAL
 {
 if mouse_check_button_released(mb_left)
 {
-if c_x>(4096+5*16) // on est dans la barre de selection
+if c_x>(4096+5*16) and c_y>1024 // on est dans la barre de selection
 {
 	item = instance_position(c_x,c_y,obj_master)
 	if item != noone
@@ -33,7 +33,7 @@ if c_x>(4096+5*16) // on est dans la barre de selection
 		}
 	}
 }
-else if c_x>4096 // On est dans la minimap
+else if c_x>4096 and c_y>1024 // On est dans la minimap
 {
 	//Position de la souris dans la caméra de l'interface
 	c_y = mouse_y - camera_get_view_y(view_camera[1]) - 6
@@ -46,7 +46,7 @@ else if c_x>4096 // On est dans la minimap
 else  // On clique pour poser l'objet
 {
 	//Si la salle est vide on la crée
-	if !created_room[current_room_x,current_room_y]//current_type == obj_mur_salle
+	if c_x<=4096 and !created_room[current_room_x,current_room_y]//current_type == obj_mur_salle
 	{
 		x = current_room_x*256
 		y = current_room_y*176
@@ -88,7 +88,7 @@ else  // On clique pour poser l'objet
 			current_player = new_item
 		}
 	}
-	else if current_type != noone // par défaut (si il y a un truc à peindre)
+	else if (x<4096 and current_type != noone) or (object_is_ancestor(current_type.object_index,objp_item) or current_type.object_index = obj_bat  ) // par défaut (si il y a un truc à peindre)
 	{
 		x = round((mouse_x-8) / 16)*16+8;
 		y = round((mouse_y-8) / 16)*16+8;
@@ -97,7 +97,6 @@ else  // On clique pour poser l'objet
 		{
 			ds_list_add(obj_list,instance_create_layer(x,y,"Instances",current_type));
 			
-			nb_obj ++;
 			if current_type == obj_joueur
 			{
 				current_player = obj_list[| nb_obj]
@@ -105,6 +104,25 @@ else  // On clique pour poser l'objet
 			{
 				obj_list[| nb_obj].destination = dest;
 				obj_list[| nb_obj].mask_index = spr_bloc;
+			}
+			nb_obj ++;
+		} //Si on clic un escalier
+		else if item.object_index == obj_escalier
+		{
+			with obj_escalier_bis
+			{
+				if destination == other.item.destination{ //on cherche celui avec le meme id
+					camera_set_view_pos(view_camera[0],room_origine_x*256 ,176*room_origine_y);
+				}
+			}
+		} //Si on clic un escalier retour
+		else if item.object_index == obj_escalier_bis
+		{
+			with obj_escalier
+			{
+				if x<4096 and destination == other.item.destination{ //on cherche celui avec le meme id
+					camera_set_view_pos(view_camera[0],room_origine_x*256 ,176*room_origine_y);
+				}
 			}
 		}
 	}

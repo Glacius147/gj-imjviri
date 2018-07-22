@@ -25,7 +25,7 @@ for (i = 0; i < 16; i += 1)
 			
 			x1 = 3*4*i + offset_x
 			y1 = 3*3*j + offset_y
-			if i == current_room_x and j == current_room_y
+			if current_room_x<16 and i == current_room_x and j == current_room_y
 			{
 				draw_set_color(c_red);
 				draw_rectangle(x1, y1, x1+12, y1+9, false);
