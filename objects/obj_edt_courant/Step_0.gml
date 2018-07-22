@@ -97,6 +97,7 @@ else  // On clique pour poser l'objet
 		{
 			ds_list_add(obj_list,instance_create_layer(x,y,"Instances",current_type));
 			
+			nb_obj ++;
 			if current_type == obj_joueur
 			{
 				current_player = obj_list[| nb_obj]
@@ -105,7 +106,6 @@ else  // On clique pour poser l'objet
 				obj_list[| nb_obj].destination = dest;
 				obj_list[| nb_obj].mask_index = spr_bloc;
 			}
-			nb_obj ++;
 		}
 	}
 	
