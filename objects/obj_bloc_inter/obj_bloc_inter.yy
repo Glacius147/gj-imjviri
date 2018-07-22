@@ -128,6 +128,20 @@
             "value": "0",
             "varName": "vsp_ini",
             "varType": 0
+        },
+        {
+            "id": "c8125f9e-30b4-48fe-9e01-fc2e51879c16",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "enclenche",
+            "varType": 3
         }
     ],
     "solid": false,

@@ -183,6 +183,14 @@
             }
         },
         {
+            "Key": "1669e00d-f004-48bb-90c9-75418329140e",
+            "Value": {
+                "id": "c41d99e3-1872-4e0f-b634-6a003c90f340",
+                "resourcePath": "sprites\\spr_mur_salle_haut\\spr_mur_salle_haut.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "166efd11-fe32-4a5c-b838-6c6468017018",
             "Value": {
                 "id": "508123f5-1504-4c93-b57c-1a1853236ea0",
@@ -324,6 +332,14 @@
                 "id": "8a79fc17-e556-4701-b213-602f1495060d",
                 "resourcePath": "scripts\\scr_transition\\scr_transition.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "2da54749-918d-4973-9f35-8743b68680b4",
+            "Value": {
+                "id": "31b17b17-67dd-40e1-be89-0bcf43543a2a",
+                "resourcePath": "sprites\\spr_porte_haut\\spr_porte_haut.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -899,6 +915,14 @@
             "Value": {
                 "id": "6fa1fb7b-2d39-4143-8fb2-a801b82c3cee",
                 "resourcePath": "objects\\obj_coeur\\obj_coeur.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "89ad7b45-222c-4c71-b010-5df8658b114c",
+            "Value": {
+                "id": "908b0e91-1bf7-4aa2-9da9-d9fac88795ea",
+                "resourcePath": "objects\\obj_mur_salle_up\\obj_mur_salle_up.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -1532,6 +1556,14 @@
                 "id": "1278ea4c-5073-4f62-b30b-88b120cb7645",
                 "resourcePath": "sprites\\spr_echelles\\spr_echelles.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "df34de26-cd57-4399-a049-152c8f8115aa",
+            "Value": {
+                "id": "1708cb87-58b1-4685-ba06-d87c17df995b",
+                "resourcePath": "objects\\obj_porte_haut\\obj_porte_haut.yy",
+                "resourceType": "GMObject"
             }
         },
         {
