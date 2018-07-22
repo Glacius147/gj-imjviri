@@ -25,8 +25,8 @@ touche_enfoncee = false;
 enum TYPE_DECO
 {
 	BOTW,
-	GLACE,
-	DESERT
+	DESERT,
+	GLACE
 }
 
 nb_deco = 3

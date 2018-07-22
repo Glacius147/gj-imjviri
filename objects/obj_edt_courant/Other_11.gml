@@ -94,7 +94,19 @@ for (i = 0; i < size; i++;)
 	}
 }
 
-
+id_bg = layer_background_get_id("Backgrounds")
+if obj_menu.t_deco = TYPE_DECO.BOTW
+{
+	layer_background_change(id_bg,spr_sol)
+} else if obj_menu.t_deco = TYPE_DECO.GLACE
+{
+						
+	layer_background_change(id_bg,spr_sol_glace)
+}else if obj_menu.t_deco = TYPE_DECO.DESERT
+{
+						
+	layer_background_change(id_bg,spr_sol_desert)
+}
 
 with obj_joueur
 {

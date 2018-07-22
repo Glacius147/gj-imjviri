@@ -1215,6 +1215,14 @@
             }
         },
         {
+            "Key": "ab796335-8a34-4072-98f2-c664ef2a1dc6",
+            "Value": {
+                "id": "f17a59e3-86c1-42d9-bf41-d2d82871e21a",
+                "resourcePath": "sprites\\spr_sol_desert\\spr_sol_desert.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "ac69b450-46a2-45a2-99b2-bacec902c197",
             "Value": {
                 "id": "d2b86026-f46c-4a4f-b469-2e26ee2afd28",
@@ -1299,6 +1307,14 @@
             "Value": {
                 "id": "d336ab14-3280-458e-acd8-fb8af68082fa",
                 "resourcePath": "sprites\\spr_bloc_statue\\spr_bloc_statue.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "c21015d6-696b-4cfd-8ac2-fd05c5837b44",
+            "Value": {
+                "id": "c9c850db-5502-456a-8fc4-f8929c3623f7",
+                "resourcePath": "sprites\\spr_sol_glace\\spr_sol_glace.yy",
                 "resourceType": "GMSprite"
             }
         },
