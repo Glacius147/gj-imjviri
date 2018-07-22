@@ -392,6 +392,7 @@ if  mode_edition = EDITEUR_MODE.ERASER
 		{
 			var flag = true
 			//On checke que la salle est vide.
+			nb_obj = ds_list_size(obj_list)
 			for(var i = 0; i < nb_obj; i++) 
 			{
 				var c_item = obj_list[| i];
