@@ -29,6 +29,7 @@ if obj_joueur.torche draw_sprite(spr_torche,0,x_b + 118 + 90 , y_b - 133);
 
 
 if obj_joueur.map draw_sprite(spr_map,0,x_b + 30 , y_b - 100);
+if obj_joueur.bottes_fer draw_sprite(spr_bottes_fer,0,x_b + 30 , y_b - 70);
 
 
 	
