@@ -2,6 +2,11 @@
 
 if mode = MENU_MODE.JEU || mode = MENU_MODE.UP || mode = MENU_MODE.DOWN || mode = MENU_MODE.PAUSE || mode = MENU_MODE.CHANGEMENT_SALLE
 {
+	//correction bug d'affichage
+	draw_set_color(c_black);
+	draw_rectangle(x_b + 254,y_b - 176 ,x_b + 256,y_b + 176,false);
+
+	//cadres map	
 	draw_set_color(c_blue);
 	draw_rectangle(x_b + 6,y_b + 6,x_b + 75,y_b + 59,false);
 	scr_mini_map();
@@ -46,7 +51,7 @@ if mode = MENU_MODE.JEU || mode = MENU_MODE.UP || mode = MENU_MODE.DOWN || mode 
 		if pv >= i im_coeur = 0;
 		if pv = i - 0.5 im_coeur = 1;
 		if pv < i - 0.5 im_coeur = 2;
-		draw_sprite(spr_coeur,im_coeur,x_b + 190 + 13*(i-1),y_b + 18);
+		draw_sprite(spr_coeur,im_coeur,x_b + 185 + 13*(i-1),y_b + 18);
 	}
 	
 	for (i = 6; i <= min(pv_max,10); i++)
@@ -54,7 +59,7 @@ if mode = MENU_MODE.JEU || mode = MENU_MODE.UP || mode = MENU_MODE.DOWN || mode 
 		if pv >= i im_coeur = 0;
 		if pv = i - 0.5 im_coeur = 1;
 		if pv < i - 0.5 im_coeur = 2;
-		draw_sprite(spr_coeur,im_coeur,x_b + 190 + 13*(i-1),y_b + 3);
+		draw_sprite(spr_coeur,im_coeur,x_b + 185 + 13*(i-6),y_b + 33);
 	}	
 	
 	
