@@ -35,16 +35,6 @@
             "m_owner": "0a8ac3a1-5833-4b80-941c-db8a6ffa818c"
         },
         {
-            "id": "383ccaed-987a-4bb8-9eed-cd7a2c1b707d",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "0a8ac3a1-5833-4b80-941c-db8a6ffa818c"
-        },
-        {
             "id": "2932a88a-c5f3-4cc9-96da-8c98c5e1664a",
             "modelName": "GMEvent",
             "mvc": "1.0",
@@ -52,6 +42,16 @@
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 2,
+            "m_owner": "0a8ac3a1-5833-4b80-941c-db8a6ffa818c"
+        },
+        {
+            "id": "cbd3d0c1-47e5-44dd-b1c2-17f15a1ece59",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
             "m_owner": "0a8ac3a1-5833-4b80-941c-db8a6ffa818c"
         }
     ],
@@ -172,6 +172,20 @@
             "value": "0",
             "varName": "magnis_cible",
             "varType": 3
+        },
+        {
+            "id": "5690b19c-928e-4bc9-a0e2-1a63049fb538",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "300",
+            "varName": "alarm_0",
+            "varType": 0
         }
     ],
     "solid": false,
