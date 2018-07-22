@@ -125,6 +125,20 @@
             "value": "0",
             "varName": "objets_dependants",
             "varType": 6
+        },
+        {
+            "id": "22bb8cc9-ea9f-4097-97ec-bbeda73e4fba",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "vu",
+            "varType": 3
         }
     ],
     "solid": false,

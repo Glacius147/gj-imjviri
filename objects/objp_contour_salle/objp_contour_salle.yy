@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "objp_contour_salle",
     "eventList": [
-        
+        {
+            "id": "470b3bba-9357-4a9d-854d-dfeea2dbc6f9",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
+            "m_owner": "e8381c17-0d08-42e1-a287-13f6280a61f0"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

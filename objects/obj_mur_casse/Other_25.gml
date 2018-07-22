@@ -1,5 +1,5 @@
 /// @desc Changement de salle !
-if obj_menu.mode = MENU_MODE.JEU
+if obj_menu.mode = MENU_MODE.JEU && collision = obj_joueur.id
 {
 
 	var x_to = 0;
