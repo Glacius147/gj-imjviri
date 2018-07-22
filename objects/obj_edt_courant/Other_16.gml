@@ -47,8 +47,8 @@ switch(mode_edition)
 		{
 			image_alpha = 1
 		}
-		sprite_index = spr_eraser
-		current_type = noone
+		sprite_index = spr_eraser;
+		current_type = noone;
 		break;
 	
 } 
