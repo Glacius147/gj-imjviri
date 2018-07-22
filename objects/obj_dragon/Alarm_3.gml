@@ -40,10 +40,10 @@ if mode = MODE_DRAKE.BURST
 			break;
 		}
 	}
-	
 	with instance_create_layer(x_t,y_t,"mob",obj_boule_feu)
 	{
 		direction = random_range(-15,15) + point_direction(x,y,obj_joueur.x,obj_joueur.y);
 		vitesse_marche = 1.5;
 	}
+	
 }

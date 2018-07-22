@@ -223,6 +223,14 @@
             }
         },
         {
+            "Key": "1efdc1c9-2c3b-4b77-98c4-bce8d2b52a33",
+            "Value": {
+                "id": "8687ba3b-7830-40e8-b323-9ba155ce8222",
+                "resourcePath": "sprites\\spr_dragon_edt\\spr_dragon_edt.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1ff3c85a-62c2-4b50-b211-2255baef5d75",
             "Value": {
                 "id": "e855a06d-8ea5-4322-9bd4-b043015fc7c2",

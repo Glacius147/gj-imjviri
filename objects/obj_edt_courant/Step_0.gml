@@ -24,12 +24,33 @@ if mode_edition == EDITEUR_MODE.NORMAL
 			item = instance_position(c_x,c_y,obj_master)
 			if item != noone
 			{
-		
-				sprite_index = item.sprite_index
-				current_type = item.object_index
-				if current_type == obj_escalier
+				if item.object_index == obj_mur_salle
 				{
-					dest = item.destination	
+					obj_menu.t_deco = (obj_menu.t_deco+1) mod obj_menu.nb_deco
+					/* GAEL EST UN TARE !!!
+					with objp_contour_salle
+					{
+						image_index+=4
+						if object_index == obj_mur{
+							image_index = (image_index + 4)// mod (4*obj_menu.nb_deco)
+						} else
+						{
+							image_index = (image_index + 1)// mod obj_menu.nb_deco	
+							
+							var a =3
+						}
+					}
+					*/
+					
+				}
+				else
+				{
+					sprite_index = item.sprite_index
+					current_type = item.object_index
+					if current_type == obj_escalier
+					{
+						dest = item.destination	
+					}
 				}
 			}
 		}
@@ -55,23 +76,24 @@ if mode_edition == EDITEUR_MODE.NORMAL
 				created_room[current_room_x,current_room_y] = true;
 				nb_obj ++;
 				//Ajout de 4 murs
-				ds_list_add(obj_list,instance_create_layer(x+3*8,y+11*8,"Instances",obj_mur));
+				ds_list_add(obj_list,instance_create_layer(x+3*8,y+11*8,"salles",obj_mur));
 				obj_list[| nb_obj].image_index = 1;
 				nb_obj ++;
-				ds_list_add(obj_list,instance_create_layer(x+29*8,y+11*8,"Instances",obj_mur));
+				ds_list_add(obj_list,instance_create_layer(x+29*8,y+11*8,"salles",obj_mur));
 				obj_list[| nb_obj].image_index = 3;
 				nb_obj ++;
-				ds_list_add(obj_list,instance_create_layer(x+16*8,y+3*8,"Instances",obj_mur));
+				ds_list_add(obj_list,instance_create_layer(x+16*8,y+3*8,"salles",obj_mur));
 				obj_list[| nb_obj].image_index = 0;
 				nb_obj ++;
-				ds_list_add(obj_list,instance_create_layer(x+16*8,y+19*8,"Instances",obj_mur));
+				ds_list_add(obj_list,instance_create_layer(x+16*8,y+19*8,"salles",obj_mur));
 				obj_list[| nb_obj].image_index = 2;
 				nb_obj ++;
 				ds_list_add(obj_list,instance_create_layer(x+8,y+8,"Instances",obj_fantome));
 				nb_obj ++;
 			
 			} else
-			{
+			{	
+				
 				x = round((mouse_x-8) / 16)*16+8;
 				y = round((mouse_y-8) / 16)*16+8;
 				item = instance_position(x,y,obj_master);
@@ -94,8 +116,14 @@ if mode_edition == EDITEUR_MODE.NORMAL
 								camera_set_view_pos(view_camera[0],room_origine_x*256 ,176*room_origine_y);
 							}
 						}
+					} else if item.object_index == obj_mur and (item.image_index mod 4 ==0) and current_type = obj_dragon
+					{//Cas particulier du dragon
+						ds_list_add(obj_list,instance_create_layer(x,y,"Instances",current_type));
+						obj_list[| nb_obj].sprite_index = spr_dragon_edt
+						nb_obj ++;
 					}
-				}
+				} 
+				
 				else // pas de conflit d'objet
 				{
 					if current_type == obj_joueur and current_player !=noone
@@ -110,7 +138,7 @@ if mode_edition == EDITEUR_MODE.NORMAL
 							current_player = new_item
 						}
 					}
-					else if (x<4096 and current_type != noone) or (object_is_ancestor(current_type.object_index,objp_item) or current_type.object_index = obj_bat  ) // par défaut (si il y a un truc à peindre)
+					else if (x<4096 and current_type != noone and current_type != obj_dragon) or (object_is_ancestor(current_type.object_index,objp_item) or current_type.object_index = obj_bat  ) // par défaut (si il y a un truc à peindre)
 					{
 						if created_room[current_room_x,current_room_y]
 						{

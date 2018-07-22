@@ -8,32 +8,32 @@
     "VTile": false,
     "bbox_bottom": 15,
     "bbox_left": 1,
-    "bbox_right": 15,
-    "bbox_top": 1,
+    "bbox_right": 14,
+    "bbox_top": 0,
     "bboxmode": 0,
     "colkind": 1,
     "coltolerance": 0,
     "edgeFiltering": false,
     "frames": [
         {
-            "id": "f473c490-9f53-4aca-84af-ef4ad5392f2f",
+            "id": "643ca673-4b34-49ba-bfde-3977373a224e",
             "modelName": "GMSpriteFrame",
             "mvc": "1.0",
             "SpriteId": "ac69b450-46a2-45a2-99b2-bacec902c197",
             "compositeImage": {
-                "id": "84e57587-ea43-4925-8c95-0ab262705fb4",
+                "id": "f6eaad22-36b1-4a6c-9516-079840c04e56",
                 "modelName": "GMSpriteImage",
                 "mvc": "1.0",
-                "FrameId": "f473c490-9f53-4aca-84af-ef4ad5392f2f",
+                "FrameId": "643ca673-4b34-49ba-bfde-3977373a224e",
                 "LayerId": "00000000-0000-0000-0000-000000000000"
             },
             "images": [
                 {
-                    "id": "590d5a0c-63cb-4edb-b9aa-8aa327365b26",
+                    "id": "918421d7-28f9-4e0d-8dd1-b105242d318e",
                     "modelName": "GMSpriteImage",
                     "mvc": "1.0",
-                    "FrameId": "f473c490-9f53-4aca-84af-ef4ad5392f2f",
-                    "LayerId": "8c45cff2-7028-4c41-83f9-47b132f1d8fd"
+                    "FrameId": "643ca673-4b34-49ba-bfde-3977373a224e",
+                    "LayerId": "c661501a-3a4e-471a-888e-2219f5438b1c"
                 }
             ]
         }
@@ -43,7 +43,7 @@
     "height": 16,
     "layers": [
         {
-            "id": "8c45cff2-7028-4c41-83f9-47b132f1d8fd",
+            "id": "c661501a-3a4e-471a-888e-2219f5438b1c",
             "modelName": "GMImageLayer",
             "mvc": "1.0",
             "SpriteId": "ac69b450-46a2-45a2-99b2-bacec902c197",
@@ -56,7 +56,7 @@
     ],
     "origin": 4,
     "originLocked": false,
-    "playbackSpeed": 15,
+    "playbackSpeed": 2,
     "playbackSpeedType": 0,
     "premultiplyAlpha": false,
     "sepmasks": false,

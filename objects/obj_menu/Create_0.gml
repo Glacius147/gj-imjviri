@@ -29,7 +29,8 @@ enum TYPE_DECO
 	DESERT
 }
 
-t_deco = TYPE_DECO.GLACE;
+nb_deco = 3
+t_deco = TYPE_DECO.BOTW;
 
 enum MENU_MODE
 {
@@ -115,6 +116,8 @@ for (i = 0; i<nb_item; i+=1)
 	ds_map_add(global.map_item_index,coress,i)
 }
 
+
+//ajoute le nivo 0 si le slot est libre.
 if !file_exists("svg_slot0.json")
 {
 	file_copy("svg_slot.json","svg_slot0.json")
