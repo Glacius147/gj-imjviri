@@ -43,12 +43,12 @@ if mode = MENU_MODE.MENU
 	{
 		switch menu_selection
 		{
-			case 2 : default: scr_transition(TRANS_MODE.GOTO,room_editeur); break;
+			case 1 : default: scr_transition(TRANS_MODE.GOTO,room_editeur); break;
 			case 0 : game_end(); break;
-			case 1 : scr_transition(TRANS_MODE.GOTO,room_jeu);
-			mode = MENU_MODE.JEU;
-			break;
-			case 3 : default: scr_transition(TRANS_MODE.GOTO,room_select);
+			//case 1 : scr_transition(TRANS_MODE.GOTO,room_jeu);
+			//mode = MENU_MODE.JEU;
+			//break;
+			case 2 : default: scr_transition(TRANS_MODE.GOTO,room_select);
 			mode = MENU_MODE.SELECT_LOAD;
 			break;
 		}
