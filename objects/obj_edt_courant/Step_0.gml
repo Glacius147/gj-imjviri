@@ -99,6 +99,7 @@ else // On clique pour poser l'objet
 			} else if current_type == obj_escalier
 			{
 				obj_list[| nb_obj].destination = dest
+				obj_list[| nb_obj].mask_index = spr_bloc
 			}
 			nb_obj ++;
 		}
