@@ -107,6 +107,7 @@ global.list_item[33] = string(obj_gel);
 global.list_item[34] = string(obj_dragon);
 global.list_item[35] = string(obj_bottes_fer);
 global.list_item[36] = string(obj_bloc_inter);
+global.list_item[37] = string(obj_bloc_im);
 
 
 global.map_item_index = ds_map_create()
