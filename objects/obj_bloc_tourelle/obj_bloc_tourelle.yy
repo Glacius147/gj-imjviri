@@ -63,7 +63,7 @@
             "mvc": "1.0",
             "objectId": "d6c33cd1-23d3-4fc7-a8f7-b739c79c8dce",
             "propertyId": "0dec6461-7c55-4cc6-8a4f-dba7d8133036",
-            "value": "False"
+            "value": "True"
         },
         {
             "id": "21deb412-c4f5-462f-aa9e-68e454b1a242",
@@ -71,6 +71,14 @@
             "mvc": "1.0",
             "objectId": "d6c33cd1-23d3-4fc7-a8f7-b739c79c8dce",
             "propertyId": "41aac493-dafc-4917-a01a-702818a9e297",
+            "value": "False"
+        },
+        {
+            "id": "9fe91a32-e0ab-4b2b-8e36-89ca732cf311",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "d6c33cd1-23d3-4fc7-a8f7-b739c79c8dce",
+            "propertyId": "88f1a07a-3ee1-4364-96e1-a80c89b720a6",
             "value": "False"
         }
     ],
