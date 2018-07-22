@@ -24,13 +24,13 @@ if mode = MENU_MODE.JEU || mode = MENU_MODE.UP || mode = MENU_MODE.DOWN || mode 
 	if instance_exists(obj_joueur) 
 	{
 		draw_sprite(obj_joueur.objet_a,0,x_b + 129,y_b + 40);
-		draw_sprite(obj_joueur.objet_b,0,x_b + 163,y_b + 40);
+		if obj_joueur.objet_b != 0 draw_sprite(obj_joueur.objet_b,0,x_b + 163,y_b + 40);
 	}
 
 	//affichage choix objet & contour map
 	scr_9box(spr_9box,x_b + 100, y_b -150, x_b + 230, y_b -112);
 	
-	draw_set_color(c_navy);
+	draw_set_color(c_blue);
 	draw_rectangle(x_b + 50, y_b -110, x_b + 230, y_b -10, false);
 
 	//placement des coeurs

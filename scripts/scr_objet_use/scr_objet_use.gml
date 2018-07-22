@@ -41,11 +41,24 @@ switch objet_b
 		if bombes > 0
 		{
 			bombes --;
-			instance_create_layer(x,y,"items",obj_bombe_posee);		
+			instance_create_layer(x,y,"items",obj_bombe_posee);	
+			break;
 		}
 	}
 	case spr_cryo :
 		{
-			with instance_position(x_t1,y_t1,obj_master) event_user(11);			
+			with instance_position(x_t1,y_t1,obj_master) event_user(11);
+			break;
+		}
+	case spr_magnis :
+		{
+			with instance_position(x_t1,y_t1,obj_master) event_user(13);
+			magnis_actif = true;
+			break;
+		}
+	case spr_torche :
+		{
+			with instance_position(x_t1,y_t1,obj_master) event_user(12);
+			break;
 		}
 }

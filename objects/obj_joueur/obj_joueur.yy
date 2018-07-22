@@ -245,7 +245,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "10",
+            "value": "0",
             "varName": "bombes",
             "varType": 0
         },
@@ -259,7 +259,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "spr_cryo",
+            "value": "0",
             "varName": "objet_b",
             "varType": 0
         },
@@ -301,7 +301,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "True",
+            "value": "False",
             "varName": "cryo",
             "varType": 3
         },
@@ -315,7 +315,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "True",
+            "value": "False",
             "varName": "bombes_possede",
             "varType": 3
         },
@@ -329,7 +329,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "True",
+            "value": "False",
             "varName": "magnetis",
             "varType": 3
         },
@@ -343,7 +343,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "True",
+            "value": "False",
             "varName": "torche",
             "varType": 3
         },
