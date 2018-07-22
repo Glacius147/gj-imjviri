@@ -21,3 +21,4 @@ with instance_place(x,y,obj_joueur)
 		audio_play_sound(son_hurt,2,0);
 	}
 }
+
