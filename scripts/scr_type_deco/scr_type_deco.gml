@@ -20,11 +20,19 @@ switch obj_menu.t_deco
 	}
 }
 
-if image_number < 4 
+switch image_number 
 {
+	case 3 :
 	image_index = i_index;
-}
-else
-{
+	break;
+	
+	case 6 : 
+	
+	break;
+	image_index = scr_wrap(image_index,0,1) + 2 * i_index;
+	
+	case 12 :
 	image_index = scr_wrap(image_index,0,3) + 4 * i_index;
+	
+	break;
 }

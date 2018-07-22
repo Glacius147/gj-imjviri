@@ -5,16 +5,6 @@
     "name": "obj_bloc_inter",
     "eventList": [
         {
-            "id": "e11095e2-05fb-4e25-9017-fade9556fb19",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 25,
-            "eventtype": 7,
-            "m_owner": "f0458313-19e8-4bf5-8a16-8c5a3e242387"
-        },
-        {
             "id": "f853e663-a6e9-4c7f-abc1-4277c3973032",
             "modelName": "GMEvent",
             "mvc": "1.0",
@@ -25,13 +15,13 @@
             "m_owner": "f0458313-19e8-4bf5-8a16-8c5a3e242387"
         },
         {
-            "id": "54d6a4cd-c128-487d-85c8-2fa2e3979cda",
+            "id": "8608c3e2-bbcf-4868-b61c-e460fccf6aca",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 22,
-            "eventtype": 7,
+            "enumb": 2,
+            "eventtype": 3,
             "m_owner": "f0458313-19e8-4bf5-8a16-8c5a3e242387"
         }
     ],
@@ -54,7 +44,7 @@
             "value": "True"
         }
     ],
-    "parentObjectId": "ecc6472e-0ffe-4374-adcb-097042aed299",
+    "parentObjectId": "d6c33cd1-23d3-4fc7-a8f7-b739c79c8dce",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,

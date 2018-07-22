@@ -1,5 +1,9 @@
 /// @desc Bloc poussé par le joueur
 
+if temp_hsp != 0 hsp = temp_hsp;
+if temp_vsp != 0 vsp = temp_vsp;
+
+
 if collision == obj_joueur.id && actif && deplacement_effectue < sprite_height
 {
 	// On enregistre la direction du 1° deplacement

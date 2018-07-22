@@ -5,5 +5,5 @@ if actif
 	audio_play_sound(son_pickup,2,0);
 	other.map = true;
 	with objp_contour_salle vu = true;
-	instance_destroy();
+	instance_change(obj_master,false);
 }

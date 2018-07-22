@@ -6,5 +6,5 @@ if actif
 	other.objet_a = spr_master_sword;
 	other.degats = 2;
 	other.spr_attaque = spr_joueur_attaque_master_sword;
-	instance_destroy();
+	instance_change(obj_master,false);
 }
