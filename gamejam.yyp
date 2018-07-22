@@ -1079,6 +1079,14 @@
             }
         },
         {
+            "Key": "a5c628f1-a32d-4172-bce4-aeeab3573c9f",
+            "Value": {
+                "id": "b5335795-ece3-4c35-b2c7-4b30b898e7b8",
+                "resourcePath": "sprites\\spr_fleche_pointe\\spr_fleche_pointe.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a6874c70-8d26-4a4d-bd11-407d50f74519",
             "Value": {
                 "id": "b5a7c25f-1627-485f-a228-d627c8211b79",

@@ -63,7 +63,7 @@ for (i = 0; i < size; i++;)
 		origines[count] = item[? "origine"];
 		destinations[count] = item[? "destination"];
 		count++
-		var new_item = instance_create_layer(item_x,item_y,"Instances",item_type);
+		var new_item = instance_create_layer(item_x,item_y,"Instances_dep",item_type);
 		new_item.origine_id = obj_list[| item[? "origine"]];
 		new_item.destination_id = obj_list[| item[? "destination"]];
 	} else

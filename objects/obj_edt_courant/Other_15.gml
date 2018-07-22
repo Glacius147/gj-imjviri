@@ -18,6 +18,7 @@ switch (mode_edition) {
 		{
 			image_alpha = 1
 		}
+		break;
 	case EDITEUR_MODE.ERASER_DEP:
 		mode_edition = EDITEUR_MODE.ERASER
 		with obj_master
@@ -28,6 +29,7 @@ switch (mode_edition) {
 		{
 			image_alpha = 0.2	
 		}
+		break;
     case EDITEUR_MODE.NORMAL:
         mode_edition = EDITEUR_MODE.DEPENDANCE_1
 		with obj_master

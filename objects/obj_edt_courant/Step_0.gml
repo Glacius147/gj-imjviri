@@ -236,11 +236,9 @@ if mode_edition = EDITEUR_MODE.DEPENDANCE_1{
 }
 
 if mode_edition = EDITEUR_MODE.DEPENDANCE_2{
+	//Relachement sur l'item suivant
 	image_angle =  point_direction(begin_arrow.x, begin_arrow.y, mouse_x, mouse_y);
-	with begin_arrow
-	{
-		other.image_xscale = distance_to_point(mouse_x,mouse_y)/32
-	}
+	image_xscale = point_distance(begin_arrow.x, begin_arrow.y, mouse_x, mouse_y)/16
 	if mouse_check_button_released(mb_left)
 	{
 		//Dans tous les cas on revient en mode 1
@@ -260,18 +258,22 @@ if mode_edition = EDITEUR_MODE.DEPENDANCE_2{
 		image_angle =0
 		image_xscale = 1
 		item = instance_position(mouse_x,mouse_y,obj_master);
-		if item != noone and item.activable
+		if item != noone and item.activable and item.id != begin_arrow.id
 		{
-			new_item =  instance_create_layer(begin_arrow.x,begin_arrow.y,"Instances",obj_dependance);
+			new_item =  instance_create_layer(begin_arrow.x,begin_arrow.y,"Instances_dep",obj_dependance);
 			//new_item.origine = scr_get_index(obj_list,begin_arrow)
 			//new_item.destination = scr_get_index(obj_list,item)
 			new_item.origine_id = begin_arrow
 			new_item.destination_id = item
-			new_item.image_angle = point_direction(begin_arrow.x, begin_arrow.y, item.x, item.y);
+			/*new_item.image_angle = point_direction(begin_arrow.x, begin_arrow.y, item.x, item.y);
+			image_xscale=point_distance(origine_id.x, origine_id.y, destination_id.x, destination_id.y)/16
+
+			draw_self()
+			draw_sprite(spr_fleche_pointe,0,destination_id.x,destination_id.y)
 			with begin_arrow
 			{
 				other.new_item.image_xscale = distance_to_point(other.item.x,other.item.y)/32
-			}
+			}*/
 			//image_xscale = distance_to_point(mouse_x,mouse_y)/32;
 			ds_list_add(obj_list,new_item)
 			nb_obj++
