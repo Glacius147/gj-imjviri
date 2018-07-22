@@ -1,7 +1,7 @@
 /// @descr degats joueur
 
 
-with obj_joueur
+with collision
 {
 	if !invulnerable
 	{

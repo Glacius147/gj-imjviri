@@ -25,7 +25,11 @@ if mode = MODE_PIC.RETOUR
 	//deplacement horizontal
 	while (place_meeting(x+hsp,y,obj_master) && hsp != 0)
 	{
-		if place_meeting(x+hsp,y,obj_joueur) event_user(1);
+		if place_meeting(x+hsp,y,objp_objet_mobil)
+		{
+			collision = instance_place(x+hsp,y,objp_objet_mobil)
+			event_user(1);
+		}
 		hsp = scr_approche(hsp,0,1);
 	}
 	x = scr_approche(x,xstart,abs(hsp));
@@ -33,7 +37,11 @@ if mode = MODE_PIC.RETOUR
 	//deplacement vertical
 	while (place_meeting(x,y+vsp,obj_master) && vsp != 0)
 	{
-		if place_meeting(x,y+vsp,obj_joueur) event_user(1);
+		if place_meeting(x,y+vsp,objp_objet_mobil)
+		{
+			collision = instance_place(x,y+vsp,objp_objet_mobil)
+			event_user(1);
+		}
 		vsp = scr_approche(vsp,0,1);
 	}
 	y = scr_approche(y,ystart,abs(vsp));
@@ -50,7 +58,11 @@ if mode = MODE_PIC.CHARGE
 	//deplacement horizontal
 	while (place_meeting(x+hsp,y,obj_master) && hsp != 0)
 	{
-		if place_meeting(x+hsp,y,obj_joueur) event_user(1);
+		if place_meeting(x+hsp,y,objp_objet_mobil)
+		{
+			collision = instance_place(x+hsp,y,objp_objet_mobil)
+			event_user(1);
+		}
 		hsp = scr_approche(hsp,0,1);
 	}
 	x = x + hsp;
@@ -58,7 +70,11 @@ if mode = MODE_PIC.CHARGE
 	//deplacement vertical
 	while (place_meeting(x,y+vsp,obj_master) && vsp != 0)
 	{
-		if place_meeting(x,y+vsp,obj_joueur) event_user(1);
+		if place_meeting(x,y+vsp,objp_objet_mobil)
+		{
+			collision = instance_place(x,y+vsp,objp_objet_mobil)
+			event_user(1);
+		}
 		vsp = scr_approche(vsp,0,1);
 	}
 	y = y + vsp;

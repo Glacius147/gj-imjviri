@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "002e089a-ea31-4b5d-874f-72be9368d3f1",
+            "Value": {
+                "id": "0f74aaf2-aea3-4f63-9e1d-911dd1240c85",
+                "resourcePath": "sounds\\son_epee\\son_epee.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "0163593c-64fa-45cf-a54a-591165b2aeb8",
             "Value": {
                 "id": "fbc6f6b2-7e26-438a-9576-0206e89cd221",
@@ -354,7 +362,7 @@
             "Key": "41459cb7-4bec-4861-b8c3-2b83ff79a0d7",
             "Value": {
                 "id": "3aac1436-0ffe-4776-b2ae-c2b50952faa7",
-                "resourcePath": "sounds\\sound0\\sound0.yy",
+                "resourcePath": "sounds\\son_explosion\\son_explosion.yy",
                 "resourceType": "GMSound"
             }
         },

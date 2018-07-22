@@ -1,8 +1,8 @@
 {
-    "id": "41459cb7-4bec-4861-b8c3-2b83ff79a0d7",
+    "id": "002e089a-ea31-4b5d-874f-72be9368d3f1",
     "modelName": "GMSound",
     "mvc": "1.0",
-    "name": "sound0",
+    "name": "son_epee",
     "audioGroupGuid": "7b2c4976-1e09-44e5-8256-c527145e03bb",
     "bitDepth": 1,
     "bitRate": 128,
