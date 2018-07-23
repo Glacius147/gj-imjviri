@@ -34,6 +34,8 @@ if view_current == 0 and obj_menu.mode == MENU_MODE.CONSTRUCTION
 	else if mode_edition = EDITEUR_MODE.DEPENDANCE_2
 	{
 		image_alpha = 1
+		x = begin_arrow.x
+		y = begin_arrow.y
 		if mouse_x<4096
 		{
 			draw_self()	

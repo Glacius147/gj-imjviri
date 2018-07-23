@@ -36,6 +36,9 @@ if current_room_x+x_to<0 or current_room_y+y_to<0{
 	if created_room[current_room_x+x_to,current_room_y+y_to]{
 		result[0] = true
 		var item = instance_position(current_room_x*256+128 + x_to*(128+3*8),current_room_y*176+88+y_to*(88+3*8),obj_master);
+		if item.object_index = obj_dragon{
+			result[0] = false
+		}
 		result[1] = item
 		return result
 	} else
