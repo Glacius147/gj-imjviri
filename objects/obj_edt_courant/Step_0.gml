@@ -121,6 +121,9 @@ if mode_edition == EDITEUR_MODE.NORMAL
 					{//Cas particulier du dragon
 						ds_list_add(obj_list,instance_create_layer(x,y,"Instances",current_type));
 						obj_list[| nb_obj].sprite_index = spr_dragon_edt
+						obj_list[| nb_obj].room_origine_x = current_room_x
+						obj_list[| nb_obj].room_origine_x = current_room_x
+						obj_list[| nb_obj].degats = 0
 						nb_obj ++;
 					}
 				} 
@@ -163,6 +166,8 @@ if mode_edition == EDITEUR_MODE.NORMAL
 							{
 								flag_dejacree.x = x;
 								flag_dejacree.y = y;
+								flag_dejacree.room_origine_x = current_room_x
+								flag_dejacree.room_origine_y = current_room_y
 								flag_dejacree.actif = true
 								with (obj_dependance)
 								{
@@ -182,7 +187,10 @@ if mode_edition == EDITEUR_MODE.NORMAL
 					{
 						if created_room[current_room_x,current_room_y]
 						{
+							nb_obj = ds_list_size(obj_list)
 							ds_list_add(obj_list,instance_create_layer(x,y,"Instances",current_type));
+							obj_list[| nb_obj].room_origine_x = current_room_x
+							obj_list[| nb_obj].room_origine_x = current_room_x
 							nb_obj ++;
 							if current_type == obj_joueur//Cas du joueur non deja crée
 							{
@@ -260,6 +268,7 @@ if mode_edition == EDITEUR_MODE.NORMAL
 					new_x = item.x
 					new_y = item.y
 					new_item =  instance_create_layer(new_x,new_y,"Instances",next_type);
+					//show_debug_message(new_item.room_origine_x)
 					if next_type == obj_mur_explosable
 					{
 						new_item.image_index = round(item.image_angle/90)
@@ -396,7 +405,10 @@ if  mode_edition = EDITEUR_MODE.ERASER
 			for(var i = 0; i < nb_obj; i++) 
 			{
 				var c_item = obj_list[| i];
-				if c_item.room_origine_x == current_room_x and c_item.room_origine_y == current_room_y and item.object_index != obj_mur_salle and item.object_index != obj_mur and item.object_index != obj_fantome
+				//show_debug_message(string(c_item.room_origine_x) + " " +string(c_item.room_origine_y))
+				//show_debug_message("id joueur" +string(obj_joueur.object_index))
+				//show_debug_message("id objet" +string(c_item.object_index))
+				if c_item.room_origine_x == current_room_x and c_item.room_origine_y == current_room_y and c_item.object_index != obj_mur_salle and c_item.object_index != obj_mur and c_item.object_index != obj_fantome
 				{
 					flag = false;
 					break;
