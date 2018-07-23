@@ -1,6 +1,8 @@
 /// @descr Mode pour les sous terrains
 
 
+room_origine_x = floor(x/256)
+room_origine_y = floor(y/176)
 
 enum TYPE_SALLE
 {
