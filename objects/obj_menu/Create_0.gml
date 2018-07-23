@@ -123,7 +123,7 @@ for (i = 0; i<nb_item; i+=1)
 
 
 //ajoute le nivo 0 si le slot est libre.
-if !file_exists("svg_slot0.json")*/
+if !file_exists("svg_slot0.json")
 {
 	file_copy("svg_slot_0.json","svg_slot0.json")
 }
