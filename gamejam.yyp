@@ -743,6 +743,14 @@
             }
         },
         {
+            "Key": "737877de-9d98-4e89-adf0-356a1ab821b2",
+            "Value": {
+                "id": "9f76297b-13f4-403c-95e1-59ae85fa561a",
+                "resourcePath": "sounds\\son_musique_intro\\son_musique_intro.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "7518873a-92e2-4c77-909a-28bfec2a199f",
             "Value": {
                 "id": "1787cf1c-9272-461b-9442-3b6cd61bd322",
@@ -756,6 +764,14 @@
                 "id": "aa5a501b-5b40-4f91-966c-36ae1116dcfb",
                 "resourcePath": "views\\7562ce5b-a91f-4d43-8e68-c73173ca323e.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "75b08472-5722-408b-87df-0c68d801b70d",
+            "Value": {
+                "id": "d3e44604-a7e0-4e75-b85a-d44a0cc9ab43",
+                "resourcePath": "datafiles_yy\\svg_slot_0.json.yy",
+                "resourceType": "GMIncludedFile"
             }
         },
         {
@@ -908,14 +924,6 @@
                 "id": "87608340-0e11-47f0-bf01-74b2c1d247a2",
                 "resourcePath": "views\\841fd3af-65ad-4e55-9716-445bb8c8f181.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "84dd7a2f-7d90-47b0-bdac-0c1c83520372",
-            "Value": {
-                "id": "e98ba37c-171d-4cf6-92e1-40d0a63fcf1e",
-                "resourcePath": "datafiles_yy\\svg_slot.json.yy",
-                "resourceType": "GMIncludedFile"
             }
         },
         {
@@ -1348,6 +1356,14 @@
                 "id": "a1adf9ec-3cff-4283-a1f9-e939ddce5aec",
                 "resourcePath": "objects\\obj_affichage_item_use\\obj_affichage_item_use.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "b504cba7-77d7-4bb5-a06f-a2dddf417852",
+            "Value": {
+                "id": "cd25ff73-091f-49d4-9a77-a02bbdc2fe0f",
+                "resourcePath": "datafiles_yy\\svg_slot_1.json.yy",
+                "resourceType": "GMIncludedFile"
             }
         },
         {
