@@ -120,7 +120,7 @@ if mode_edition == EDITEUR_MODE.NORMAL
 					} else if item.object_index == obj_mur and (item.image_index mod 4 ==0) and current_type = obj_dragon
 					{//Cas particulier du dragon
 						ds_list_add(obj_list,instance_create_layer(x,y,"Instances",current_type));
-						obj_list[| nb_obj].sprite_index = spr_dragon_edt
+						//obj_list[| nb_obj].sprite_index = spr_dragon_edt
 						obj_list[| nb_obj].room_origine_x = current_room_x
 						obj_list[| nb_obj].room_origine_x = current_room_x
 						obj_list[| nb_obj].degats = 0
@@ -191,11 +191,11 @@ if mode_edition == EDITEUR_MODE.NORMAL
 							ds_list_add(obj_list,instance_create_layer(x,y,"Instances",current_type));
 							obj_list[| nb_obj].room_origine_x = current_room_x
 							obj_list[| nb_obj].room_origine_x = current_room_x
-							nb_obj ++;
 							if current_type == obj_joueur//Cas du joueur non deja crée
 							{
 								current_player = obj_list[| nb_obj]
 							} 
+							nb_obj ++;
 						}
 					} 
 				}
@@ -319,7 +319,6 @@ if mode_edition = EDITEUR_MODE.DEPENDANCE_1{
 			}
 		sprite_index = spr_fleche1
 		begin_arrow = item
-		
 		}
 	}
 }
